@@ -2,6 +2,8 @@
 
 # mod-polish-translation
 
+🇵🇱 [Wersja polska](README.pl.md)
+
 Polish translation of AzerothCore server-side texts (quests, NPC and item names, gossip, speech, books,
 system messages) as a plain module: no core changes, the server stays English and each account can switch
 to Polish. Client-side texts (spells, zones, UI, fonts) are not part of this module.
