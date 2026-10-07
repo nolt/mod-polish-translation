@@ -207,8 +207,13 @@ INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCap
 (180690, 'koKR', 'Duża szkatuła ze skarabeuszem', '', 0),
 (180745, 'koKR', 'Uścisk C\'Thuna', '', 0);
 
-DELETE FROM `item_template_locale` WHERE `ID` IN (20874, 20875, 20876, 20877, 20878, 20879, 20881, 20882, 20926, 20927, 20928, 20929, 20930, 20931, 20932, 20933, 21126, 21128, 21134, 21156, 21218, 21222, 21223, 21224, 21225, 21226, 21229, 21230, 21232, 21237, 21242, 21244, 21268, 21269, 21272, 21273, 21275, 21321, 21323, 21324, 21329, 21330, 21331, 21332, 21333, 21334, 21335, 21336, 21337, 21338, 21343, 21344, 21345, 21346, 21347, 21348, 21349, 21350, 21351, 21352, 21353, 21354, 21355, 21356, 21357, 21359, 21360, 21361, 21362, 21364, 21365, 21366, 21367, 21368, 21370, 21372, 21373, 21374, 21375, 21376, 21387, 21388, 21389, 21390, 21391, 21579, 21581, 21582, 21583, 21585, 21586, 21596, 21597, 21598, 21599, 21600, 21601, 21602, 21603, 21604, 21605, 21606, 21607, 21608, 21609, 21616, 21617, 21618, 21619, 21620, 21621, 21622, 21623, 21624, 21625, 21626, 21627, 21635, 21639, 21645, 21647, 21648, 21650, 21651, 21652, 21663, 21664, 21665, 21666, 21667, 21668, 21669, 21670, 21671, 21672, 21673, 21674, 21675, 21676, 21677, 21678, 21679, 21680, 21681, 21682, 21683, 21684, 21685, 21686, 21687, 21688, 21689, 21690, 21691, 21692, 21693, 21694, 21695, 21696, 21697, 21698, 21699, 21700, 21701, 21702, 21703, 21704, 21705, 21706, 21707, 21708, 21762, 21814, 21836, 21837, 21838, 21839, 21856, 21888, 21889, 21890, 21891, 22203, 22222, 22396, 22399, 22402, 22730, 22731, 22732) AND `locale` = 'koKR';
+DELETE FROM `item_template_locale` WHERE `ID` IN (20727, 20728, 20729, 20730, 20736, 20874, 20875, 20876, 20877, 20878, 20879, 20881, 20882, 20926, 20927, 20928, 20929, 20930, 20931, 20932, 20933, 21126, 21128, 21134, 21156, 21218, 21222, 21223, 21224, 21225, 21226, 21229, 21230, 21232, 21237, 21242, 21244, 21268, 21269, 21272, 21273, 21275, 21276, 21321, 21323, 21324, 21329, 21330, 21331, 21332, 21333, 21334, 21335, 21336, 21337, 21338, 21343, 21344, 21345, 21346, 21347, 21348, 21349, 21350, 21351, 21352, 21353, 21354, 21355, 21356, 21357, 21359, 21360, 21361, 21362, 21364, 21365, 21366, 21367, 21368, 21370, 21372, 21373, 21374, 21375, 21376, 21387, 21388, 21389, 21390, 21391, 21579, 21581, 21582, 21583, 21585, 21586, 21596, 21597, 21598, 21599, 21600, 21601, 21602, 21603, 21604, 21605, 21606, 21607, 21608, 21609, 21616, 21617, 21618, 21619, 21620, 21621, 21622, 21623, 21624, 21625, 21626, 21627, 21635, 21639, 21645, 21647, 21648, 21650, 21651, 21652, 21663, 21664, 21665, 21666, 21667, 21668, 21669, 21670, 21671, 21672, 21673, 21674, 21675, 21676, 21677, 21678, 21679, 21680, 21681, 21682, 21683, 21684, 21685, 21686, 21687, 21688, 21689, 21690, 21691, 21692, 21693, 21694, 21695, 21696, 21697, 21698, 21699, 21700, 21701, 21702, 21703, 21704, 21705, 21706, 21707, 21708, 21762, 21814, 21836, 21837, 21838, 21839, 21856, 21888, 21889, 21890, 21891, 22203, 22222, 22396, 22399, 22402, 22730, 22731, 22732, 25007, 25008) AND `locale` = 'koKR';
 INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `VerifiedBuild`) VALUES
+(20727, 'koKR', 'Formuła: zaklęcie rękawic – moc cienia', 'Uczy trwałego zaklinania rękawic, co zwiększa moc czarów cienia o 20.', 0),
+(20728, 'koKR', 'Formuła: zaklęcie rękawic – moc mrozu', 'Uczy trwałego zaklinania rękawic, co zwiększa moc czarów mrozu o 20.', 0),
+(20729, 'koKR', 'Formuła: zaklęcie rękawic – moc ognia', 'Uczy trwałego zaklinania rękawic, co zwiększa moc czarów ognia o 20.', 0),
+(20730, 'koKR', 'Formuła: zaklęcie rękawic – moc leczenia', 'Uczy trwałego zaklinania rękawic, co zwiększa moc czarów o 16.', 0),
+(20736, 'koKR', 'Formuła: zaklęcie płaszcza – unik', 'Uczy trwałego zaklinania płaszcza, co zwiększa wskaźnik uników o 12.', 0),
 (20874, 'koKR', 'Idol słońca', '', 0),
 (20875, 'koKR', 'Idol nocy', '', 0),
 (20876, 'koKR', 'Idol śmierci', '', 0),
@@ -246,6 +251,7 @@ INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `Veri
 (21272, 'koKR', 'Błogosławiony muszkiet Qiraji', 'Broń jest nasycona elementium i nim wzmocniona.', 0),
 (21273, 'koKR', 'Błogosławiony kostur akolity Qiraji', 'Broń jest nasycona elementium i nim wzmocniona.', 0),
 (21275, 'koKR', 'Błogosławiony kostur augura Qiraji', 'Broń jest nasycona elementium i nim wzmocniona.', 0),
+(21276, 'koKR', '', 'Broń jest nasycona elementium i nim wzmocniona.', 0),
 (21321, 'koKR', 'Czerwony rezonujący kryształ Qiraji', 'Uczy przywoływania tego wierzchowca. Można go przywołać tylko w Świątyni Ahn\'Qiraj.', 0),
 (21323, 'koKR', 'Zielony rezonujący kryształ Qiraji', 'Uczy przywoływania tego wierzchowca. Można go przywołać tylko w Świątyni Ahn\'Qiraj.', 0),
 (21324, 'koKR', 'Żółty rezonujący kryształ Qiraji', 'Uczy przywoływania tego wierzchowca. Można go przywołać tylko w Świątyni Ahn\'Qiraj.', 0),
@@ -393,12 +399,14 @@ INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `Veri
 (21891, 'koKR', 'Odłamek spadającej gwiazdy', '', 0),
 (22203, 'koKR', 'Duży obsydianowy odłamek', '', 0),
 (22222, 'koKR', 'Plany: gruby obsydianowy napierśnik', 'Uczy wykuwania grubego obsydianowego napierśnika.', 0),
-(22396, 'koKR', 'Totem życia', '', 0),
+(22396, 'koKR', 'Totem życia', 'Liczy się jako totem powietrza, ziemi, ognia i wody.', 0),
 (22399, 'koKR', 'Idol zdrowia', '', 0),
 (22402, 'koKR', 'Libram łaski', '', 0),
 (22730, 'koKR', 'Sznur z oczypnia', '', 0),
 (22731, 'koKR', 'Płaszcz pożartego', '', 0),
-(22732, 'koKR', 'Znak C\'Thuna', '', 0);
+(22732, 'koKR', 'Znak C\'Thuna', '', 0),
+(25007, 'koKR', 'Nagolenniki zdobywcy', '', 0),
+(25008, 'koKR', 'Napierśnik zdobywcy', '', 0);
 
 DELETE FROM `creature_text_locale` WHERE (`CreatureID`, `GroupID`, `ID`) IN ((15263, 0, 1), (15263, 0, 2), (15263, 1, 1), (15263, 1, 2), (15263, 2, 0)) AND `Locale` = 'koKR';
 INSERT INTO `creature_text_locale` (`CreatureID`, `GroupID`, `ID`, `Locale`, `Text`) VALUES

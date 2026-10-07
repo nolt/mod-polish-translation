@@ -45,13 +45,15 @@ INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCap
 (20920, 'koKR', 'Bulwa modrolistu', '', 0),
 (21099, 'koKR', 'bariera', '', 0);
 
-DELETE FROM `item_template_locale` WHERE `ID` IN (1488, 1727, 1975, 1976, 1978, 2264, 2549, 2816, 4438, 6679, 6681, 6682, 6685, 6686, 6687, 6688, 6689, 6690, 6691, 6692, 6693, 6694, 6695, 6696, 6697, 11393, 11394, 15515) AND `locale` = 'koKR';
+DELETE FROM `item_template_locale` WHERE `ID` IN (776, 1488, 1727, 1975, 1976, 1978, 2039, 2264, 2549, 2816, 4438, 6679, 6681, 6682, 6685, 6686, 6687, 6688, 6689, 6690, 6691, 6692, 6693, 6694, 6695, 6696, 6697, 11393, 11394, 15515) AND `locale` = 'koKR';
 INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `VerifiedBuild`) VALUES
+(776, 'koKR', 'Wendeta', '', 0),
 (1488, 'koKR', 'Zbroja mściciela', '', 0),
 (1727, 'koKR', 'Miecz rozkładu', '', 0),
 (1975, 'koKR', 'Stary wielki miecz Pysana', '', 0),
 (1976, 'koKR', 'Żużlomłot', '', 0),
 (1978, 'koKR', 'Rękawice wilczego pazura', '', 0),
+(2039, 'koKR', 'Pierścień równin', '', 0),
 (2264, 'koKR', 'Naramienniki złodziei', '', 0),
 (2549, 'koKR', 'Kostur cienia', '', 0),
 (2816, 'koKR', 'Berło Mówcy Umarłych', '', 0),
@@ -76,11 +78,12 @@ INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `Veri
 (11394, 'koKR', 'Serce nietoperza', '', 0),
 (15515, 'koKR', 'Nabijany kolczy pas', '', 0);
 
-DELETE FROM `broadcast_text_locale` WHERE `ID` IN (6178, 6179, 6180, 6181, 6182, 6183) AND `locale` = 'koKR';
+DELETE FROM `broadcast_text_locale` WHERE `ID` IN (6178, 6179, 6180, 6181, 6182, 6183, 21654) AND `locale` = 'koKR';
 INSERT INTO `broadcast_text_locale` (`ID`, `locale`, `MaleText`, `FemaleText`, `VerifiedBuild`) VALUES
 (6178, 'koKR', 'Zwycięstwo! Za Agamaggana!', '', 0),
 (6179, 'koKR', '', 'Uciążliwe szczeniaki. Oduczę was wtrącania się!', 0),
 (6180, 'koKR', '', 'Kto następny?', 0),
 (6181, 'koKR', '', 'Zapłacicie, obcy, za wtargnięcie na naszą ziemię!', 0),
 (6182, 'koKR', '', 'Phi! Tu rządzi moja moc!', 0),
-(6183, 'koKR', '', 'Nasi nowi sojusznicy nas pomszczą!', 0);
+(6183, 'koKR', '', 'Nasi nowi sojusznicy nas pomszczą!', 0),
+(21654, 'koKR', 'Kto następny?', 'Kto następny?', 0);

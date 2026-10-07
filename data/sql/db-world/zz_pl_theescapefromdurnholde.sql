@@ -14,7 +14,7 @@ DELETE FROM `quest_request_items_locale` WHERE `ID` IN (10284) AND `locale` = 'k
 INSERT INTO `quest_request_items_locale` (`ID`, `locale`, `CompletionText`, `VerifiedBuild`) VALUES
 (10284, 'koKR', '<Erozion kiwa głową.>', 0);
 
-DELETE FROM `creature_template_locale` WHERE `entry` IN (17814, 17815, 17819, 17820, 17833, 17840, 17846, 17860, 18092, 18093, 18094, 18598, 18644, 18646, 18649, 18650, 18651, 18655, 18656, 18657, 18664, 18666, 18672, 18673, 18725, 18764, 18765, 18887, 20345, 20346, 20347, 20348, 20350, 20351, 20353, 20354, 20357, 20358, 20359, 20360, 20361, 20370, 20372, 20376, 20378, 20379, 20380, 20401, 20419, 20420, 20422, 20426, 20428, 20429, 20430, 20432, 20441, 21341, 21342, 21343, 21344, 21345) AND `locale` = 'koKR';
+DELETE FROM `creature_template_locale` WHERE `entry` IN (17814, 17815, 17819, 17820, 17833, 17840, 17846, 17860, 18092, 18093, 18094, 18598, 18644, 18646, 18649, 18650, 18651, 18655, 18656, 18657, 18664, 18666, 18672, 18673, 18725, 18764, 18765, 18887, 20345, 20346, 20347, 20348, 20351, 20353, 20354, 20357, 20358, 20359, 20360, 20361, 20372, 20376, 20379, 20380, 20422, 20426, 20428, 20429, 20430, 20432, 20441, 20523, 20524, 20526, 20527, 20528, 20529, 20530, 20537, 20538, 20541, 20542, 20543, 20545, 20546, 20547, 20548, 21341, 21342, 21343, 21344, 21345, 23175, 23176, 23177, 23178, 23179, 23180, 23181, 23182, 23183, 23184, 23185, 23186, 28171, 33672) AND `locale` = 'koKR';
 INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `VerifiedBuild`) VALUES
 (17814, 'koKR', 'Stróż Lordaeronu', '', 0),
 (17815, 'koKR', 'Wartownik Lordaeronu', '', 0),
@@ -48,7 +48,6 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (20346, 'koKR', 'Isillien', '', 0),
 (20347, 'koKR', 'Abbendis', '', 0),
 (20348, 'koKR', 'Fairbanks', '', 0),
-(20350, 'koKR', '', 'Kirin Tor', 0),
 (20351, 'koKR', 'Kapitan Sanders', '', 0),
 (20353, 'koKR', 'Helcular', '', 0),
 (20354, 'koKR', 'Nathanos Marris', '', 0),
@@ -57,15 +56,10 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (20359, 'koKR', 'Mały Jimmy Vishas', '', 0),
 (20360, 'koKR', 'Herod Łobuz', '', 0),
 (20361, 'koKR', 'Taelan', '', 0),
-(20370, 'koKR', '', 'Kirin Tor', 0),
 (20372, 'koKR', 'Jonathan Revah', '', 0),
 (20376, 'koKR', 'Jerry Carter', '', 0),
-(20378, 'koKR', '', 'Mięsne specjały i breja', 0),
 (20379, 'koKR', 'Bilger Sztywniak', '', 0),
 (20380, 'koKR', 'Raleigh Prawy', '', 0),
-(20401, 'koKR', 'Frances Lin', '', 0),
-(20419, 'koKR', '', 'Początkujący kupiec', 0),
-(20420, 'koKR', 'Nadzorca Mark 0', '', 0),
 (20422, 'koKR', 'Mag Kirin Toru', '', 0),
 (20426, 'koKR', 'Mieszkaniec Międzygórza', '', 0),
 (20428, 'koKR', 'Mieszkaniec Międzygórza', '', 0),
@@ -73,18 +67,48 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (20430, 'koKR', 'Mieszkaniec Międzygórza', '', 0),
 (20432, 'koKR', 'Żebrak', '', 0),
 (20441, 'koKR', 'Natasha Morris', '', 0),
+(20523, 'koKR', 'Płatnerz z Durnholdu (1)', '', 0),
+(20524, 'koKR', 'Kucharka z Durnholdu (1)', '', 0),
+(20526, 'koKR', 'Strzelec z Durnholdu (1)', '', 0),
+(20527, 'koKR', 'Wartownik z Durnholdu (1)', '', 0),
+(20528, 'koKR', 'Ogar tropiący z Durnholdu (1)', '', 0),
+(20529, 'koKR', 'Weteran z Durnholdu (1)', '', 0),
+(20530, 'koKR', 'Strażnik z Durnholdu (1)', '', 0),
+(20537, 'koKR', 'Wartownik Lordaeronu (1)', '', 0),
+(20538, 'koKR', 'Stróż Lordaeronu (1)', '', 0),
+(20541, 'koKR', 'Orkowy więzień (1)', '', 0),
+(20542, 'koKR', 'Konferansjer areny (1)', '', 0),
+(20543, 'koKR', 'Widz walk na arenie (1)', '', 0),
+(20545, 'koKR', 'Strażnik ze Smolnego Młyna (1)', '', 0),
+(20546, 'koKR', 'Czujka ze Smolnego Młyna (1)', '', 0),
+(20547, 'koKR', 'Obrońca ze Smolnego Młyna (1)', '', 0),
+(20548, 'koKR', 'Thrall (1)', '', 0),
 (21341, 'koKR', 'Victor', '', 0),
 (21342, 'koKR', 'Alex', '', 0),
 (21343, 'koKR', 'Harvey', '', 0),
 (21344, 'koKR', 'Phil', '', 0),
-(21345, 'koKR', 'Hugh', '', 0);
+(21345, 'koKR', 'Hugh', '', 0),
+(23175, 'koKR', 'Strażnik ze Smolnego Młyna', '', 0),
+(23176, 'koKR', 'Strażnik ze Smolnego Młyna', '', 0),
+(23177, 'koKR', 'Czujka ze Smolnego Młyna', '', 0),
+(23178, 'koKR', 'Czujka ze Smolnego Młyna', '', 0),
+(23179, 'koKR', 'Obrońca ze Smolnego Młyna', '', 0),
+(23180, 'koKR', 'Obrońca ze Smolnego Młyna', '', 0),
+(23181, 'koKR', 'Strażnik ze Smolnego Młyna (1)', '', 0),
+(23182, 'koKR', 'Strażnik ze Smolnego Młyna (1)', '', 0),
+(23183, 'koKR', 'Czujka ze Smolnego Młyna (1)', '', 0),
+(23184, 'koKR', 'Czujka ze Smolnego Młyna (1)', '', 0),
+(23185, 'koKR', 'Obrońca ze Smolnego Młyna (1)', '', 0),
+(23186, 'koKR', 'Obrońca ze Smolnego Młyna (1)', '', 0),
+(28171, 'koKR', 'Don Carlos (1)', '', 0),
+(33672, 'koKR', 'Mag Kirin Toru', '', 0);
 
 DELETE FROM `gameobject_template_locale` WHERE `entry` IN (184332, 184393) AND `locale` = 'koKR';
 INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCaption`, `VerifiedBuild`) VALUES
 (184332, 'koKR', 'Księga jasnowidzenia', '', 0),
 (184393, 'koKR', 'Drzwi więzienia', '', 0);
 
-DELETE FROM `item_template_locale` WHERE `ID` IN (39, 40, 43, 44, 51, 52, 53, 55, 56, 57, 59, 1395, 1396, 6096, 6098, 19222, 21151, 22539, 23585, 25725, 25729, 25853, 29401, 29412, 30457) AND `locale` = 'koKR';
+DELETE FROM `item_template_locale` WHERE `ID` IN (39, 40, 43, 44, 51, 52, 53, 55, 56, 57, 59, 1395, 1396, 6096, 6098, 6116, 6118, 6119, 6121, 6122, 6129, 6140, 6144, 19222, 20891, 20892, 20893, 20894, 20895, 20902, 20903, 21151, 22539, 23322, 23474, 23475, 23477, 23478, 23585, 25725, 25729, 25853, 29401, 29412, 30457, 38506) AND `locale` = 'koKR';
 INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `VerifiedBuild`) VALUES
 (39, 'koKR', 'Spodnie rekruta', '', 0),
 (40, 'koKR', 'Buty rekruta', '', 0),
@@ -101,19 +125,41 @@ INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `Veri
 (1396, 'koKR', 'Spodnie akolity', '', 0),
 (6096, 'koKR', 'Koszula ucznia', '', 0),
 (6098, 'koKR', 'Szata neofity', '', 0),
+(6116, 'koKR', 'Szata ucznia', '', 0),
+(6118, 'koKR', 'Spodnie giermka', '', 0),
+(6119, 'koKR', 'Szata neofity', '', 0),
+(6121, 'koKR', 'Spodnie rekruta', '', 0),
+(6122, 'koKR', 'Buty rekruta', '', 0),
+(6129, 'koKR', 'Szata akolity', '', 0),
+(6140, 'koKR', 'Szata ucznia', '', 0),
+(6144, 'koKR', 'Szata neofity', '', 0),
 (19222, 'koKR', 'Tanie piwo', '', 0),
+(20891, 'koKR', 'Szata neofity', '', 0),
+(20892, 'koKR', 'Szata akolity', '', 0),
+(20893, 'koKR', 'Szata ucznia', '', 0),
+(20894, 'koKR', 'Spodnie ucznia', '', 0),
+(20895, 'koKR', 'Buty ucznia', '', 0),
+(20902, 'koKR', 'Spodnie rekruta', '', 0),
+(20903, 'koKR', 'Buty rekruta', '', 0),
 (21151, 'koKR', 'Rum Rumseya – czarna etykieta', '', 0),
 (22539, 'koKR', 'Formuła: zaklęcie tarczy – intelekt', 'Uczy trwałego zaklinania tarczy, by zwiększała intelekt o 12. Wymaga przedmiotu na poziomie 35 lub wyższym.', 0),
+(23322, 'koKR', 'Szata akolity', '', 0),
+(23474, 'koKR', 'Spodnie rekruta', '', 0),
+(23475, 'koKR', 'Buty rekruta', '', 0),
+(23477, 'koKR', 'Spodnie giermka', '', 0),
+(23478, 'koKR', 'Spodnie rekruta', '', 0),
 (23585, 'koKR', 'Mocnomłot Lite', 'Na ciepłe, słoneczne dni!', 0),
 (25725, 'koKR', 'Wykrój: szpicruta', 'Uczy wytwarzania szpicruty.', 0),
 (25729, 'koKR', 'Wykrój: szykowny kapelusz podróżnika', 'Uczy wytwarzania szykownego kapelusza podróżnika.', 0),
 (25853, 'koKR', 'Paczka bomb zapalających', '', 0),
 (29401, 'koKR', 'Musujący cydr z Południowego Brzegu', '', 0),
 (29412, 'koKR', 'Specjalna breja Jessena', '', 0),
-(30457, 'koKR', 'Gazowana woda z Gilneas', '', 0);
+(30457, 'koKR', 'Gazowana woda z Gilneas', '', 0),
+(38506, 'koKR', 'Słynny kapelusz Don Carlosa', '', 0);
 
-DELETE FROM `broadcast_text_locale` WHERE `ID` IN (14467, 14468, 15114, 15603, 15604, 15605, 15606, 15608, 15609, 15610, 15611, 15612, 15613, 15614, 15615, 15616, 15617, 15618, 15619, 15620, 15621, 15622, 15623, 15624, 15625, 15626, 15627, 15628, 15629, 15630, 15647, 15648, 15649, 15650, 15651, 15652, 15653, 15654, 15655, 15656, 15657, 15658, 15659, 15660, 15661, 15662, 15663, 15664, 15665, 15666, 15667, 15668, 15669, 15670, 15671, 15672, 15891, 15892, 15893, 15908, 15916, 15948, 15958, 15969, 15970, 15974, 15975, 15976, 15977, 15978, 15979, 15986, 15993, 15994, 16017, 16082, 16083, 16084, 16085, 16089, 16090, 16459, 16460, 16461, 16499, 17600, 17601, 17602, 17603, 17604, 17605, 17606, 17607, 17608, 17609, 17610, 17611, 17612, 17613, 17622, 17623, 17753, 17966, 17967, 17968, 17969, 17970, 17971, 17972, 17973, 17974, 17975, 17976, 17977, 17978, 17979, 17980, 17981, 17982, 17983, 17984, 17985, 17986, 17987, 17988, 17989, 17990, 17991, 17992, 17993, 17994, 17995, 17996, 17997, 17998, 17999, 18009, 18011, 18012, 18033, 18041, 18042, 18043, 18044, 18050, 18051, 18052, 18060, 18061, 18062, 18064, 18065, 18066, 18067, 18068, 18069, 18070, 18071, 18072, 18073, 18074, 18075, 18077, 18078, 18079, 18081, 18082, 18083, 18084, 18085, 18086, 18087, 18088, 18089, 18090, 18091, 18093, 18094, 18095, 18096, 18097, 18098, 18099, 18100, 18101, 18102, 18103, 18104, 18107, 18108, 18109, 18110, 18112, 18113, 18117, 18121, 18122, 18123, 18124, 18125, 18126, 18127, 18128, 18129, 18130, 18132, 18133, 18134, 18135, 18136, 18137, 18138, 18140, 18141, 18142, 18143, 18144, 18157, 18158, 18159, 18160, 18161, 18201, 18202, 18203, 18204, 18205, 18206, 18207, 18208, 18209, 19171, 19512, 19515, 19517, 19518, 19520, 19521, 19522, 19555, 19556, 19560, 19561, 19562, 27540) AND `locale` = 'koKR';
+DELETE FROM `broadcast_text_locale` WHERE `ID` IN (9147, 14467, 14468, 15114, 15603, 15604, 15605, 15606, 15608, 15609, 15610, 15611, 15612, 15613, 15614, 15615, 15616, 15617, 15618, 15619, 15620, 15621, 15622, 15623, 15624, 15625, 15626, 15627, 15628, 15629, 15630, 15647, 15648, 15649, 15650, 15651, 15652, 15653, 15654, 15655, 15656, 15657, 15658, 15659, 15660, 15661, 15662, 15663, 15664, 15665, 15666, 15667, 15668, 15669, 15670, 15671, 15672, 15891, 15892, 15893, 15908, 15916, 15948, 15958, 15969, 15970, 15974, 15975, 15976, 15977, 15978, 15979, 15986, 15993, 15994, 16017, 16082, 16083, 16084, 16085, 16089, 16090, 16459, 16460, 16461, 16499, 17600, 17601, 17602, 17603, 17604, 17605, 17606, 17607, 17608, 17609, 17610, 17611, 17612, 17613, 17622, 17623, 17753, 17966, 17967, 17968, 17969, 17970, 17971, 17972, 17973, 17974, 17975, 17976, 17977, 17978, 17979, 17980, 17981, 17982, 17983, 17984, 17985, 17986, 17987, 17988, 17989, 17990, 17991, 17992, 17993, 17994, 17995, 17996, 17997, 17998, 17999, 18009, 18011, 18012, 18033, 18041, 18042, 18043, 18044, 18050, 18051, 18052, 18060, 18061, 18062, 18064, 18065, 18066, 18067, 18068, 18069, 18070, 18071, 18072, 18073, 18074, 18075, 18077, 18078, 18079, 18081, 18082, 18083, 18084, 18085, 18086, 18087, 18088, 18089, 18090, 18091, 18093, 18094, 18095, 18096, 18097, 18098, 18099, 18100, 18101, 18102, 18103, 18104, 18107, 18108, 18109, 18110, 18112, 18113, 18117, 18121, 18122, 18123, 18124, 18125, 18126, 18127, 18128, 18129, 18130, 18132, 18133, 18134, 18135, 18136, 18137, 18138, 18140, 18141, 18142, 18143, 18144, 18157, 18158, 18159, 18160, 18161, 18201, 18202, 18203, 18204, 18205, 18206, 18207, 18208, 18209, 19171, 19511, 19512, 19515, 19517, 19518, 19520, 19521, 19522, 19555, 19556, 19560, 19561, 19562, 27540, 50626) AND `locale` = 'koKR';
 INSERT INTO `broadcast_text_locale` (`ID`, `locale`, `MaleText`, `FemaleText`, `VerifiedBuild`) VALUES
+(9147, 'koKR', '%s ziewa.', '', 0),
 (14467, 'koKR', 'Kim jesteś? Po prostu zostaw mnie w spokoju.', '', 0),
 (14468, 'koKR', 'Jesteśmy gotowi cię stąd wyciągnąć, Thrallu. Ruszajmy!', 'Jesteśmy gotowi cię stąd wyciągnąć, Thrallu. Ruszajmy!', 0),
 (15114, 'koKR', 'Berek! Gonisz!', 'Berek! Gonisz!', 0),
@@ -346,6 +392,7 @@ INSERT INTO `broadcast_text_locale` (`ID`, `locale`, `MaleText`, `FemaleText`, `
 (18208, 'koKR', 'Wygrana czy przegrana, porucznik musi być szalony, żeby trzymać takiego orka jak zwierzątko. Im nie można ufać. To zwierzęta.\n', 'Wygrana czy przegrana, porucznik musi być szalony, żeby trzymać takiego orka jak zwierzątko. Im nie można ufać. To zwierzęta.\n', 0),
 (18209, 'koKR', 'Racja. Racja. Niech Światłość ma go w opiece, jeśli ten potwór kiedyś się uwolni!', 'Racja. Racja. Niech Światłość ma go w opiece, jeśli ten potwór kiedyś się uwolni!', 0),
 (19171, 'koKR', 'Stać!', '', 0),
+(19511, 'koKR', 'Stać!', 'Stać!', 0),
 (19512, 'koKR', 'Natychmiast się poddaj!', 'Natychmiast się poddaj!', 0),
 (19515, 'koKR', 'Ja tylko... wykonywałam rozkazy.', 'Ja tylko... wykonywałam rozkazy.', 0),
 (19517, 'koKR', 'Blackmoore zażąda... twojej głowy!', 'Blackmoore zażąda... twojej głowy!', 0),
@@ -358,4 +405,5 @@ INSERT INTO `broadcast_text_locale` (`ID`, `locale`, `MaleText`, `FemaleText`, `
 (19560, 'koKR', 'Słyszałam, że Blackmoore dziwnie się ostatnio zachowuje.', 'Słyszałam, że Blackmoore dziwnie się ostatnio zachowuje.', 0),
 (19561, 'koKR', 'Myślę o urlopie. Słyszałam, że w Żagiewiu jest ładnie.', 'Myślę o urlopie. Słyszałam, że w Żagiewiu jest ładnie.', 0),
 (19562, 'koKR', 'Oby już był fajrant.', 'Oby już był fajrant.', 0),
-(27540, 'koKR', 'Nie... możliwe...', '', 0);
+(27540, 'koKR', 'Nie... możliwe...', '', 0),
+(50626, 'koKR', 'Który?', 'Który?', 0);

@@ -2,7 +2,7 @@
 
 DELETE FROM `quest_template_locale` WHERE `ID` IN (11116) AND `locale` = 'koKR';
 INSERT INTO `quest_template_locale` (`ID`, `locale`, `Title`, `Details`, `Objectives`, `EndText`, `CompletedText`, `ObjectiveText1`, `ObjectiveText2`, `ObjectiveText3`, `ObjectiveText4`, `VerifiedBuild`) VALUES
-(11116, 'koKR', '', 'Musisz przejść cztery próby, zanim zostaniesz $guznany:uznana; za $ggodnego:godną; Klucza Burz.$B$BZostała tylko jedna przeszkoda, śmiertelniku. Zbierz armię i udaj się do leża Magtheridona, głęboko w Cytadeli Piekielnego Ognia. Przebij się do serca komnaty i zniszcz plugawego deprawatora!$B$BUczyń to, a otrzymasz Klucz Burz.', '', '', 'Wróć do A\'dala na Półwyspie Piekielnego Ognia.', '', '', '', '', 0);
+(11116, 'koKR', '', 'Musisz przejść cztery próby, zanim zostaniesz $guznany:uznana; za $ggodnego:godną; Klucza Burz.$B$BZostała tylko jedna przeszkoda, śmiertelniku. Zbierz armię i udaj się do leża Magtheridona, głęboko w Cytadeli Piekielnego Ognia. Przebij się do serca komnaty i zniszcz plugawego deprawatora!$B$BUczyń to, a otrzymasz Klucz Burz.', 'A\'dal w Shattrath chce, abyś $gzabił:zabiła; Magtheridona.', '', 'Wróć do A\'dala na Półwyspie Piekielnego Ognia.', '', '', '', '', 0);
 
 DELETE FROM `creature_template_locale` WHERE `entry` IN (18829) AND `locale` = 'koKR';
 INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `VerifiedBuild`) VALUES

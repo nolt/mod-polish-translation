@@ -11,20 +11,39 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (19389, 'koKR', 'Osiłek z leża', '', 0),
 (21350, 'koKR', 'Kapłan gronnów', '', 0);
 
-DELETE FROM `item_template_locale` WHERE `ID` IN (28795, 28796, 28797, 28799, 28800, 28801) AND `locale` = 'koKR';
+DELETE FROM `item_template_locale` WHERE `ID` IN (28794, 28795, 28796, 28797, 28799, 28800, 28801, 28802, 28803, 28804, 28810, 28822, 28823, 28824, 28825, 28826, 28827, 28828, 28830, 29762, 29763, 29764, 29765, 29766, 29767) AND `locale` = 'koKR';
 INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `VerifiedBuild`) VALUES
+(28794, 'koKR', 'Topór Władców Gronnów', '', 0),
 (28795, 'koKR', 'Wojenne opaski Klanu Ostrza', '', 0),
 (28796, 'koKR', 'Złowroga maska cieni', '', 0),
 (28797, 'koKR', 'Brutalny płaszcz ogrzych magów', '', 0),
 (28799, 'koKR', 'Pas boskiej inspiracji', '', 0),
 (28800, 'koKR', 'Młot naaru', '', 0),
-(28801, 'koKR', 'Hełm bojowy Maulgara', '', 0);
+(28801, 'koKR', 'Hełm bojowy Maulgara', '', 0),
+(28802, 'koKR', 'Magiczne ostrze Krwawej Paszczy', '', 0),
+(28803, 'koKR', 'Kapica oddechu natury', '', 0),
+(28804, 'koKR', 'Kołnierz Cho\'galla', '', 0),
+(28810, 'koKR', 'Buty wiatrocięcia', '', 0),
+(28822, 'koKR', 'Zęby Gruula', '', 0),
+(28823, 'koKR', 'Oko Gruula', '', 0),
+(28824, 'koKR', 'Rękawice wojennej doskonałości', '', 0),
+(28825, 'koKR', 'Dziedziczny obrońca Aldorich', '', 0),
+(28826, 'koKR', 'Shuriken negacji', '', 0),
+(28827, 'koKR', 'Rękawice smokobójcy', '', 0),
+(28828, 'koKR', 'Pas szyty przez gronnów', '', 0),
+(28830, 'koKR', 'Trofeum ze smoczego kręgosłupa', '', 0),
+(29762, 'koKR', 'Naramienniki upadłego bohatera', '', 0),
+(29763, 'koKR', 'Naramienniki upadłego czempiona', '', 0),
+(29764, 'koKR', 'Naramienniki upadłego obrońcy', '', 0),
+(29765, 'koKR', 'Nogawice upadłego bohatera', '', 0),
+(29766, 'koKR', 'Nogawice upadłego czempiona', '', 0),
+(29767, 'koKR', 'Nogawice upadłego obrońcy', '', 0);
 
 DELETE FROM `creature_text_locale` WHERE (`CreatureID`, `GroupID`, `ID`) IN ((19044, 4, 0)) AND `Locale` = 'koKR';
 INSERT INTO `creature_text_locale` (`CreatureID`, `GroupID`, `ID`, `Locale`, `Text`) VALUES
 (19044, 4, 0, 'koKR', 'Aaarrgh...');
 
-DELETE FROM `broadcast_text_locale` WHERE `ID` IN (18790, 20066, 20067, 20068, 20069, 20070, 20071, 20072, 20074, 20075, 20116, 20117, 20118, 20119, 20120, 20121, 20123) AND `locale` = 'koKR';
+DELETE FROM `broadcast_text_locale` WHERE `ID` IN (18790, 20066, 20067, 20068, 20069, 20070, 20071, 20072, 20074, 20075, 20116, 20117, 20118, 20119, 20120, 20121, 20123, 33611) AND `locale` = 'koKR';
 INSERT INTO `broadcast_text_locale` (`ID`, `locale`, `MaleText`, `FemaleText`, `VerifiedBuild`) VALUES
 (18790, 'koKR', '%s rośnie w oczach!', '', 0),
 (20066, 'koKR', 'To gronny są prawdziwą potęgą Rubieży!', '', 0),
@@ -42,4 +61,5 @@ INSERT INTO `broadcast_text_locale` (`ID`, `locale`, `MaleText`, `FemaleText`, `
 (20119, 'koKR', 'Zostań.', '', 0),
 (20120, 'koKR', 'Błagaj o życie.', '', 0),
 (20121, 'koKR', 'Koniec.', '', 0),
-(20123, 'koKR', 'Giń.', '', 0);
+(20123, 'koKR', 'Giń.', '', 0),
+(33611, 'koKR', 'Nie boję się was!', '', 0);

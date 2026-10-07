@@ -29,7 +29,7 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (4887, 'koKR', 'Ghamoo-ra', '', 0),
 (6243, 'koKR', 'Gelihast', '', 0);
 
-DELETE FROM `gameobject_template_locale` WHERE `entry` IN (13949, 21117, 21118, 21119, 21120, 21121, 94039, 103015, 103016, 177964) AND `locale` = 'koKR';
+DELETE FROM `gameobject_template_locale` WHERE `entry` IN (13949, 21117, 21118, 21119, 21120, 21121, 94039, 94040, 103015, 103016, 177964) AND `locale` = 'koKR';
 INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCaption`, `VerifiedBuild`) VALUES
 (13949, 'koKR', 'Skorodowana żelazna skrzynia', '', 0),
 (21117, 'koKR', 'Portal Aku\'mai', '', 0),
@@ -38,6 +38,7 @@ INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCap
 (21120, 'koKR', 'Ogień Aku\'mai', '', 0),
 (21121, 'koKR', 'Ogień Aku\'mai', '', 0),
 (94039, 'koKR', 'Kaplica Gelihasta', '', 0),
+(94040, 'koKR', 'Ołtarz Głębin', '', 0),
 (103015, 'koKR', 'Kaplica Gelihasta', '', 0),
 (103016, 'koKR', 'Ołtarz Głębin', '', 0),
 (177964, 'koKR', 'Kamień głębin', '', 0);

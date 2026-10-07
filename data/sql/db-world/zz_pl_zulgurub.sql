@@ -95,13 +95,16 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (15067, 'koKR', 'Zuliański tropiciel', '', 0),
 (15111, 'koKR', 'Szalony sługa', '', 0);
 
-DELETE FROM `gameobject_template_locale` WHERE `entry` IN (179985, 180215, 180228, 180229, 180252, 180358, 180364, 180365, 180366, 180368, 180369, 180392, 180393, 180497, 180526) AND `locale` = 'koKR';
+DELETE FROM `gameobject_template_locale` WHERE `entry` IN (179985, 180215, 180228, 180229, 180244, 180247, 180252, 180327, 180358, 180364, 180365, 180366, 180368, 180369, 180392, 180393, 180497, 180526, 184610) AND `locale` = 'koKR';
 INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCaption`, `VerifiedBuild`) VALUES
 (179985, 'koKR', 'Pajęcze jajo', '', 0),
 (180215, 'koKR', 'Żyła torium Hakkari', '', 0),
 (180228, 'koKR', 'Przeklęty stos hoodoo', '', 0),
 (180229, 'koKR', 'Przeklęty stos hoodoo', '', 0),
+(180244, 'koKR', 'Przeklęty stos hoodoo', '', 0),
+(180247, 'koKR', 'Przeklęty stos hoodoo', '', 0),
 (180252, 'koKR', 'Błyskawica trollowego bohatera', '', 0),
+(180327, 'koKR', 'Kosz żarowy szaleństwa', '', 0),
 (180358, 'koKR', 'Gri\'lek z Żelaznej Krwi', '', 0),
 (180364, 'koKR', 'Hazza\'rah, Tkacz Snów', '', 0),
 (180365, 'koKR', 'Renataki z Tysiąca Ostrzy', '', 0),
@@ -111,9 +114,10 @@ INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCap
 (180392, 'koKR', 'Pełny dzban', '', 0),
 (180393, 'koKR', 'Wushoolay, Wiedźma Burzy', '', 0),
 (180497, 'koKR', 'Pole siłowe', '', 0),
-(180526, 'koKR', 'Gong Bethekk', '', 0);
+(180526, 'koKR', 'Gong Bethekk', '', 0),
+(184610, 'koKR', 'Pole siłowe', '', 0);
 
-DELETE FROM `item_template_locale` WHERE `ID` IN (19707, 19708, 19709, 19710, 19711, 19712, 19713, 19714, 19715, 19726, 19727, 19767, 19768, 19774, 19782, 19783, 19784, 19785, 19786, 19787, 19788, 19789, 19790, 19813, 19814, 19815, 19816, 19817, 19818, 19819, 19820, 19821, 19871, 19872, 19896, 19897, 19898, 19899, 19900, 19901, 19902, 19903, 19904, 19905, 19906, 19907, 19908, 19915, 19918, 19919, 19920, 19921, 19923, 19925, 19927, 19928, 19930, 19943, 20032, 20258, 20259, 20260, 20261, 20262, 20263, 20265, 20266, 22635, 22637, 48126) AND `locale` = 'koKR';
+DELETE FROM `item_template_locale` WHERE `ID` IN (19707, 19708, 19709, 19710, 19711, 19712, 19713, 19714, 19715, 19726, 19727, 19767, 19768, 19774, 19782, 19783, 19784, 19785, 19786, 19787, 19788, 19789, 19790, 19813, 19814, 19815, 19816, 19817, 19818, 19819, 19820, 19821, 19852, 19853, 19854, 19855, 19856, 19857, 19859, 19861, 19862, 19863, 19864, 19865, 19866, 19867, 19869, 19870, 19871, 19872, 19873, 19874, 19875, 19876, 19877, 19878, 19884, 19885, 19886, 19887, 19888, 19889, 19890, 19891, 19892, 19893, 19894, 19895, 19896, 19897, 19898, 19899, 19900, 19901, 19902, 19903, 19904, 19905, 19906, 19907, 19908, 19915, 19918, 19919, 19920, 19921, 19923, 19925, 19927, 19928, 19929, 19930, 19943, 19975, 20032, 20038, 20257, 20258, 20259, 20260, 20261, 20262, 20263, 20264, 20265, 20266, 22635, 22637, 22711, 22712, 22713, 22714, 22715, 22716, 22718, 22720, 22721, 22722) AND `locale` = 'koKR';
 INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `VerifiedBuild`) VALUES
 (19707, 'koKR', 'Czerwona błyskotka Hakkari', 'Ważny symbol potęgi Imperium Gurubaszów.', 0),
 (19708, 'koKR', 'Niebieska błyskotka Hakkari', 'Ważny symbol potęgi Imperium Gurubaszów.', 0),
@@ -147,8 +151,42 @@ INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `Veri
 (19819, 'koKR', 'Przekłuta lalka wudu', 'Lalka przypomina czarnoksiężnika.', 0),
 (19820, 'koKR', 'Przekłuta lalka wudu', 'Lalka przypomina kapłana.', 0),
 (19821, 'koKR', 'Przekłuta lalka wudu', 'Lalka przypomina druida.', 0),
+(19852, 'koKR', 'Pradawny mężobójca Hakkari', '', 0),
+(19853, 'koKR', 'Niszczyciel krasnoludów Gurubaszów', '', 0),
+(19854, 'koKR', 'Zin\'rokh, Niszczyciel Światów', '', 0),
+(19855, 'koKR', 'Nogawice płytowe przesiąknięte krwią', '', 0),
+(19856, 'koKR', 'Oko Hakkara', '', 0),
+(19857, 'koKR', 'Płaszcz pochłonięcia', '', 0),
+(19859, 'koKR', 'Kieł Beztwarzowych', '', 0),
+(19861, 'koKR', 'Dotyk chaosu', '', 0),
+(19862, 'koKR', 'Egida Krwawego Boga', '', 0),
+(19863, 'koKR', 'Pieczęć prymalisty', '', 0),
+(19864, 'koKR', 'Przywoływacz krwi', '', 0),
+(19865, 'koKR', 'Ostrze wojenne Hakkari', 'Wykute w...', 0),
+(19866, 'koKR', 'Ostrze wojenne Hakkari', 'Kipiących płomieniach nienawiści.', 0),
+(19867, 'koKR', 'Obrońca Władcy Krwi', '', 0),
+(19869, 'koKR', 'Uchwyty zbroczone krwią', '', 0),
+(19870, 'koKR', 'Płaszcz loa Hakkari', '', 0),
 (19871, 'koKR', 'Talizman ochrony', '', 0),
 (19872, 'koKR', 'Rączy raptor Razzashi', 'Uczy przywoływania raptora Władcy Krwi Mandokira. To bardzo szybki wierzchowiec.', 0),
+(19873, 'koKR', 'Karmazynowa obrączka zwierzchnika', '', 0),
+(19874, 'koKR', 'Halabarda porażenia', '', 0),
+(19875, 'koKR', 'Zakrwawiony czepiec', '', 0),
+(19876, 'koKR', 'Naszyjnik plugawiciela dusz', '', 0),
+(19877, 'koKR', 'Nogawice animisty', '', 0),
+(19878, 'koKR', 'Naramienniki przesiąknięte krwią', '', 0),
+(19884, 'koKR', 'Osąd Jin\'do', '', 0),
+(19885, 'koKR', 'Złe oko Jin\'do', '', 0),
+(19886, 'koKR', 'Okrycie Czyniącego Uroki', '', 0),
+(19887, 'koKR', 'Zakrwawione nogawice płytowe', '', 0),
+(19888, 'koKR', 'Objęcia zwierzchnika', '', 0),
+(19889, 'koKR', 'Nogawice zbroczone krwią', '', 0),
+(19890, 'koKR', 'Rzucacz uroków Jin\'do', '', 0),
+(19891, 'koKR', 'Torba uroków Jin\'do', '', 0),
+(19892, 'koKR', 'Buty animisty', '', 0),
+(19893, 'koKR', 'Pieczęć Zanzila', '', 0),
+(19894, 'koKR', 'Rękawice pancerne przesiąknięte krwią', '', 0),
+(19895, 'koKR', 'Krwią zabarwiony kilt', '', 0),
 (19896, 'koKR', 'Uścisk Tekala', '', 0),
 (19897, 'koKR', 'Buty zdrajcy', '', 0),
 (19898, 'koKR', 'Pieczęć Jina', '', 0),
@@ -171,20 +209,34 @@ INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `Veri
 (19925, 'koKR', 'Obrączka Jina', '', 0),
 (19927, 'koKR', 'Dotyk Mar\'li', '', 0),
 (19928, 'koKR', 'Naramienniki animisty', '', 0),
+(19929, 'koKR', 'Krwią zabarwione rękawice', '', 0),
 (19930, 'koKR', 'Oko Mar\'li', '', 0),
 (19943, 'koKR', 'Potężne mojo', 'Więcej mojo, niż powinien mieć jakikolwiek troll.', 0),
+(19975, 'koKR', 'Zuliański błotny skunks', '', 0),
 (20032, 'koKR', 'Powłóczyste szaty rytualne', '', 0),
+(20038, 'koKR', 'Żądło Mandokira', '', 0),
+(20257, 'koKR', 'Rękawice pancerne morskiej furii', '', 0),
 (20258, 'koKR', 'Zuliański kostur ceremonialny', '', 0),
 (20259, 'koKR', 'Rękawice ze skóry cienistej pantery', '', 0),
 (20260, 'koKR', 'Nogawice morskiej furii', '', 0),
 (20261, 'koKR', 'Pas ze skóry cienistej pantery', '', 0),
 (20262, 'koKR', 'Buty morskiej furii', '', 0),
 (20263, 'koKR', 'Hełm Gurubaszów', '', 0),
+(20264, 'koKR', 'Rękawice pancerne rozjemcy', '', 0),
 (20265, 'koKR', 'Buty rozjemcy', '', 0),
 (20266, 'koKR', 'Nogawice rozjemcy', '', 0),
 (22635, 'koKR', 'Dziki strażnik', '', 0),
 (22637, 'koKR', 'Pierwotny idol Hakkari', 'Wewnątrz budzi się pradawne zło...', 0),
-(48126, 'koKR', 'Pisklę Razzashi', '', 0);
+(22711, 'koKR', 'Płaszcz wyznawców Hakkari', '', 0),
+(22712, 'koKR', 'Potęga plemienia', '', 0),
+(22713, 'koKR', 'Zuliańskie berło obrzędów', '', 0),
+(22714, 'koKR', 'Ofiarne rękawice pancerne', '', 0),
+(22715, 'koKR', 'Rękawice udręczonych', '', 0),
+(22716, 'koKR', 'Pas niewykorzystanej mocy', '', 0),
+(22718, 'koKR', 'Maska zbroczona krwią', '', 0),
+(22720, 'koKR', 'Zuliańskie nakrycie głowy', '', 0),
+(22721, 'koKR', 'Obrączka służebności', '', 0),
+(22722, 'koKR', 'Pieczęć berserkera Gurubaszów', '', 0);
 
 DELETE FROM `creature_text_locale` WHERE (`CreatureID`, `GroupID`, `ID`) IN ((11380, 0, 0), (11382, 0, 0), (11382, 2, 0), (11382, 3, 0), (14510, 0, 0)) AND `Locale` = 'koKR';
 INSERT INTO `creature_text_locale` (`CreatureID`, `GroupID`, `ID`, `Locale`, `Text`) VALUES
@@ -194,7 +246,7 @@ INSERT INTO `creature_text_locale` (`CreatureID`, `GroupID`, `ID`, `Locale`, `Te
 (11382, 3, 0, 'koKR', 'Lepiej mnie nie złośćcie. Wściekły jestem nie do zniesienia.'),
 (14510, 0, 0, 'koKR', 'Przyciągnij mnie do swej sieci, pani Shadro. Uwolnij swój jad!');
 
-DELETE FROM `broadcast_text_locale` WHERE `ID` IN (8251, 10026, 10027, 10369, 10370, 10425, 10436, 10437, 10438, 10443, 10444, 10447, 10448, 10449, 10451, 10452, 10455, 10459, 10460, 10463, 10464, 10465, 10466, 10467, 10468, 10469, 10470, 10484, 10485, 10486, 10487, 10494, 10496, 10505, 10507, 10538, 10539, 10540, 10541, 10542, 10543, 10544, 10545, 10546, 10550, 10590, 10593, 10594, 10635) AND `locale` = 'koKR';
+DELETE FROM `broadcast_text_locale` WHERE `ID` IN (8251, 10026, 10027, 10369, 10370, 10425, 10436, 10437, 10438, 10443, 10444, 10447, 10448, 10449, 10451, 10452, 10453, 10455, 10459, 10460, 10463, 10464, 10465, 10466, 10467, 10468, 10469, 10470, 10484, 10485, 10486, 10487, 10494, 10496, 10505, 10507, 10538, 10539, 10540, 10541, 10542, 10543, 10544, 10545, 10546, 10550, 10590, 10593, 10594, 10635) AND `locale` = 'koKR';
 INSERT INTO `broadcast_text_locale` (`ID`, `locale`, `MaleText`, `FemaleText`, `VerifiedBuild`) VALUES
 (8251, 'koKR', '%s umiera.', '', 0),
 (10026, 'koKR', 'Niech rozwiną się sploty nienawiści!', '', 0),
@@ -212,6 +264,7 @@ INSERT INTO `broadcast_text_locale` (`ID`, `locale`, `MaleText`, `FemaleText`, `
 (10449, 'koKR', 'Witajcie na wielkim przedstawieniu, przyjaciele. Podchodźcie śmiało i umierajcie!', '', 0),
 (10451, 'koKR', 'Hakkar już mnie nie zniewala! Nareszcie spokój!', '', 0),
 (10452, 'koKR', '', 'Nareszcie... śmierć! Przeklinam cię, Hakkarze! Przeklinam!', 0),
+(10453, 'koKR', '%s umiera.', '%s umiera.', 0),
 (10455, 'koKR', 'Shirvallah, napełnij mnie swoim GNIEWEM!', '', 0),
 (10459, 'koKR', '', 'Bądźcie błogosławieni, śmiertelnicy, za to wyzwolenie... Hakkar już nade mną nie panuje!', 0),
 (10460, 'koKR', 'Ssspokój... nareszccie!', '', 0),

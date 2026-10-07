@@ -45,7 +45,7 @@ INSERT INTO `quest_template_locale` (`ID`, `locale`, `Title`, `Details`, `Object
 (9609, 'koKR', 'Pomóż wartownikowi Biggsowi', 'Magtoor powiedział mi, że w pobliżu utknął pewien wartownik. Podobno karawanę, którą eskortował z Mrocznych Włości, zaatakowali Zagubieni. Wygląda na to, że tylko on przeżył.$B$BJest gdzieś na południu. Proszę, $N, pomóż mu.', 'Znajdź wartownika Biggsa na Moczarach Smutków.', '', '', '', '', '', '', 0),
 (9610, 'koKR', 'Sadzawka Łez', 'Interesuję się przeszłością Azeroth i zastanawiam się, czy zechcesz mi pomóc.$B$BNa bagnach, niedaleko stąd, jest miejsce o znaczeniu historycznym, do którego chciałbym cię wysłać. Na południowym wschodzie leży Sadzawka Łez. Powiadają, że na jej brzegach i w jej głębinach spoczywają zakopane artefakty cywilizacji trolli Atal\'ai.$B$BAle uważaj, strzeże jej Somnus, pradawny zielony smok, i jego drakanie, a w samej sadzawce żyją mięsożerne ryby!', 'Zdobądź 5 artefaktów Atal\'ai i zanieś je Holaaru w Przystani na Moczarach Smutków.', '', 'Wróć do Holaaru na Moczarach Smutków.', '', '', '', '', 0);
 
-DELETE FROM `quest_offer_reward_locale` WHERE `ID` IN (698, 699, 1389, 1392, 1393, 1396, 1398, 1421, 1422, 1423, 1424, 1425, 1426, 1427, 1428, 1429, 1430, 1444, 1445, 2621, 2622, 2623, 2681, 2701, 2702, 2721, 2743, 2744, 2783, 2784, 2801, 3374, 3512, 3627, 3628, 8423, 8424, 8425, 9440, 9448, 9609, 9610) AND `locale` = 'koKR';
+DELETE FROM `quest_offer_reward_locale` WHERE `ID` IN (698, 699, 1389, 1392, 1393, 1396, 1398, 1421, 1422, 1423, 1424, 1425, 1426, 1427, 1428, 1429, 1430, 1444, 1445, 2621, 2622, 2623, 2681, 2701, 2702, 2721, 2743, 2744, 2783, 2784, 2801, 3374, 3512, 3627, 3628, 8423, 8424, 8425, 9440, 9448, 9609, 9610, 11781, 11857) AND `locale` = 'koKR';
 INSERT INTO `quest_offer_reward_locale` (`ID`, `locale`, `RewardText`, `VerifiedBuild`) VALUES
 (698, 'koKR', 'Ach! Wspaniale. Świeże mięso na dzisiejsze ognisko. Dzięki, $N.$b$bDzięki tobie nadchodzące noce będą znośniejsze. Ogień płonie jasno, a nasze brzuchy będą pełne.$b$bMiła niespodzianka, że to ty $gprzyniosłeś:przyniosłaś; nam dostawę; Dar nie jest najprzystojniejszym orkiem, na jakiego ktokolwiek patrzył, ale przynajmniej jego charakter cuchnie o wiele mniej niż on sam.', 0),
 (699, 'koKR', 'Dobrze widzieć cię $gcałego:całą; i $gzdrowego:zdrową;, $N.$b$bTe szczypce świetnie się nadadzą. Im więcej broni mamy w gotowości na wypadek ataku, tym lepiej dla nas.$b$bZabiorę się za twoją broń najszybciej, jak się da. To zajmie tylko chwilę. Nabrałem sporej wprawy i szybkości w ich wyrabianiu.', 0),
@@ -88,7 +88,9 @@ INSERT INTO `quest_offer_reward_locale` (`ID`, `locale`, `RewardText`, `Verified
 (9440, 'koKR', 'Och, doskonale! Nie mogę się doczekać, aż zmierzę efekty tej najnowszej partii!$B$BCóż, $gspisałeś:spisałaś; się godnie, kochanie. Szkoda, że nie mogę ci dać więcej za tę rozrywkę, ale $gsam:sama; wiesz, jak jest. Na bagnach nie da się zarobić wielkich pieniędzy.$B$BJestem pewna, że dla samej zabawy było warto!', 0),
 (9448, 'koKR', 'A więc stało się. Dziękuję, że $gokazałeś:okazałaś; współczucie. Gdy wypaczyło ich to, czym karmiła ich Cersei, nic więcej nie dało się zrobić.$B$BTeraz zaznali spokoju, a mam nadzieję, że moje badania nad pozostałymi przyniosą owoce i uda się ich uleczyć.', 0),
 (9609, 'koKR', 'Co? Przysłał cię tu draenei z Przystani? Dziwne.$B$BCóż, nie zwykłem odmawiać pomocy. Dzięki, że $gprzyszedłeś:przyszłaś;, $N!', 0),
-(9610, 'koKR', 'Dziękuję, $N. Badanie tych artefaktów zajmie mnie na jakiś czas. Jak my, Złamani i draenei, mamy się tu odnaleźć, jeśli nie zrozumiemy historii waszego świata?', 0);
+(9610, 'koKR', 'Dziękuję, $N. Badanie tych artefaktów zajmie mnie na jakiś czas. Jak my, Złamani i draenei, mamy się tu odnaleźć, jeśli nie zrozumiemy historii waszego świata?', 0),
+(11781, 'koKR', 'Zbezcześć wielkie ognisko Hordy na Moczarach Smutków!', 0),
+(11857, 'koKR', 'Uczcij płomień Moczarów Smutków!', 0);
 
 DELETE FROM `quest_request_items_locale` WHERE `ID` IN (698, 699, 1389, 1392, 1396, 1398, 1421, 1424, 1425, 1426, 1428, 1429, 1430, 1445, 2623, 2681, 2744, 2784, 2801, 3374, 3627, 3628, 8423, 8424, 8425, 9440, 9448, 9610) AND `locale` = 'koKR';
 INSERT INTO `quest_request_items_locale` (`ID`, `locale`, `CompletionText`, `VerifiedBuild`) VALUES
@@ -127,7 +129,7 @@ INSERT INTO `quest_greeting_locale` (`ID`, `type`, `locale`, `Greeting`, `Verifi
 (5591, 0, 'koKR', 'Ta chlewnia to nie szczyt wygody, ale ma swoją historię, więc Stonard musi być dla kogoś ważny. Założę się, że dlatego tu siedzimy. Na pewno nie dla widoków – nawet nie przypomina domu.', 0),
 (5598, 0, 'koKR', 'Czego ode mnie chcesz?', 0);
 
-DELETE FROM `creature_template_locale` WHERE `entry` IN (740, 741, 742, 743, 744, 745, 746, 747, 750, 751, 752, 755, 757, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 858, 861, 862, 863, 864, 865, 866, 867, 868, 922, 980, 981, 982, 983, 984, 985, 987, 989, 1063, 1081, 1082, 1084, 1087, 1088, 1106, 1386, 1443, 1775, 1776, 3622, 4953, 5224, 5225, 5235, 5243, 5261, 5263, 5269, 5353, 5391, 5399, 5400, 5401, 5476, 5477, 5546, 5547, 5591, 5592, 5593, 5598, 5622, 5993, 5996, 5997, 5998, 6004, 6005, 6006, 6026, 6653, 6930, 7623, 7643, 7668, 7669, 7670, 7671, 7729, 7750, 7826, 8176, 8177, 8588, 9916, 10049, 11198, 11874, 12900, 14356, 14445, 14446, 14447, 14448, 17109, 17111, 17112, 17113, 17115, 17127, 17531, 18221, 27705) AND `locale` = 'koKR';
+DELETE FROM `creature_template_locale` WHERE `entry` IN (740, 741, 742, 743, 744, 745, 746, 747, 750, 751, 752, 755, 757, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 858, 861, 862, 863, 864, 865, 866, 867, 868, 922, 980, 982, 1063, 1081, 1082, 1084, 1087, 1088, 1106, 1443, 1775, 1776, 3622, 4953, 5224, 5225, 5235, 5243, 5261, 5263, 5269, 5353, 5391, 5399, 5400, 5401, 5476, 5477, 5546, 5547, 5591, 5592, 5593, 5598, 5622, 5993, 5996, 5997, 5998, 6004, 6005, 6006, 6653, 7623, 7643, 7668, 7669, 7670, 7671, 7729, 7750, 7826, 8588, 9916, 11198, 11874, 12900, 14356, 14445, 14446, 14447, 14448, 17109, 17111, 17112, 17113, 17115, 17127, 17531, 18221, 25941) AND `locale` = 'koKR';
 INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `VerifiedBuild`) VALUES
 (740, 'koKR', 'Dorastające smocze pisklę', '', 0),
 (741, 'koKR', 'Śniące smocze pisklę', '', 0),
@@ -164,13 +166,7 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (868, 'koKR', 'Szaman ze Stonardu', '', 0),
 (922, 'koKR', 'Mułowy pełzacz', '', 0),
 (980, 'koKR', 'Grimnal', 'Kupiec kolczug i zbroi płytowych', 0),
-(981, 'koKR', 'Hartash', '', 0),
 (982, 'koKR', 'Thultash', 'Sprzedawca jedzenia i napojów', 0),
-(983, 'koKR', 'Thultazor', '', 0),
-(984, 'koKR', 'Thralosh', '', 0),
-(985, 'koKR', 'Malosh', '', 0),
-(987, 'koKR', 'Ogromm', '', 0),
-(989, 'koKR', 'Banalash', '', 0),
 (1063, 'koKR', 'Nefryt', '', 0),
 (1081, 'koKR', 'Władca Trzęsawisk', '', 0),
 (1082, 'koKR', 'Piłozęby krokoliszek', '', 0),
@@ -178,11 +174,10 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (1087, 'koKR', 'Piłozęby kłapacz', '', 0),
 (1088, 'koKR', 'Monstrualny pełzacz', '', 0),
 (1106, 'koKR', 'Kucharz Zagubionych', '', 0),
-(1386, 'koKR', 'Rogvar', '', 0),
 (1443, 'koKR', 'Fel\'zerul', '', 0),
 (1775, 'koKR', 'Zun\'dartha', '', 0),
 (1776, 'koKR', 'Magtoor', '', 0),
-(3622, 'koKR', 'Grokor', '', 0),
+(3622, 'koKR', 'Grokor', 'Treser zwierząt', 0),
 (4953, 'koKR', 'Mokasyn', '', 0),
 (5224, 'koKR', 'Mętny ślizgacz', '', 0),
 (5225, 'koKR', 'Mętny pluwacz', '', 0),
@@ -212,9 +207,7 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (6004, 'koKR', 'Kultysta Cienioprzysięgłych', '', 0),
 (6005, 'koKR', 'Oprych Cienioprzysięgłych', '', 0),
 (6006, 'koKR', 'Adept Cienioprzysięgłych', '', 0),
-(6026, 'koKR', 'Breyk', '', 0),
 (6653, 'koKR', 'Ogromna ropucha', '', 0),
-(6930, 'koKR', 'Karczmarz Karakul', '', 0),
 (7623, 'koKR', 'Dowódca wypraw Ruag', '', 0),
 (7643, 'koKR', 'Bengor', '', 0),
 (7668, 'koKR', 'Sługa Razelikha', '', 0),
@@ -224,11 +217,8 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (7729, 'koKR', 'Duch Kiritha', '', 0),
 (7750, 'koKR', 'Kapral Thund Rozszczepione Kopyto', '', 0),
 (7826, 'koKR', 'Ambasador Ardalan', '', 0),
-(8176, 'koKR', 'Gharash', '', 0),
-(8177, 'koKR', 'Rartar', '', 0),
 (8588, 'koKR', 'Umbranse Mówca Duchów', '', 0),
 (9916, 'koKR', 'Jarquia', '', 0),
-(10049, 'koKR', 'Hekkru', '', 0),
 (11198, 'koKR', 'Złamany wygnaniec', '', 0),
 (11874, 'koKR', 'Masat T\'andr', 'Znakomity garbarz', 0),
 (12900, 'koKR', 'Somnus', '', 0),
@@ -245,9 +235,9 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (17127, 'koKR', 'Anachoreta Avuun', '', 0),
 (17531, 'koKR', 'Draenejski obrońca', '', 0),
 (18221, 'koKR', 'Holaaru', '', 0),
-(27705, 'koKR', 'Lorrin Lisogień', '', 0);
+(25941, 'koKR', 'Opiekun płomienia Moczarów Smutków', '', 0);
 
-DELETE FROM `gameobject_template_locale` WHERE `entry` IN (2553, 22550, 24798, 28024, 28604, 30854, 30855, 30856, 32569, 37099, 37118, 50936, 141980, 142143, 181624, 181625) AND `locale` = 'koKR';
+DELETE FROM `gameobject_template_locale` WHERE `entry` IN (2553, 22550, 24798, 28024, 28604, 30854, 30855, 30856, 32569, 37099, 37118, 50936, 141980, 142143, 181624, 181625, 183046) AND `locale` = 'koKR';
 INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCaption`, `VerifiedBuild`) VALUES
 (2553, 'koKR', 'Rozmokły zwój', '', 0),
 (22550, 'koKR', 'Kryształy draenetystu', '', 0),
@@ -264,9 +254,10 @@ INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCap
 (141980, 'koKR', 'Widmowa kasetka', '', 0),
 (142143, 'koKR', 'Ślepoziel', '', 0),
 (181624, 'koKR', 'Klatka z tarantulą', '', 0),
-(181625, 'koKR', 'Klatka z jaguarem i krokoliszkiem', '', 0);
+(181625, 'koKR', 'Klatka z jaguarem i krokoliszkiem', '', 0),
+(183046, 'koKR', 'Ślepoziel', '', 0);
 
-DELETE FROM `item_template_locale` WHERE `ID` IN (4459, 6071, 6146, 6168, 6169, 6170, 6172, 6175, 6178, 6181, 6184, 6193, 6196, 6827, 6828, 7974, 7995, 8244, 8392, 8463, 8498, 9300, 9678, 9679, 9680, 9681, 9682, 10286, 10455, 10589, 10593, 10623, 10624, 10625, 10626, 10627, 10628, 10629, 10631, 10632, 10634, 10659, 10753, 10754, 10755, 10757, 10759, 10778, 10779, 10959, 11205, 11723, 12253, 12254, 12361, 15726, 15727, 20130, 20517, 20521, 23659) AND `locale` = 'koKR';
+DELETE FROM `item_template_locale` WHERE `ID` IN (4459, 6071, 6146, 6168, 6169, 6170, 6172, 6175, 6178, 6181, 6184, 6193, 6196, 6827, 6828, 7392, 7974, 7995, 8244, 8392, 8463, 9300, 9678, 9679, 9680, 9681, 9682, 10286, 10455, 10589, 10593, 10623, 10624, 10625, 10626, 10627, 10628, 10629, 10631, 10632, 10634, 10659, 10753, 10754, 10755, 10757, 10759, 10778, 10779, 10959, 11205, 11723, 12253, 12254, 12361, 15726, 15727, 20130, 20517, 20521, 23659) AND `locale` = 'koKR';
 INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `VerifiedBuild`) VALUES
 (4459, 'koKR', 'Krucha smocza kość', '', 0),
 (6071, 'koKR', 'Kryształ draenetystu', '', 0),
@@ -283,12 +274,12 @@ INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `Veri
 (6196, 'koKR', 'Maczuga Noboru', '', 0),
 (6827, 'koKR', 'Skrzynka z zapasami', '', 0),
 (6828, 'koKR', 'Puklerz wizjonera', '', 0),
+(7392, 'koKR', 'Łuska zielonego smoczego pisklęcia', '', 0),
 (7974, 'koKR', 'Ostre mięso małży', '', 0),
 (7995, 'koKR', 'Plany: karwasze z mithrilowych łusek', 'Uczy wykuwania karwaszy z mithrilowych łusek.', 0),
 (8244, 'koKR', 'Nieskazitelna kula draenetystu', '', 0),
 (8392, 'koKR', 'Płuco dzika z Jałowych Ziem', '', 0),
 (8463, 'koKR', 'Rozkazy wodza', 'Pieczęć jest złamana.', 0),
-(8498, 'koKR', 'Maleńkie szmaragdowe smocze pisklę', '', 0),
 (9300, 'koKR', 'Receptura: eliksir zabijania demonów', 'Uczy warzenia eliksiru zabijania demonów.', 0),
 (9678, 'koKR', 'Tłuczek na murloki Tok\'kara', '', 0),
 (9679, 'koKR', 'Siekacz na murloki Tok\'kara', '', 0),

@@ -34,7 +34,7 @@ INSERT INTO `quest_template_locale` (`ID`, `locale`, `Title`, `Details`, `Object
 (2358, 'koKR', 'Rogi Nez\'ry', 'Wiele lat temu Rogi Nez\'ry zostały skradzione z dworu w Krukowisku. Szukałem ich na wielu kontynentach i za oceanami, by w końcu odkryć, że przez cały czas miały je te nędzne bestie.$B$BZabijaj każdego orka z Czarnej Skały, na jakiego trafisz, aż odzyskasz Rogi Nez\'ry. Jeśli je zdobędziesz, znajdź mnie w Jeziernych Włościach.$B$BZrób to dla mnie, a twoje imię pozna Krukowisko, $N.', 'Zwróć Rogi Nez\'ry Arantirowi w Jeziernych Włościach.', '', 'Wróć do Arantira w Jeziernych Włościach w Górach Rudej Grani.', '', '', '', '', 0),
 (3741, 'koKR', 'Naszyjnik Hilary', 'Moja przyjaciółka Hilary zgubiła naszyjnik i nie możemy go znaleźć. Cały dzień łowiliśmy tu ryby i już tu wszystko przeszukaliśmy. Jedyne, co przychodzi mi do głowy, to że wpadł do jeziora. Rodzice nie pozwalają nam pływać w jeziorze... mama mówi, że pod wodą są jakieś złe stwory, ale ty nie wyglądasz, jakbyś się $gbał:bała; złych stworów.$B$BMożesz go dla niej znaleźć? Proszę!', 'Znajdź naszyjnik Hilary i oddaj go Hilary w Jeziernych Włościach.', '', 'Wróć do Hilary w Jeziernych Włościach w Górach Rudej Grani.', '', '', '', '', 0);
 
-DELETE FROM `quest_offer_reward_locale` WHERE `ID` IN (19, 20, 34, 89, 91, 92, 115, 116, 122, 124, 125, 126, 127, 128, 129, 130, 131, 145, 146, 150, 169, 180, 219, 244, 246, 248, 386, 1699, 2282, 2358, 3741) AND `locale` = 'koKR';
+DELETE FROM `quest_offer_reward_locale` WHERE `ID` IN (19, 20, 34, 89, 91, 92, 115, 116, 122, 124, 125, 126, 127, 128, 129, 130, 131, 145, 146, 150, 169, 180, 219, 244, 246, 248, 386, 1699, 2282, 2358, 3741, 11751, 11822) AND `locale` = 'koKR';
 INSERT INTO `quest_offer_reward_locale` (`ID`, `locale`, `RewardText`, `VerifiedBuild`) VALUES
 (19, 'koKR', 'Tharil\'zun był okrutnym i przebiegłym orkiem. Dobra robota – na pewno nie dał się łatwo pokonać. Oto twoja nagroda, $N.', 0),
 (20, 'koKR', 'Dzięki. Mamy teraz o wielu orków mniej na głowie.', 0),
@@ -66,7 +66,9 @@ INSERT INTO `quest_offer_reward_locale` (`ID`, `locale`, `RewardText`, `Verified
 (1699, 'koKR', 'Udało ci się! Brawo! Hip, hip, hurra! Niech żyje $N!', 0),
 (2282, 'koKR', '$GRozpracowałeś:Rozpracowałaś; ją, co? Niezła robota, $N.$B$BJeśli teraz zginiesz, możemy spać spokojnie, wiedząc, że to przez twoją głupotę, a nie brak doświadczenia.', 0),
 (2358, 'koKR', 'Odmówić Krukowisku tego artefaktu to jak zaprzeć się własnego istnienia. Dobra robota, $N. Być może jeszcze staniesz w szeregach zabójców z Krukowiska.$B$BGdy jako młody łotrzyk przemierzałem Mroczne Wybrzeże, odkryłem herbatę, która przywraca energię w walce. Przez lata dobrze mi służyła, a teraz daję ci skosztować ostowej herbaty. Pij ją, gdy opadniesz z sił, $N, i znów walcz z wigorem!$B$B', 0),
-(3741, 'koKR', 'Dziękuję, że $gznalazłeś:znalazłaś; mój naszyjnik, $gpanie:pani; $N... jesteś bardzo $gmiły:miła;! Mój kotek też ci dziękuje – prawda, Effsee?', 0);
+(3741, 'koKR', 'Dziękuję, że $gznalazłeś:znalazłaś; mój naszyjnik, $gpanie:pani; $N... jesteś bardzo $gmiły:miła;! Mój kotek też ci dziękuje – prawda, Effsee?', 0),
+(11751, 'koKR', 'Zbezcześć wielkie ognisko Przymierza w Górach Rudej Grani!', 0),
+(11822, 'koKR', 'Uczcij płomień Gór Rudej Grani!', 0);
 
 DELETE FROM `quest_request_items_locale` WHERE `ID` IN (19, 20, 34, 89, 91, 92, 115, 116, 122, 124, 125, 126, 127, 128, 129, 131, 145, 146, 150, 169, 180, 246, 248, 386, 2282, 2358, 3741) AND `locale` = 'koKR';
 INSERT INTO `quest_request_items_locale` (`ID`, `locale`, `CompletionText`, `VerifiedBuild`) VALUES
@@ -106,7 +108,7 @@ INSERT INTO `quest_greeting_locale` (`ID`, `type`, `locale`, `Greeting`, `Verifi
 (464, 0, 'koKR', 'Witaj, $N. Złe to czasy, $gprzyjacielu:przyjaciółko;, bo nasze miasto jest oblężone! Orkowie z Czarnej Skały atakują z Twierdzy Kamiennej Straży, Cienioskórzy czają się nad Wieżą Ilgalara, a sfora gnoli z Rudej Grani rośnie w siłę. Mam nadzieję, że nie przybywasz tu na wypoczynek...', 0),
 (900, 0, 'koKR', 'Co cię sprowadza przed oblicze sądu Jeziernych Włości i Szanownego Sędziego Solomona?', 0);
 
-DELETE FROM `creature_template_locale` WHERE `entry` IN (263, 334, 335, 342, 343, 345, 346, 348, 349, 379, 381, 382, 397, 422, 423, 424, 426, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 440, 441, 442, 445, 446, 464, 485, 486, 505, 518, 544, 545, 548, 568, 578, 579, 580, 584, 615, 616, 703, 711, 712, 777, 789, 790, 791, 793, 812, 819, 847, 848, 849, 850, 851, 859, 900, 903, 931, 932, 933, 934, 935, 936, 947, 956, 1070, 1083, 1671, 1678, 1680, 2697, 3085, 3086, 3087, 3088, 3089, 3090, 3091, 3096, 3097, 4064, 4065, 4462, 4463, 4464, 5607, 5608, 5620, 6295, 6727, 6728, 7009, 8962, 8963, 8965, 9982, 10037, 14269, 14270, 14271, 14272, 14273, 14357) AND `locale` = 'koKR';
+DELETE FROM `creature_template_locale` WHERE `entry` IN (263, 334, 335, 342, 343, 345, 346, 348, 349, 379, 381, 382, 397, 422, 423, 424, 426, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 440, 441, 442, 445, 446, 464, 485, 486, 505, 518, 544, 545, 548, 568, 578, 579, 580, 584, 615, 616, 703, 711, 712, 777, 789, 790, 791, 793, 819, 847, 848, 849, 850, 851, 859, 900, 903, 931, 932, 933, 934, 935, 936, 947, 1070, 1083, 1462, 1571, 2941, 3085, 3086, 3090, 3096, 3097, 4064, 4065, 4462, 4463, 4464, 5607, 5608, 5620, 6727, 6728, 7009, 7823, 8962, 8963, 8965, 10037, 14269, 14270, 14271, 14272, 14273, 14357, 25904, 31026) AND `locale` = 'koKR';
 INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `VerifiedBuild`) VALUES
 (263, 'koKR', 'Lord Ello Ebonlocke', 'Burmistrz Mrocznych Włości', 0),
 (334, 'koKR', 'Gath\'Ilzogg', 'Wódz klanu Czarnej Skały', 0),
@@ -161,9 +163,8 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (777, 'koKR', 'Amy Davenport', 'Handlarka', 0),
 (789, 'koKR', 'Kimberly Hiett', 'Strzelarka', 0),
 (790, 'koKR', 'Karen Taylor', 'Materiały kowalskie i górnicze', 0),
-(791, 'koKR', 'Lindsay Ashlock', '', 0),
+(791, 'koKR', 'Lindsay Ashlock', 'Zaopatrzenie ogólne', 0),
 (793, 'koKR', 'Kara Adams', 'Tarczowniczka', 0),
-(812, 'koKR', 'Alma Jainrose', '', 0),
 (819, 'koKR', 'Sługa Ilgalara', '', 0),
 (847, 'koKR', 'Nathan', '', 0),
 (848, 'koKR', 'Madison', '', 0),
@@ -180,22 +181,16 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (935, 'koKR', 'Strażnik Pearce', '', 0),
 (936, 'koKR', 'Strażniczka Adams', '', 0),
 (947, 'koKR', 'Rohh Milczący', '', 0),
-(956, 'koKR', 'Dorin Śpiewne Ostrze', '', 0),
 (1070, 'koKR', 'Zastępca Feldon', '', 0),
 (1083, 'koKR', 'Murlok brzegowy napastnik', '', 0),
-(1671, 'koKR', 'Lamar Veisilli', '', 0),
-(1678, 'koKR', 'Vernon Hale', '', 0),
-(1680, 'koKR', 'Matthew Hooper', '', 0),
-(2697, 'koKR', 'Clyde Ranthal', '', 0),
-(3085, 'koKR', 'Gloria Femmel', '', 0),
+(1462, 'koKR', 'Edwina Monzor', 'Strzelarka', 0),
+(1571, 'koKR', 'Shellei Brondir', 'Mistrzyni gryfów', 0),
+(2941, 'koKR', 'Lanie Reed', 'Mistrzyni gryfów', 0),
+(3085, 'koKR', 'Gloria Femmel', 'Artykuły kulinarne', 0),
 (3086, 'koKR', 'Gretchen Vogel', 'Kelnerka', 0),
-(3087, 'koKR', 'Crystal Boughman', '', 0),
-(3088, 'koKR', 'Henry Chapal', '', 0),
-(3089, 'koKR', 'Sherman Femmel', '', 0),
-(3090, 'koKR', 'Gerald Crawley', '', 0),
-(3091, 'koKR', 'Franklin Hamar', '', 0),
+(3090, 'koKR', 'Gerald Crawley', 'Zaopatrzenie w trucizny', 0),
 (3096, 'koKR', 'Pojmany sługa Azory', 'Specjalistyczne materiały krawieckie', 0),
-(3097, 'koKR', 'Bernard Brubaker', '', 0),
+(3097, 'koKR', 'Bernard Brubaker', 'Kupiec zbroi skórzanych', 0),
 (4064, 'koKR', 'Zwiadowca Czarnej Skały', '', 0),
 (4065, 'koKR', 'Wartownik Czarnej Skały', '', 0),
 (4462, 'koKR', 'Łowca Czarnej Skały', '', 0),
@@ -203,24 +198,25 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (4464, 'koKR', 'Gladiator Czarnej Skały', '', 0),
 (5607, 'koKR', 'Roger', '', 0),
 (5608, 'koKR', 'Jamin', '', 0),
-(5620, 'koKR', 'Barman Wental', '', 0),
-(6295, 'koKR', 'Wilma Ranthal', '', 0),
-(6727, 'koKR', 'Karczmarka Brianna', '', 0),
+(5620, 'koKR', 'Barman Wental', 'Jedzenie i napoje', 0),
+(6727, 'koKR', 'Karczmarka Brianna', 'Karczmarka', 0),
 (6728, 'koKR', 'Narnie', '', 0),
 (7009, 'koKR', 'Arantir', 'Ręka Chaosu', 0),
+(7823, 'koKR', 'Bera Kamiennomłot', 'Mistrzyni gryfów', 0),
 (8962, 'koKR', 'Hilary', '', 0),
 (8963, 'koKR', 'Effsee', '', 0),
 (8965, 'koKR', 'Shawn', '', 0),
-(9982, 'koKR', 'Penny', '', 0),
 (10037, 'koKR', 'Strażnik Jeziernych Włości', '', 0),
 (14269, 'koKR', 'Poszukiwacz Aqualon', '', 0),
 (14270, 'koKR', 'Squiddic', '', 0),
 (14271, 'koKR', 'Żebrogon', '', 0),
 (14272, 'koKR', 'Warkopłom', '', 0),
 (14273, 'koKR', 'Głazoserce', '', 0),
-(14357, 'koKR', 'Jeziorny młocarz', '', 0);
+(14357, 'koKR', 'Jeziorny młocarz', '', 0),
+(25904, 'koKR', 'Strażnik płomienia Rudej Grani', '', 0),
+(31026, 'koKR', '', 'Kelnerka', 0);
 
-DELETE FROM `gameobject_template_locale` WHERE `entry` IN (31, 32, 47, 60, 76, 114, 115, 116, 117, 118, 1726, 3659, 103628, 121264, 154357, 175544, 178244, 178246, 179487) AND `locale` = 'koKR';
+DELETE FROM `gameobject_template_locale` WHERE `entry` IN (31, 32, 47, 60, 76, 114, 115, 116, 117, 118, 1726, 3659, 103628, 121264, 154357, 175544, 178244, 178245, 178246, 179487, 179489, 179491, 195257, 201969, 202168) AND `locale` = 'koKR';
 INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCaption`, `VerifiedBuild`) VALUES
 (31, 'koKR', 'Stary posąg lwa', '', 0),
 (32, 'koKR', 'Zatopiona skrzynia', '', 0),
@@ -239,10 +235,16 @@ INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCap
 (154357, 'koKR', 'Połyskujące błoto', '', 0),
 (175544, 'koKR', 'Kula na łańcuchu', '', 0),
 (178244, 'koKR', 'Kasetka do ćwiczeń', '', 0),
+(178245, 'koKR', 'Kasetka do ćwiczeń', '', 0),
 (178246, 'koKR', 'Kasetka do ćwiczeń', '', 0),
-(179487, 'koKR', 'Nasiąknięty wodą kufer', '', 0);
+(179487, 'koKR', 'Nasiąknięty wodą kufer', '', 0),
+(179489, 'koKR', 'Nasiąknięty wodą kufer', '', 0),
+(179491, 'koKR', 'Nasiąknięty wodą kufer', '', 0),
+(195257, 'koKR', 'Ozdoba wisząca, wysoka/wąska, mała – Festiwal Piwa', '', 0),
+(201969, 'koKR', 'Kula na łańcuchu', '', 0),
+(202168, 'koKR', 'Kula na łańcuchu', '', 0);
 
-DELETE FROM `item_template_locale` WHERE `ID` IN (878, 1013, 1075, 1080, 1082, 1211, 1212, 1213, 1214, 1218, 1219, 1220, 1221, 1260, 1261, 1270, 1275, 1276, 1287, 1296, 1300, 1302, 1303, 1304, 1309, 1310, 1317, 1319, 1322, 1325, 1326, 1406, 1409, 1410, 1440, 1445, 1446, 1448, 1455, 1457, 1458, 1459, 1460, 1461, 1467, 1469, 1473, 1942, 2058, 2175, 2251, 2562, 2856, 2910, 3014, 3182, 3229, 3231, 3400, 3403, 3431, 3555, 3567, 3614, 3630, 3631, 3632, 3633, 3663, 3722, 3723, 3724, 3725, 4375, 4402, 4428, 4446, 4447, 5534, 6092, 6093, 7289, 7871, 7906, 7907, 9451, 10456, 10958, 12562, 17706, 20576) AND `locale` = 'koKR';
+DELETE FROM `item_template_locale` WHERE `ID` IN (878, 1013, 1075, 1080, 1082, 1211, 1212, 1213, 1214, 1218, 1219, 1220, 1221, 1260, 1261, 1270, 1275, 1276, 1287, 1288, 1296, 1300, 1302, 1303, 1304, 1309, 1310, 1317, 1319, 1322, 1325, 1326, 1406, 1409, 1410, 1440, 1445, 1446, 1448, 1455, 1457, 1458, 1459, 1460, 1461, 1464, 1467, 1469, 1473, 1942, 2058, 2175, 2251, 2562, 2856, 2910, 3014, 3182, 3229, 3231, 3400, 3403, 3431, 3555, 3567, 3614, 3630, 3631, 3632, 3633, 3663, 3722, 3723, 3724, 3725, 4375, 4402, 4428, 4446, 4447, 5534, 6092, 6093, 6647, 7286, 7289, 7871, 7906, 7907, 9451, 10456, 10958, 12562, 17706, 20576) AND `locale` = 'koKR';
 INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `VerifiedBuild`) VALUES
 (878, 'koKR', 'Kądziołek wielkości pięści', '', 0),
 (1013, 'koKR', 'Żelazny nit', '', 0),
@@ -263,6 +265,7 @@ INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `Veri
 (1275, 'koKR', 'Kolcza kurta zastępcy', '', 0),
 (1276, 'koKR', 'Puklerz hartowany w ogniu', '', 0),
 (1287, 'koKR', 'Kieł olbrzymiej tarantuli', '', 0),
+(1288, 'koKR', 'Duży gruczoł jadowy', '', 0),
 (1296, 'koKR', 'Maczuga Czarnej Skały', '', 0),
 (1300, 'koKR', 'Mniejszy kostur Iglicy', '', 0),
 (1302, 'koKR', 'Rękawice z czarnego pisklęcia', '', 0),
@@ -288,6 +291,7 @@ INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `Veri
 (1459, 'koKR', 'Skalpownik Cienioskórych', '', 0),
 (1460, 'koKR', 'Miecz dwuręczny Cienioskórych', '', 0),
 (1461, 'koKR', 'Topór bojowy pogromcy', '', 0),
+(1464, 'koKR', 'Szpon sępa', '', 0),
 (1467, 'koKR', 'Cętkowany bass słoneczny', '', 0),
 (1469, 'koKR', 'Sejmitar Atuna', '', 0),
 (1473, 'koKR', 'Nadrzeczny kostur', '', 0),
@@ -325,6 +329,8 @@ INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `Veri
 (5534, 'koKR', 'Posiłek Parkera', '', 0),
 (6092, 'koKR', 'Buty z czarnego pisklęcia', '', 0),
 (6093, 'koKR', 'Miażdżyciel orków', '', 0),
+(6647, 'koKR', 'Wzdęty sum', '', 0),
+(7286, 'koKR', 'Łuska czarnego smoczego pisklęcia', '', 0),
 (7289, 'koKR', 'Wykrój: płaszcz z czarnego pisklęcia', 'Uczy wytwarzania płaszcza z czarnego pisklęcia.', 0),
 (7871, 'koKR', 'Żeton złodziejstwa', '', 0),
 (7906, 'koKR', 'Rogi Nez\'ry', '', 0),

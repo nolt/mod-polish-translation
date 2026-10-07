@@ -12,11 +12,15 @@ DELETE FROM `quest_request_items_locale` WHERE `ID` IN (10297) AND `locale` = 'k
 INSERT INTO `quest_request_items_locale` (`ID`, `locale`, `CompletionText`, `VerifiedBuild`) VALUES
 (10297, 'koKR', 'W każdej kieszeni czasu możesz użyć tylko jednej chronolatarni.', 0);
 
-DELETE FROM `creature_template_locale` WHERE `entry` IN (17952, 18982, 18983) AND `locale` = 'koKR';
+DELETE FROM `creature_template_locale` WHERE `entry` IN (17952, 18982, 18983, 20075, 22162, 22163, 22173) AND `locale` = 'koKR';
 INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `VerifiedBuild`) VALUES
 (17952, 'koKR', 'Krokoliszek ciemnych wód', '', 0),
 (18982, 'koKR', 'Czarny jaguar', '', 0),
-(18983, 'koKR', 'Czarnokła tarantula', '', 0);
+(18983, 'koKR', 'Czarnokła tarantula', '', 0),
+(20075, 'koKR', 'Krokoliszek ciemnych wód', '', 0),
+(22162, 'koKR', 'Czarnokła tarantula (1)', '', 0),
+(22163, 'koKR', 'Krokoliszek ciemnych wód (1)', '', 0),
+(22173, 'koKR', 'Czarny jaguar (1)', '', 0);
 
 DELETE FROM `item_template_locale` WHERE `ID` IN (24289) AND `locale` = 'koKR';
 INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `VerifiedBuild`) VALUES

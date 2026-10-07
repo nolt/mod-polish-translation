@@ -10,26 +10,29 @@ INSERT INTO `quest_offer_reward_locale` (`ID`, `locale`, `RewardText`, `Verified
 (24499, 'koKR', 'W samą porę! Dziękuję, $N.$B$BPrzed nami Czeluść Saronu, a jeśli nasi zwiadowcy się nie mylą, za nią znajdują się Sale Odbić. To tam Arthas traci czujność i to tam liczymy na znalezienie wskazówki co do jego słabości... a może, tylko może, jego odkupienia.', 0),
 (24511, 'koKR', 'W samą porę, $N!$B$BPrzed nami Czeluść Saronu, a jeśli nasi zwiadowcy się nie mylą, za nią znajdują się Sale Odbić. To tam Arthas traci czujność i to tam liczymy na znalezienie wskazówki co do jego słabości... i drogi do zemsty, na którą czekamy zbyt długo.', 0);
 
-DELETE FROM `creature_template_locale` WHERE `entry` IN (36478, 36497, 36499, 36502, 36516, 36522, 36551, 36564, 36620, 36666, 36967, 37583) AND `locale` = 'koKR';
+DELETE FROM `creature_template_locale` WHERE `entry` IN (36497, 36498, 36502, 36503, 36504, 36522, 36551, 36666, 36967, 37563, 37564, 37565, 37583, 37608, 37677) AND `locale` = 'koKR';
 INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `VerifiedBuild`) VALUES
-(36478, 'koKR', 'Stróż Straży Dusz', '', 0),
 (36497, 'koKR', 'Bronjahm', 'Ojciec chrzestny dusz', 0),
-(36499, 'koKR', 'Żniwiarz Straży Dusz', '', 0),
+(36498, 'koKR', 'Bronjahm (1)', 'Ojciec chrzestny dusz', 0),
 (36502, 'koKR', 'Pożeracz dusz', '', 0),
-(36516, 'koKR', 'Ożywiacz Straży Dusz', '', 0),
+(36503, 'koKR', 'Pożeracz dusz', '', 0),
+(36504, 'koKR', 'Pożeracz dusz', '', 0),
 (36522, 'koKR', 'Monstrum dusz', '', 0),
 (36551, 'koKR', 'Złośliwa zjawa', '', 0),
-(36564, 'koKR', 'Kościomanta Straży Dusz', '', 0),
-(36620, 'koKR', 'Adept Straży Dusz', '', 0),
 (36666, 'koKR', 'Widmowy strażnik', '', 0),
 (36967, 'koKR', 'Złośliwa zjawa', '', 0),
-(37583, 'koKR', 'Mroczna tropicielka Kalira', '', 0);
+(37563, 'koKR', 'Widmowy strażnik (1)', '', 0),
+(37564, 'koKR', 'Złośliwa zjawa (1)', '', 0),
+(37565, 'koKR', 'Monstrum dusz (1)', '', 0),
+(37583, 'koKR', 'Mroczna tropicielka Kalira', '', 0),
+(37608, 'koKR', 'Mroczna tropicielka Kalira (1)', '', 0),
+(37677, 'koKR', 'Pożeracz dusz (1)', '', 0);
 
 DELETE FROM `gameobject_template_locale` WHERE `entry` IN (201600) AND `locale` = 'koKR';
 INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCaption`, `VerifiedBuild`) VALUES
 (201600, 'koKR', 'Kosz żarowy tygla', '', 0);
 
-DELETE FROM `item_template_locale` WHERE `ID` IN (49783, 49784, 49785, 49786, 49787, 49788, 50316, 50317) AND `locale` = 'koKR';
+DELETE FROM `item_template_locale` WHERE `ID` IN (49783, 49784, 49785, 49786, 49787, 49788, 49789, 49790, 49791, 49792, 49793, 49794, 49795, 49796, 49797, 49798, 49799, 49800, 50169, 50191, 50193, 50194, 50196, 50197, 50198, 50203, 50206, 50207, 50208, 50209, 50210, 50211, 50212, 50213, 50214, 50215, 50316, 50317) AND `locale` = 'koKR';
 INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `VerifiedBuild`) VALUES
 (49783, 'koKR', 'Stare szczęśliwe słońce', '', 0),
 (49784, 'koKR', 'Nogawice płytowe ministra numer jeden', '', 0),
@@ -37,6 +40,36 @@ INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `Veri
 (49786, 'koKR', 'Szaty zdradliwego serca', '', 0),
 (49787, 'koKR', 'Siedem burzowych poranków', '', 0),
 (49788, 'koKR', 'Uchwyty zimnego potu', '', 0),
+(49789, 'koKR', 'Dreszcz serca', '', 0),
+(49790, 'koKR', 'Lancet wrzącej krwi', '', 0),
+(49791, 'koKR', 'Osłona piersi z zaginionego relikwiarza', '', 0),
+(49792, 'koKR', 'Przeklęta pełzająca peleryna', '', 0),
+(49793, 'koKR', 'Wieża butwiejących zwłok', '', 0),
+(49794, 'koKR', 'Nogawice płytowe z zamarzniętego granitu', '', 0),
+(49795, 'koKR', 'Trzewiki pancerne cierpienia', '', 0),
+(49796, 'koKR', 'Esencja gniewu', '', 0),
+(49797, 'koKR', 'Osłony przedramion bezgwiezdnej nocy', '', 0),
+(49798, 'koKR', 'Buty krzyczących dusz', '', 0),
+(49799, 'koKR', 'Splot brakujących klejnotów', '', 0),
+(49800, 'koKR', 'Złośliwy sygnet', '', 0),
+(50169, 'koKR', 'Nowiutki nóż tatusia', '', 0),
+(50191, 'koKR', 'Nocna pora', '', 0),
+(50193, 'koKR', 'Bardzo modne naramienniki', '', 0),
+(50194, 'koKR', 'Płaczące rękawice pancerne', '', 0),
+(50196, 'koKR', 'Więzień miłości', '', 0),
+(50197, 'koKR', 'Oczy oszołomienia', '', 0),
+(50198, 'koKR', 'Skorpion najeżony igłami', '', 0),
+(50203, 'koKR', 'Płaczący krwią', '', 0),
+(50206, 'koKR', 'Postrzępiona czapka łotra', '', 0),
+(50207, 'koKR', 'Trzewiki płytowe czarnej iglicy', '', 0),
+(50208, 'koKR', 'Naramienniki pożeracza dusz', '', 0),
+(50209, 'koKR', 'Esencja cierpienia', '', 0),
+(50210, 'koKR', 'Kipienie', '', 0),
+(50211, 'koKR', 'Tajemne pętle gniewu', '', 0),
+(50212, 'koKR', 'Esencja pożądania', '', 0),
+(50213, 'koKR', 'Szaty z Mord\'rethar', '', 0),
+(50214, 'koKR', 'Hełm wstrząsu ducha', '', 0),
+(50215, 'koKR', 'Buty z odzyskanego relikwiarza', '', 0),
 (50316, 'koKR', 'Nowiutka torba Papy', '', 0),
 (50317, 'koKR', 'Nowa torba Papy', '', 0);
 

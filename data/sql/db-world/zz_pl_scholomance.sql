@@ -2,9 +2,9 @@
 
 DELETE FROM `quest_template_locale` WHERE `ID` IN (5383) AND `locale` = 'koKR';
 INSERT INTO `quest_template_locale` (`ID`, `locale`, `Title`, `Details`, `Objectives`, `EndText`, `CompletedText`, `ObjectiveText1`, `ObjectiveText2`, `ObjectiveText3`, `ObjectiveText4`, `VerifiedBuild`) VALUES
-(5383, 'koKR', '', 'Otwierasz torbę i znajdujesz w niej rozmaite narzędzia tortur. Pośród tych akcesoriów twoją uwagę przykuwa dziwny przedmiot: fiolka krwi – wciąż ciepła w dotyku.$B$BSądzisz, że twoje odkrycie może zainteresować Sarkhoffów.', 'Zanieś Torbę okropności Evie Sarkhoff w Caer Darrow.', '', '', '', '', '', '', 0);
+(5383, 'koKR', 'Torba okropności Krastinova', 'Otwierasz torbę i znajdujesz w niej rozmaite narzędzia tortur. Pośród tych akcesoriów twoją uwagę przykuwa dziwny przedmiot: fiolka krwi – wciąż ciepła w dotyku.$B$BSądzisz, że twoje odkrycie może zainteresować Sarkhoffów.', 'Zanieś Torbę okropności Evie Sarkhoff w Caer Darrow.', '', '', '', '', '', '', 0);
 
-DELETE FROM `creature_template_locale` WHERE `entry` IN (1853, 10433, 10469, 10470, 10471, 10472, 10475, 10476, 10477, 10478, 10480, 10481, 10485, 10486, 10487, 10488, 10489, 10491, 10495, 10498, 10499, 10500, 10502, 10503, 10504, 10505, 10507, 10508, 10901, 11257, 11551, 11582, 11622, 14861) AND `locale` = 'koKR';
+DELETE FROM `creature_template_locale` WHERE `entry` IN (1853, 10433, 10469, 10470, 10471, 10472, 10475, 10476, 10477, 10478, 10480, 10481, 10485, 10486, 10487, 10488, 10489, 10491, 10495, 10498, 10499, 10500, 10502, 10503, 10504, 10505, 10507, 10508, 10901, 11257, 11551, 11582, 11622, 14695, 14861, 29897) AND `locale` = 'koKR';
 INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `VerifiedBuild`) VALUES
 (1853, 'koKR', 'Mistrz Mroku Gandling', '', 0),
 (10433, 'koKR', 'Marduk Czarnostaw', '', 0),
@@ -39,7 +39,9 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (11551, 'koKR', 'Nekrobies', '', 0),
 (11582, 'koKR', 'Mroczny przywoływacz Scholomancjum', '', 0),
 (11622, 'koKR', 'Kościorwij', '', 0),
-(14861, 'koKR', 'Krwawa szafarka Kirtonosa', '', 0);
+(14695, 'koKR', 'Lord Blackwood', '', 0),
+(14861, 'koKR', 'Krwawa szafarka Kirtonosa', '', 0),
+(29897, 'koKR', 'Ożywione zwłoki', '', 0);
 
 DELETE FROM `gameobject_template_locale` WHERE `entry` IN (175167, 175564, 175611, 175612, 175613, 175614, 175615, 175616, 175617, 175618, 175620, 175737, 175747, 175762, 175965, 176484, 176485, 176486, 176487, 176561, 176944, 179746) AND `locale` = 'koKR';
 INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCaption`, `VerifiedBuild`) VALUES
@@ -66,7 +68,7 @@ INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCap
 (176944, 'koKR', 'Stara skrzynia ze skarbem', '', 0),
 (179746, 'koKR', 'Wielkie Ossuarium', '', 0);
 
-DELETE FROM `item_template_locale` WHERE `ID` IN (10137, 10140, 10146, 10149, 10154, 10155, 10161, 10217, 10226, 10249, 10256, 10267, 10373, 10379, 10383, 10387, 13398, 13873, 13937, 13938, 13944, 13950, 13951, 13953, 13964, 14514, 14528, 14531, 14536, 14537, 14538, 14539, 14541, 14543, 14545, 14548, 14576, 15773, 15776, 16254, 16255, 18686, 18689, 18690, 18692, 18697, 18698, 18699, 18700, 18701, 18702, 18782, 19276, 22394, 22433) AND `locale` = 'koKR';
+DELETE FROM `item_template_locale` WHERE `ID` IN (10137, 10140, 10146, 10149, 10154, 10155, 10161, 10217, 10226, 10249, 10256, 10267, 10373, 10379, 10383, 10387, 13314, 13398, 13873, 13937, 13938, 13944, 13950, 13951, 13952, 13953, 13964, 14340, 14487, 14502, 14503, 14514, 14522, 14525, 14528, 14531, 14536, 14537, 14538, 14539, 14541, 14543, 14545, 14548, 14576, 15773, 15776, 16254, 16255, 18686, 18689, 18690, 18692, 18693, 18694, 18695, 18696, 18697, 18698, 18699, 18700, 18701, 18702, 18782, 19276, 22394, 22433, 23132, 23139, 23156) AND `locale` = 'koKR';
 INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `VerifiedBuild`) VALUES
 (10137, 'koKR', 'Buty wysokiego radnego', '', 0),
 (10140, 'koKR', 'Rękawice wysokiego radnego', '', 0),
@@ -84,6 +86,7 @@ INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `Veri
 (10379, 'koKR', 'Hełm dowódcy', '', 0),
 (10383, 'koKR', 'Naramienniki dowódcy', '', 0),
 (10387, 'koKR', 'Hyperioński pas', '', 0),
+(13314, 'koKR', 'Objęcia Alanny', '', 0),
 (13398, 'koKR', 'Buty wrzaskuna', '', 0),
 (13873, 'koKR', 'Klucz do sali obserwacyjnej', '', 0),
 (13937, 'koKR', 'Szarża dyrektora', '', 0),
@@ -91,9 +94,16 @@ INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `Veri
 (13944, 'koKR', 'Nagrobny napierśnik', '', 0),
 (13950, 'koKR', 'Rzemień karcerowy', '', 0),
 (13951, 'koKR', 'Zarękawia z krzepkiej stali', '', 0),
+(13952, 'koKR', 'Rąbacz lodowego ostrza', '', 0),
 (13953, 'koKR', 'Cichy kieł', '', 0),
 (13964, 'koKR', 'Ostrze wiedźmy', '', 0),
+(14340, 'koKR', 'Zamrażające szaty lisza', '', 0),
+(14487, 'koKR', 'Młot mrożący kości', '', 0),
+(14502, 'koKR', 'Pas odmrożenia', '', 0),
+(14503, 'koKR', 'Uścisk śmierci', '', 0),
 (14514, 'koKR', 'Wykrój: szata Pustki', 'Uczy szycia szaty Pustki.', 0),
+(14522, 'koKR', 'Nogawice wiru', '', 0),
+(14525, 'koKR', 'Rękawice pancerne kościanego uścisku', '', 0),
 (14528, 'koKR', 'Puklerz z grzechoczącej klatki', '', 0),
 (14531, 'koKR', 'Drzewce czaszki grozy', '', 0),
 (14536, 'koKR', 'Kolczuga z kościanych klamer', '', 0),
@@ -113,6 +123,10 @@ INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `Veri
 (18689, 'koKR', 'Widmowy płaszcz', '', 0),
 (18690, 'koKR', 'Upiorne płytowe nogawice', '', 0),
 (18692, 'koKR', 'Trzewiki płytowe rycerza śmierci', '', 0),
+(18693, 'koKR', 'Drżące owijacze dłoni', '', 0),
+(18694, 'koKR', 'Cieniste kolcze nagolenniki', '', 0),
+(18695, 'koKR', 'Zaklęta księga', '', 0),
+(18696, 'koKR', 'Tarcza z misternymi runami', '', 0),
 (18697, 'koKR', 'Pantofle z zimnego kamienia', '', 0),
 (18698, 'koKR', 'Postrzępiony skórzany kaptur', '', 0),
 (18699, 'koKR', 'Naramienniki lodowego grobowca', '', 0),
@@ -122,7 +136,10 @@ INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `Veri
 (18782, 'koKR', 'Górna połowa księgi „Zaawansowane płatnerstwo: tom II”', '', 0),
 (19276, 'koKR', 'As portali', '', 0),
 (22394, 'koKR', 'Kostur metanoi', '', 0),
-(22433, 'koKR', 'Obrączka dominacji dona Mauricia', '', 0);
+(22433, 'koKR', 'Obrączka dominacji dona Mauricia', '', 0),
+(23132, 'koKR', 'Ostrze lorda Blackwooda', '', 0),
+(23139, 'koKR', 'Puklerz lorda Blackwooda', '', 0),
+(23156, 'koKR', 'Udo Blackwooda', '', 0);
 
 DELETE FROM `page_text_locale` WHERE `ID` IN (1898, 1899, 1900, 1901, 1902, 1903, 1904, 1905, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2101, 2102, 2103) AND `locale` = 'koKR';
 INSERT INTO `page_text_locale` (`ID`, `locale`, `Text`, `VerifiedBuild`) VALUES

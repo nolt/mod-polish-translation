@@ -4,23 +4,25 @@ DELETE FROM `quest_template_locale` WHERE `ID` IN (3523, 3525, 6521, 6522) AND `
 INSERT INTO `quest_template_locale` (`ID`, `locale`, `Title`, `Details`, `Objectives`, `EndText`, `CompletedText`, `ObjectiveText1`, `ObjectiveText2`, `ObjectiveText3`, `ObjectiveText4`, `VerifiedBuild`) VALUES
 (3523, 'koKR', 'Plaga w Kurhanach', 'Znakomicie! Nazywam się Belnistrasz i dziękuję ci za ratunek. Już się pogodziłem z tym, że zginę... albo, co gorsza, skończę jako posiłek tych zarażonych przez Plagę szkodników. Tak – dobrze słyszysz, Plagi. Zawarli jakiś układ z tutejszymi kolcozwierzami i ten koszmar jest tego skutkiem.$B$BSłuchaj... zamiast po prostu uciekać, chcę coś zmienić, dla dobra nas wszystkich. $GByłbyś skłonny:Byłabyś skłonna; mi w tym pomóc? Pewnie będzie niebezpiecznie, ale wyglądasz na kogoś, kto specjalnie się tym nie przejmuje.', 'Jeśli zgadzasz się pomóc Belnistraszowi, porozmawiaj z nim ponownie i oddaj mu kamień przysięgi, który ci dał.', '', '', '', '', '', '', 0),
 (3525, 'koKR', 'Wygaszenie idola', 'Niedaleko wejścia stoi idol, który służy kolcozwierzom za makabryczny piec. Te bestie... one dosłownie pożerają tych, których porwą na Pustkowiach. Mogę wygasić idol i związać ich tak, by już nigdy go nie użyli, ale potrzebuję do tego twojej pomocy. Mój plan: odprowadź mnie do idola. Kiedy dotrzemy na miejsce, rozpocznę rytuał. Ledwie będę w stanie się z tobą porozumieć, a co dopiero się bronić. Chroń mnie, gdy będę wygaszał idol. Jeśli mnie powalą, to koniec z nami.$B$BJesteś ze mną?!', 'Odprowadź Belnistrasza do idola kolcozwierzy w Kurhanach Brzytwoskórych.$B$BChroń Belnistrasza, gdy będzie odprawiał rytuał wygaszenia idola.', 'Chroń Belnistrasza, gdy będzie odprawiał rytuał wygaszenia idola', 'Wróć do kosza żarowego Belnistrasza w Kurhanach Brzytwoskórych.', '', '', '', '', 0),
-(6521, 'koKR', '', 'Malcin twierdzi, że przebywa przed Kurhanami Brzytwoskórych. Tego ambasadora trzeba zabić – niech jego misja okaże się porażką w oczach Króla Lisza.$B$BJego obecność tłumaczy wiele z tego, co odkryliśmy w tamtej okolicy. Niektóre kolcozwierze stały się przerażająco potężne, a przy tym na swój sposób wykazują oznaki zarazy. To z pewnością znak, że zawarły jakiś układ.$B$BZnajdź Malcina i zabij go, $N. Gdy to zrobisz, wróć do mnie.', '', '', '', '', '', '', '', 0),
-(6522, 'koKR', '', '', 'Zanieś mały zwój Bragorowi Krwawej Pięści w Królewskim Kwartale w Podmieście.', '', '', '', '', '', '', 0);
+(6521, 'koKR', 'Bezbożny sojusz', 'Malcin twierdzi, że przebywa przed Kurhanami Brzytwoskórych. Tego ambasadora trzeba zabić – niech jego misja okaże się porażką w oczach Króla Lisza.$B$BJego obecność tłumaczy wiele z tego, co odkryliśmy w tamtej okolicy. Niektóre kolcozwierze stały się przerażająco potężne, a przy tym na swój sposób wykazują oznaki zarazy. To z pewnością znak, że zawarły jakiś układ.$B$BZnajdź Malcina i zabij go, $N. Gdy to zrobisz, wróć do mnie.', 'Przynieś Głowę ambasadora Malcina Bragorowi Krwawej Pięści w Podmieście.', '', 'Wróć do Bragora Krwawej Pięści w Królewskim Kwartale w Podmieście.', '', '', '', '', 0),
+(6522, 'koKR', 'Bezbożny sojusz', 'Moja Pani,$B$BDoskonale wiesz, co oferujemy. Okazja, by zająć Pustkowia i ziemie za nimi, jest ogromna. W zamian prosimy jedynie o Twoją pomoc. A przez pomoc rozumiemy wyłącznie to, że pozwolisz nam swobodnie działać na tym obszarze.$B$BProszę, pozwól nam omówić to szerzej. Mamy wielką moc i chętnie podzielimy się nią z tymi, którzy są dość mądrzy, by do nas dołączyć. Na razie pozostanę przed Kurhanami Brzytwoskórych.$B$BZ wyrazami szacunku$BAmbasador Malcin', 'Zanieś mały zwój Bragorowi Krwawej Pięści w Królewskim Kwartale w Podmieście.', '', '', '', '', '', '', 0);
 
-DELETE FROM `quest_offer_reward_locale` WHERE `ID` IN (3523, 3525, 6521, 6522) AND `locale` = 'koKR';
+DELETE FROM `quest_offer_reward_locale` WHERE `ID` IN (3523, 3525, 6521, 6522, 8582) AND `locale` = 'koKR';
 INSERT INTO `quest_offer_reward_locale` (`ID`, `locale`, `RewardText`, `VerifiedBuild`) VALUES
 (3523, 'koKR', 'Fantastycznie, od razu wiedziałem, że z ciebie $gbohater:bohaterka;! Czeka nas mnóstwo roboty, $N, nie będę cię okłamywał. Jeśli skupimy się na zadaniu, powinniśmy wyjść z tego zwycięsko.$B$BA teraz pozwól, że wprowadzę cię w to, co się tu działo...', 0),
 (3525, 'koKR', 'Po nagłym odejściu Belnistrasza został płonący kosz żarowy. Gdy wpatrujesz się w płomień, twój umysł wypełnia obraz wielkiego czerwonego smoka o potężnych skrzydłach. Chropawszy niż wcześniej głos Belnistrasza przemawia wprost do ciebie.$B$B„Zaiste, śmiertelnicy, jesteście bohaterami, na których liczyłem. Dzięki wam rzeź, której dopuszczały się te bestie, należy do przeszłości. Moja wiara w śmiertelników takich jak wy znów się odrodziła. Przyjmijcie to jako nagrodę godną bohatera”.', 0),
 (6521, 'koKR', 'Dobrze. Dobra robota, $N.$B$BSkoro Malcin nie żyje, możemy być przynajmniej pewni, że natarcie Plagi zostanie powstrzymane. Mroczna Pani dziękuje ci za twoje wysiłki i pragnie nagrodzić cię podarunkiem.$B$BChoć nie znamy zasięgu wpływów Plagi w Kurhanach, jestem pewien, że wkrótce odkryjemy jej knowania.', 0),
-(6522, 'koKR', 'Rozpoznaję insygnia na tym zwoju, $N. $GZnalazłeś:Znalazłaś; go przy tej starej wiedźmie, która panuje nad Cierniskiem Brzytwoskórych? Ciekawe.$b$bNajwyraźniej Plaga nie zadowala się jednym kontynentem. Ten ambasador Malcin – autor tego liściku – jest jednym z zarażonych sług Plagi. Zanim wszystko się... zmieniło, był ludzkim dyplomatą w królestwie Lordaeronu.$b$bJeśli Plaga próbuje zdobyć przyczółek w Kalimdorze, to na nas spoczywa obowiązek działania.', 0);
+(6522, 'koKR', 'Rozpoznaję insygnia na tym zwoju, $N. $GZnalazłeś:Znalazłaś; go przy tej starej wiedźmie, która panuje nad Cierniskiem Brzytwoskórych? Ciekawe.$b$bNajwyraźniej Plaga nie zadowala się jednym kontynentem. Ten ambasador Malcin – autor tego liściku – jest jednym z zarażonych sług Plagi. Zanim wszystko się... zmieniło, był ludzkim dyplomatą w królestwie Lordaeronu.$b$bJeśli Plaga próbuje zdobyć przyczółek w Kalimdorze, to na nas spoczywa obowiązek działania.', 0),
+(8582, 'koKR', 'Dobrze. Dobra robota, $N.$B$BSkoro Malcin nie żyje, możemy być przynajmniej pewni, że natarcie Plagi zostanie powstrzymane. Mroczna Pani dziękuje ci za twoje wysiłki i pragnie nagrodzić cię podarunkiem.$B$BChoć nie znamy zasięgu wpływów Plagi w Kurhanach, jestem pewien, że wkrótce odkryjemy jej knowania.', 0);
 
-DELETE FROM `quest_request_items_locale` WHERE `ID` IN (3523, 6521, 6522) AND `locale` = 'koKR';
+DELETE FROM `quest_request_items_locale` WHERE `ID` IN (3523, 6521, 6522, 8582) AND `locale` = 'koKR';
 INSERT INTO `quest_request_items_locale` (`ID`, `locale`, `CompletionText`, `VerifiedBuild`) VALUES
 (3523, 'koKR', 'Nie interesuje mnie polityka. Nie obchodzi mnie, czy trzymasz z Hordą, czy z Przymierzem. Bardziej zależy mi na tłumieniu bezpośrednich i poważnych zagrożeń dla wszystkich ras... a tutaj mamy jedno całkiem spore.$B$BJeśli chcesz być $gprawdziwym bohaterem:prawdziwą bohaterką; dla wszystkich ludów, oddaj mi kamień przysięgi, który ci dałem, na znak zobowiązania. Nie jestem... stąd. Dla istot mojego rodzaju kamień przysięgi to ważna pieczęć porozumienia.', 0),
 (6521, 'koKR', '$GZnalazłeś:Znalazłaś; ambasadora, $N? Nie żyje?$B$BNie możemy pozwolić, by Plaga zdobyła przyczółek w Kalimdorze. Na naszych własnych granicach stanowi dość wielkie zagrożenie, byśmy musieli walczyć z nią na dwóch frontach.$B$BJedynym pocieszającym znakiem w wydarzeniach, o których mi $gopowiedziałeś:opowiedziałaś;, jest to, że stara wiedźma nie wydawała się splugawiona. W głębi ducha musi wiedzieć, że Plaga może dać jej wielką moc, ale gdyby przystała na jej układ, Pustkowia nigdy nie byłyby naprawdę jej.', 0),
-(6522, 'koKR', 'W jakiej sprawie chcesz ze mną mówić, $N? Musisz uważać, że to coś ważnego, skoro wciąż mnie nękasz.', 0);
+(6522, 'koKR', 'W jakiej sprawie chcesz ze mną mówić, $N? Musisz uważać, że to coś ważnego, skoro wciąż mnie nękasz.', 0),
+(8582, 'koKR', '$GZnalazłeś:Znalazłaś; ambasadora, $N? Nie żyje?$B$BNie możemy pozwolić, by Plaga zdobyła przyczółek w Kalimdorze. Na naszych własnych granicach stanowi dość wielkie zagrożenie, byśmy musieli walczyć z nią na dwóch frontach.$B$BJedynym pocieszającym znakiem w wydarzeniach, o których mi $gopowiedziałeś:opowiedziałaś;, jest to, że stara wiedźma nie wydawała się splugawiona. W głębi ducha musi wiedzieć, że Plaga może dać jej wielką moc, ale gdyby przystała na jej układ, Pustkowia nigdy nie byłyby naprawdę jej.', 0);
 
-DELETE FROM `creature_template_locale` WHERE `entry` IN (7327, 7328, 7329, 7332, 7333, 7334, 7335, 7337, 7341, 7342, 7343, 7344, 7345, 7346, 7347, 7348, 7352, 7353, 7354, 7357, 8516, 8567, 8696, 8767) AND `locale` = 'koKR';
+DELETE FROM `creature_template_locale` WHERE `entry` IN (7327, 7328, 7329, 7332, 7333, 7334, 7335, 7337, 7341, 7342, 7343, 7344, 7345, 7346, 7347, 7348, 7352, 7353, 7354, 7357, 8516, 8567, 8696, 8767, 14686) AND `locale` = 'koKR';
 INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `VerifiedBuild`) VALUES
 (7327, 'koKR', 'Uschnięty wojownik', '', 0),
 (7328, 'koKR', 'Uschnięty łupieżca', '', 0),
@@ -45,10 +47,12 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (8516, 'koKR', 'Belnistrasz', '', 0),
 (8567, 'koKR', 'Żarłok', '', 0),
 (8696, 'koKR', 'Henry Stern', '', 0),
-(8767, 'koKR', 'Sah\'rhee', '', 0);
+(8767, 'koKR', 'Sah\'rhee', '', 0),
+(14686, 'koKR', 'Lady Falther\'ess', '', 0);
 
-DELETE FROM `gameobject_template_locale` WHERE `entry` IN (142141, 148917, 151951, 151952, 151973, 157816, 157817, 157818, 157819, 157820) AND `locale` = 'koKR';
+DELETE FROM `gameobject_template_locale` WHERE `entry` IN (20817, 142141, 148917, 151951, 151952, 151973, 157816, 157817, 157818, 157819, 157820, 176642, 180386) AND `locale` = 'koKR';
 INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCaption`, `VerifiedBuild`) VALUES
+(20817, 'koKR', 'Zagroda', '', 0),
 (142141, 'koKR', 'Łzy Arthasa', '', 0),
 (148917, 'koKR', 'Gong', '', 0),
 (151951, 'koKR', 'Ogień pieca idola', '', 0),
@@ -58,9 +62,11 @@ INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCap
 (157817, 'koKR', 'Zagroda', '', 0),
 (157818, 'koKR', 'Zagroda', '', 0),
 (157819, 'koKR', 'Zagroda', '', 0),
-(157820, 'koKR', 'Zagroda', '', 0);
+(157820, 'koKR', 'Zagroda', '', 0),
+(176642, 'koKR', 'Łzy Arthasa', '', 0),
+(180386, 'koKR', 'Gong', '', 0);
 
-DELETE FROM `item_template_locale` WHERE `ID` IN (10682, 10710, 10758, 10767, 10768, 10769, 10770, 10771, 10772, 10774) AND `locale` = 'koKR';
+DELETE FROM `item_template_locale` WHERE `ID` IN (10682, 10710, 10758, 10767, 10768, 10769, 10770, 10771, 10772, 10774, 23177, 23178) AND `locale` = 'koKR';
 INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `VerifiedBuild`) VALUES
 (10682, 'koKR', 'Kamień przysięgi Belnistrasza', '', 0),
 (10710, 'koKR', 'Pierścień smoczego szponu', '', 0),
@@ -71,14 +77,16 @@ INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `Veri
 (10770, 'koKR', 'Martwa czaszka Mordresza', '', 0),
 (10771, 'koKR', 'Szarfa maga śmierci', '', 0),
 (10772, 'koKR', 'Tasak Żarłoka', '', 0),
-(10774, 'koKR', 'Naramienniki z mięsistej skóry', '', 0);
+(10774, 'koKR', 'Naramienniki z mięsistej skóry', '', 0),
+(23177, 'koKR', 'Palec lady Falther\'ess', '', 0),
+(23178, 'koKR', 'Naramienniki lady Falther\'ess', '', 0);
 
 DELETE FROM `creature_text_locale` WHERE (`CreatureID`, `GroupID`, `ID`) IN ((8567, 2, 0), (8567, 3, 0)) AND `Locale` = 'koKR';
 INSERT INTO `creature_text_locale` (`CreatureID`, `GroupID`, `ID`, `Locale`, `Text`) VALUES
 (8567, 2, 0, 'koKR', '%s robi się głodny!'),
 (8567, 3, 0, 'koKR', '%s robi się BARDZO głodny!');
 
-DELETE FROM `broadcast_text_locale` WHERE `ID` IN (4435, 4436, 4437, 4493, 4501, 4504, 4505, 4506, 4507, 4534, 4535, 4536, 4537, 4538, 4575, 4577, 4578, 4579, 6184, 6185, 6186, 9006, 9008) AND `locale` = 'koKR';
+DELETE FROM `broadcast_text_locale` WHERE `ID` IN (4435, 4436, 4437, 4493, 4501, 4504, 4505, 4506, 4507, 4534, 4535, 4536, 4537, 4538, 4575, 4577, 4578, 4579, 6184, 6185, 6186, 9006, 9008, 12429) AND `locale` = 'koKR';
 INSERT INTO `broadcast_text_locale` (`ID`, `locale`, `MaleText`, `FemaleText`, `VerifiedBuild`) VALUES
 (4435, 'koKR', 'Zniewolimy kolcozwierze!', '', 0),
 (4436, 'koKR', 'Rozprzestrzenimy się po tej jałowej krainie!', '', 0),
@@ -102,4 +110,5 @@ INSERT INTO `broadcast_text_locale` (`ID`, `locale`, `MaleText`, `FemaleText`, `
 (6185, 'koKR', 'Ja czuć smród żywych!', '', 0),
 (6186, 'koKR', 'Ja pożreć was wszystkich!', '', 0),
 (9006, 'koKR', 'Uwaga, $n!', '', 0),
-(9008, 'koKR', 'Pożałujesz dnia, w którym $gwszedłeś:weszłaś; mi w drogę, $n.', '', 0);
+(9008, 'koKR', 'Pożałujesz dnia, w którym $gwszedłeś:weszłaś; mi w drogę, $n.', '', 0),
+(12429, 'koKR', 'Dziękuję, że zostajesz moją kolejną ofiarą!', '', 0);

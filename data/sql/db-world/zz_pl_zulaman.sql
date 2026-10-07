@@ -4,14 +4,14 @@ DELETE FROM `quest_template_locale` WHERE `ID` IN (11196) AND `locale` = 'koKR';
 INSERT INTO `quest_template_locale` (`ID`, `locale`, `Title`, `Details`, `Objectives`, `EndText`, `CompletedText`, `ObjectiveText1`, `ObjectiveText2`, `ObjectiveText3`, `ObjectiveText4`, `VerifiedBuild`) VALUES
 (11196, 'koKR', '', 'Słuchaj, mon, jest jeszcze coś do zrobienia dla starego Prigmona.$b$bZungam, mój kuzyn nicpoń, utknął w Zul\'Aman. I jeszcze żyje, mon – dopiero co wczoraj w nocy widziałem jego flarę sygnałową!$b$bPowinienem dać mu zgnić za to, że wpakował mnie w tę kabałę, ale wisi mi kupę forsy.$b$bPomóż mu, jak możesz, a ściąganie długu zostaw mnie!$B$B$B', 'Prigmon zlecił ci odnalezienie swojego kuzyna Zungama gdzieś w Zul\'Aman i udzielenie mu pomocy.', '', '', '', '', '', '', 0);
 
-DELETE FROM `creature_template_locale` WHERE `entry` IN (23542, 23574, 23576, 23577, 23578, 23580, 23581, 23582, 23584, 23586, 23596, 23597, 23774, 23817, 23834, 23863, 23889, 24043, 24047, 24059, 24064, 24065, 24138, 24175, 24179, 24180, 24312, 24374, 24396, 24444, 24530, 24549) AND `locale` = 'koKR';
+DELETE FROM `creature_template_locale` WHERE `entry` IN (23542, 23574, 23576, 23577, 23578, 23580, 23581, 23582, 23584, 23586, 23596, 23597, 23774, 23817, 23834, 23863, 23889, 24043, 24047, 24059, 24064, 24065, 24138, 24144, 24175, 24179, 24180, 24312, 24374, 24396, 24444, 24530, 24549, 28514, 28515, 28516, 28517, 29021, 29022, 29023, 29024) AND `locale` = 'koKR';
 INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `VerifiedBuild`) VALUES
 (23542, 'koKR', 'Miotacz toporów Amani\'shi', '', 0),
 (23574, 'koKR', 'Akil\'zon', 'Awatar orła', 0),
 (23576, 'koKR', 'Nalorakk', 'Awatar niedźwiedzia', 0),
 (23577, 'koKR', 'Halazzi', 'Awatar rysia', 0),
 (23578, 'koKR', 'Jan\'alai', 'Awatar smoczego jastrzębia', 0),
-(23580, 'koKR', 'Zwiastun wojny Amani\'shi', '', 0),
+(23580, 'koKR', 'Siewca wojny Amani\'shi', '', 0),
 (23581, 'koKR', 'Znachor Amani\'shi', '', 0),
 (23582, 'koKR', 'Członek plemienia Amani\'shi', '', 0),
 (23584, 'koKR', 'Niedźwiedź Amanów', '', 0),
@@ -29,6 +29,7 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (24064, 'koKR', 'Młody ryś Amanów', '', 0),
 (24065, 'koKR', 'Poganiacz Amani\'shi', '', 0),
 (24138, 'koKR', 'Oswojony krokoliszek Amanów', '', 0),
+(24144, 'koKR', 'Halazzi', 'Awatar rysia', 0),
 (24175, 'koKR', 'Czujka Amani\'shi', '', 0),
 (24179, 'koKR', 'Wędrowiec wiatru Amani\'shi', '', 0),
 (24180, 'koKR', 'Obrońca Amani\'shi', '', 0),
@@ -37,9 +38,17 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (24396, 'koKR', 'Żaba leśna', '', 0),
 (24444, 'koKR', 'Zwłoki Kraza', '', 0),
 (24530, 'koKR', 'Starszy ryś Amanów', '', 0),
-(24549, 'koKR', 'Nawałnik Amani\'shi', '', 0);
+(24549, 'koKR', 'Nawałnik Amani\'shi', '', 0),
+(28514, 'koKR', 'Nalorakk', '', 0),
+(28515, 'koKR', 'Jan\'alai', '', 0),
+(28516, 'koKR', 'Akil\'zon', '', 0),
+(28517, 'koKR', 'Halazzi', '', 0),
+(29021, 'koKR', 'Akil\'zon', '', 0),
+(29022, 'koKR', 'Halazzi', '', 0),
+(29023, 'koKR', 'Jan\'alai', '', 0),
+(29024, 'koKR', 'Nalorakk', '', 0);
 
-DELETE FROM `gameobject_template_locale` WHERE `entry` IN (185438, 185454, 185455, 186303, 186304, 186305, 186306, 186430, 186622, 186623, 186648, 186658, 186671, 186728, 186733, 186748, 186860, 186865, 187035, 187036, 187037, 187359, 187377, 187378, 187379, 187380) AND `locale` = 'koKR';
+DELETE FROM `gameobject_template_locale` WHERE `entry` IN (185438, 185454, 185455, 186303, 186304, 186305, 186306, 186430, 186622, 186623, 186658, 186671, 186728, 186748, 186860, 186865, 187035, 187036, 187037, 187359, 187377, 187378, 187379, 187380) AND `locale` = 'koKR';
 INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCaption`, `VerifiedBuild`) VALUES
 (185438, 'koKR', 'Siedzący szkielet 04', '', 0),
 (185454, 'koKR', 'Leżący szkielet 02', '', 0),
@@ -51,11 +60,9 @@ INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCap
 (186430, 'koKR', 'Kula u nogi Zungama', '', 0),
 (186622, 'koKR', 'Skrzynia krasnoluda', '', 0),
 (186623, 'koKR', 'Krasnoludzki młot', '', 0),
-(186648, 'koKR', 'Kufer Tanzara', '', 0),
 (186658, 'koKR', 'Skrzynia Kraza', '', 0),
 (186671, 'koKR', 'Waza Ashli', '', 0),
 (186728, 'koKR', 'Masywna brama', '', 0),
-(186733, 'koKR', 'Mapa Zul\'Aman', '', 0),
 (186748, 'koKR', 'Beczka piwa Harkora', '', 0),
 (186860, 'koKR', 'Pochodnia ołtarza boga niedźwiedzia', '', 0),
 (186865, 'koKR', 'Bęben Amanów', '', 0),
@@ -68,19 +75,81 @@ INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCap
 (187379, 'koKR', 'Klatka Kraza', '', 0),
 (187380, 'koKR', 'Klatka Ashli', '', 0);
 
-DELETE FROM `item_template_locale` WHERE `ID` IN (33865, 33956) AND `locale` = 'koKR';
+DELETE FROM `item_template_locale` WHERE `ID` IN (33191, 33203, 33206, 33211, 33214, 33215, 33216, 33281, 33283, 33285, 33286, 33293, 33297, 33299, 33300, 33303, 33317, 33322, 33326, 33327, 33328, 33329, 33332, 33354, 33356, 33357, 33466, 33467, 33468, 33469, 33471, 33473, 33474, 33476, 33478, 33479, 33480, 33481, 33483, 33489, 33490, 33491, 33492, 33493, 33494, 33495, 33496, 33497, 33498, 33499, 33500, 33533, 33590, 33591, 33640, 33805, 33830, 33831, 33865, 33956, 33971) AND `locale` = 'koKR';
 INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `VerifiedBuild`) VALUES
+(33191, 'koKR', 'Buciory z dżungli', '', 0),
+(33203, 'koKR', 'Szata niebiańskiego zamysłu', '', 0),
+(33206, 'koKR', 'Naramienniki pierwotnej furii', '', 0),
+(33211, 'koKR', 'Pas na pieniądze Bladeangela', 'Przyjmuję datki.', 0),
+(33214, 'koKR', 'Szponiaste ostrze Akil\'zona', '', 0),
+(33215, 'koKR', 'Zakrwawiona elfia kamizelka bojowa', '', 0),
+(33216, 'koKR', 'Osłona piersi ukrytego zamysłu', '', 0),
+(33281, 'koKR', 'Broszka łaski natury', '', 0),
+(33283, 'koKR', 'Karciciel Amanów', '', 0),
+(33285, 'koKR', 'Niedźwiedzia furia', '', 0),
+(33286, 'koKR', 'Maska uzdrowiciela mojo', '', 0),
+(33293, 'koKR', 'Sygnet pradawnej magii', '', 0),
+(33297, 'koKR', 'Obcisły naszyjnik dzikusa', '', 0),
+(33299, 'koKR', 'Naramienniki orędownika', '', 0),
+(33300, 'koKR', 'Naramienniki tańczących ostrzy', '', 0),
+(33303, 'koKR', 'Buty bojowe kruszyciela czaszek', '', 0),
+(33317, 'koKR', 'Szata duchów zmarłych', '', 0),
+(33322, 'koKR', 'Kamizelka z migotliwego futra', '', 0),
+(33326, 'koKR', 'Bastion Imperium Amanów', '', 0),
+(33327, 'koKR', 'Maska introspekcji', '', 0),
+(33328, 'koKR', 'Osłona piersi deszczu strzał', '', 0),
+(33329, 'koKR', 'Kirys z trollowej skóry Cienistego Zęba', '', 0),
+(33332, 'koKR', 'Emaliowany dysk mojo', '', 0),
+(33354, 'koKR', 'Przeklęte ostrze uroków Wuba', '', 0),
+(33356, 'koKR', 'Hełm naturalnej regeneracji', '', 0),
+(33357, 'koKR', 'Ochraniacze stóp szaleństwa', '', 0),
+(33466, 'koKR', 'Pętla przeklętych kości', '', 0),
+(33467, 'koKR', 'Ostrze wypaczonych wizji', '', 0),
+(33468, 'koKR', 'Mroczne błogosławieństwo', '', 0),
+(33469, 'koKR', 'Kolczuga czempiona imperium', '', 0),
+(33471, 'koKR', 'Dwupalczaste sandały', 'Nieco niewygodne dla każdego, kto nie jest trollem.', 0),
+(33473, 'koKR', 'Osłona piersi wodza', '', 0),
+(33474, 'koKR', 'Pradawny długi łuk Amanów', '', 0),
+(33476, 'koKR', 'Tasak nieprzejednanych', '', 0),
+(33478, 'koKR', 'Jin\'rohk, Wielka Apokalipsa', '', 0),
+(33479, 'koKR', 'Osłona twarzy ponurego uśmiechu', '', 0),
+(33480, 'koKR', 'Sznur z plecionych włosów trolla', '', 0),
+(33481, 'koKR', 'Naramienniki kamiennej determinacji', '', 0),
+(33483, 'koKR', 'Pas życiodajnego kroku', '', 0),
+(33489, 'koKR', 'Naramienniki złych zamiarów', '', 0),
+(33490, 'koKR', 'Kostur mrocznego zasklepiania', '', 0),
+(33491, 'koKR', 'Łamacz kłów', '', 0),
+(33492, 'koKR', 'Zmora trolli', 'Znasz to ostrze...', 0),
+(33493, 'koKR', 'Mroczny kozik', '', 0),
+(33494, 'koKR', 'Wróżebny kostur Amanów', '', 0),
+(33495, 'koKR', 'Wściekłość', '', 0),
+(33496, 'koKR', 'Sygnet pierwotnego gniewu', '', 0),
+(33497, 'koKR', 'Obrączka dostrojona do many', '', 0),
+(33498, 'koKR', 'Sygnet cichego lasu', '', 0),
+(33499, 'koKR', 'Sygnet ostatniego obrońcy', '', 0),
+(33500, 'koKR', 'Sygnet wiecznego życia', '', 0),
+(33533, 'koKR', 'Nogawice lawiny', '', 0),
+(33590, 'koKR', 'Płaszcz biesów', '', 0),
+(33591, 'koKR', 'Opończa cieniomaga', '', 0),
+(33640, 'koKR', 'Furia', '', 0),
+(33805, 'koKR', 'Stąpaki łowcy cieni', '', 0),
+(33830, 'koKR', 'Pradawny artefakt aqirów', '', 0),
+(33831, 'koKR', 'Wezwanie berserkera', '', 0),
 (33865, 'koKR', 'Kij przeciw urokom Amanów', 'To być twój wierny odczyniacz uroków, mon!', 0),
-(33956, 'koKR', 'Domowe piwo Harkora', 'Mało co się nie da naprawić kuflem tego trunku!', 0);
+(33956, 'koKR', 'Domowe piwo Harkora', 'Mało co się nie da naprawić kuflem tego trunku!', 0),
+(33971, 'koKR', 'Nogawice nasycone elunitem', '', 0);
 
-DELETE FROM `creature_text_locale` WHERE (`CreatureID`, `GroupID`, `ID`) IN ((23577, 1, 0), (23577, 3, 0), (23577, 5, 0), (23863, 0, 0), (23863, 1, 0), (23863, 7, 0)) AND `Locale` = 'koKR';
+DELETE FROM `creature_text_locale` WHERE (`CreatureID`, `GroupID`, `ID`) IN ((23577, 1, 0), (23577, 3, 0), (23577, 5, 0), (23863, 0, 0), (23863, 1, 0), (23863, 7, 0), (24144, 1, 0), (24144, 3, 0), (24144, 5, 0)) AND `Locale` = 'koKR';
 INSERT INTO `creature_text_locale` (`CreatureID`, `GroupID`, `ID`, `Locale`, `Text`) VALUES
 (23577, 1, 0, 'koKR', 'Nie wy... pokonać tej mocy!'),
 (23577, 3, 0, 'koKR', 'Ja walczyć z nieokiełznanym duchem...'),
 (23577, 5, 0, 'koKR', 'Chaga... chokajinn.'),
 (23863, 0, 0, 'koKR', 'Wszyscy zawsze chcieć nam coś zabrać. Teraz my zacząć odbierać. Kto stanąć nam na drodze... utopić się we własnej krwi! Imperium Amanów wrócić... po zemstę. A zacząć my... od was!'),
 (23863, 1, 0, 'koKR', 'Nikt nie być groźniejszy ode mnie!'),
-(23863, 7, 0, 'koKR', 'Wy za wolni! Ja za silny!');
+(23863, 7, 0, 'koKR', 'Wy za wolni! Ja za silny!'),
+(24144, 1, 0, 'koKR', 'Nie wy... pokonać tej mocy!'),
+(24144, 3, 0, 'koKR', 'Ja walczyć z nieokiełznanym duchem...'),
+(24144, 5, 0, 'koKR', 'Chaga... chokajinn.');
 
 DELETE FROM `broadcast_text_locale` WHERE `ID` IN (22144, 22145, 22146, 22151, 22155, 22838, 22971, 23109, 23166, 23167, 23168, 23169, 23170, 23171, 23172, 23173, 23175, 23176, 23177, 23178, 23179, 23181, 23182, 23183, 23232, 23233, 23234, 23235, 23236, 23238, 23252, 23305, 23306, 23308, 23313, 23314, 23528, 23585, 23586, 23587, 23588, 23589, 23590, 23636, 23931, 24263, 24294, 24295) AND `locale` = 'koKR';
 INSERT INTO `broadcast_text_locale` (`ID`, `locale`, `MaleText`, `FemaleText`, `VerifiedBuild`) VALUES

@@ -30,10 +30,10 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (7849, 'koKR', 'Ruchomy system alarmowy', '', 0),
 (7897, 'koKR', 'Alarmobomba 2600', '', 0),
 (7998, 'koKR', 'Mistrzyni wybuchów Emi Krótkolont', '', 0),
-(9676, 'koKR', 'Tink Trybogwizd', '', 0),
+(9676, 'koKR', 'Tink Trybogwizd', 'Materiały inżynieryjne', 0),
 (13876, 'koKR', 'Mechinżynier Spust', '', 0);
 
-DELETE FROM `gameobject_template_locale` WHERE `entry` IN (142207, 142208, 142209, 142210, 142211, 142212, 142213, 142214, 142215, 142216, 142217, 142218, 142219, 142344, 142475, 142476, 142477, 142487, 142696, 146085, 146086, 175084, 175085) AND `locale` = 'koKR';
+DELETE FROM `gameobject_template_locale` WHERE `entry` IN (142207, 142208, 142209, 142210, 142211, 142212, 142213, 142214, 142215, 142216, 142217, 142218, 142219, 142344, 142475, 142476, 142477, 142487, 142696, 146085, 146086, 175084, 175085, 175087, 201596) AND `locale` = 'koKR';
 INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCaption`, `VerifiedBuild`) VALUES
 (142207, 'koKR', 'Ostatnia komnata', '', 0),
 (142208, 'koKR', 'Gnomia twarz 04', '', 0),
@@ -57,7 +57,9 @@ INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCap
 (146085, 'koKR', 'Zawał', '', 0),
 (146086, 'koKR', 'Zawał', '', 0),
 (175084, 'koKR', 'Błyskomat 5200', '', 0),
-(175085, 'koKR', 'Błyskomat 5200', '', 0);
+(175085, 'koKR', 'Błyskomat 5200', '', 0),
+(175087, 'koKR', 'Błyskomat 5200', '', 0),
+(201596, 'koKR', 'Zawał', '', 0);
 
 DELETE FROM `item_template_locale` WHERE `ID` IN (3875, 6893, 9446, 9447, 9448, 9449, 9450, 9452, 9453, 9454, 9455, 9456, 9457, 9485, 9509, 10298, 10299, 11827) AND `locale` = 'koKR';
 INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `VerifiedBuild`) VALUES
@@ -76,8 +78,8 @@ INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `Veri
 (9457, 'koKR', 'Królewskie berło dyplomatyczne', '', 0),
 (9485, 'koKR', 'Wibroostrze', '', 0),
 (9509, 'koKR', 'Nogawice poplamione ropą', 'Trzymać z dala od ognia.', 0),
-(10298, 'koKR', 'Obrączka Gnomoreganu', '', 0),
-(10299, 'koKR', 'Amulet Gnomoreganu', '', 0),
+(10298, 'koKR', 'Obrączka Gnomoregan', '', 0),
+(10299, 'koKR', 'Amulet Gnomoregan', '', 0),
 (11827, 'koKR', 'Schemat: Mały Dymek', 'Uczy konstruowania własnego robota – Małego Dymka.', 0);
 
 DELETE FROM `gossip_menu_option_locale` WHERE (`MenuID`, `OptionID`) IN ((1047, 1), (1050, 1)) AND `Locale` = 'koKR';
@@ -85,7 +87,7 @@ INSERT INTO `gossip_menu_option_locale` (`MenuID`, `OptionID`, `Locale`, `Option
 (1047, 1, 'koKR', 'Dostęp: pomniejszy rekombobulator', ''),
 (1050, 1, 'koKR', 'Użyj inżynierii, aby uzyskać dostęp do ukrytych schematów!', '');
 
-DELETE FROM `broadcast_text_locale` WHERE `ID` IN (3926, 3927, 3949, 3950, 3992, 3994, 4002, 4003, 4009, 4011, 4012, 4050, 4051, 4052, 4083, 4084, 4129, 4130, 4131, 4132, 4133, 4134, 4135, 4136, 4137, 4142, 4171, 4172, 4173, 4206, 4207, 4208, 4209, 4325, 4326, 4327, 4446, 5504, 6177, 32326) AND `locale` = 'koKR';
+DELETE FROM `broadcast_text_locale` WHERE `ID` IN (3926, 3927, 3949, 3950, 3992, 3994, 4002, 4003, 4009, 4011, 4012, 4050, 4051, 4052, 4083, 4084, 4129, 4130, 4131, 4132, 4133, 4134, 4135, 4136, 4137, 4142, 4171, 4172, 4173, 4206, 4207, 4208, 4209, 4325, 4326, 4327, 4446, 5504, 6177, 27926, 32326) AND `locale` = 'koKR';
 INSERT INTO `broadcast_text_locale` (`ID`, `locale`, `MaleText`, `FemaleText`, `VerifiedBuild`) VALUES
 (3926, 'koKR', '%s aktywuje się!', '', 0),
 (3927, 'koKR', 'Sekwencja samozniszczenia aktywowana.', '', 0),
@@ -126,4 +128,5 @@ INSERT INTO `broadcast_text_locale` (`ID`, `locale`, `MaleText`, `FemaleText`, `
 (4446, 'koKR', '', 'Wspaniale! Dzięki twojej pomocy mój lud ma szansę odbić nasze ukochane miasto. Trzykrotne hura na twoją cześć!', 0),
 (5504, 'koKR', 'Może cię to zaszokuje, ale ostatnio interesy nie idą najlepiej...', '', 0),
 (6177, 'koKR', 'Elektryczna sprawiedliwość!', '', 0),
+(27926, 'koKR', 'Słyszysz coś?', '', 0),
 (32326, 'koKR', 'UWAGA, ODPALAM!', 'UWAGA, ODPALAM!', 0);

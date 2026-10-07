@@ -18,30 +18,78 @@ DELETE FROM `quest_request_items_locale` WHERE `ID` IN (24500) AND `locale` = 'k
 INSERT INTO `quest_request_items_locale` (`ID`, `locale`, `CompletionText`, `VerifiedBuild`) VALUES
 (24500, 'koKR', 'Musimy przekazać te informacje Przymierzu! Mogą okazać się kluczem do pokonania Arthasa.', 0);
 
-DELETE FROM `creature_template_locale` WHERE `entry` IN (36723, 37068, 37225, 37582, 37779, 38112, 38113, 38172, 38173, 38175, 38176, 38177) AND `locale` = 'koKR';
+DELETE FROM `creature_template_locale` WHERE `entry` IN (26528, 36723, 37068, 37107, 37225, 37720, 37721, 37722, 37779, 37797, 38112, 38113, 38172, 38173, 38175, 38176, 38177, 38524, 38525, 38544, 38563, 38564, 38599, 38603, 38608) AND `locale` = 'koKR';
 INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `VerifiedBuild`) VALUES
+(26528, 'koKR', 'Uther Światłodzierżca', 'Rycerz Srebrnej Dłoni', 0),
 (36723, 'koKR', 'Generał zaprzysiężony mrozowi', '', 0),
 (37068, 'koKR', 'Duchowe odbicie', '', 0),
+(37107, 'koKR', 'Duchowe odbicie', '', 0),
 (37225, 'koKR', 'Uther Światłodzierżca', 'Rycerz Srebrnej Dłoni', 0),
-(37582, 'koKR', 'Arcymag Koreln', '', 0),
+(37720, 'koKR', 'Generał zaprzysiężony mrozowi (1)', '', 0),
+(37721, 'koKR', 'Duchowe odbicie (1)', '', 0),
+(37722, 'koKR', 'Duchowe odbicie (1)', '', 0),
 (37779, 'koKR', 'Mroczna tropicielka Loralen', '', 0),
+(37797, 'koKR', 'Mroczna tropicielka Loralen (1)', '', 0),
 (38112, 'koKR', 'Falryk', '', 0),
 (38113, 'koKR', 'Marwyn', '', 0),
 (38172, 'koKR', 'Widmowy mag', '', 0),
 (38173, 'koKR', 'Spektralny piechur', '', 0),
 (38175, 'koKR', 'Upiorny kapłan', '', 0),
 (38176, 'koKR', 'Udręczony strzelec', '', 0),
-(38177, 'koKR', 'Cienisty najemnik', '', 0);
+(38177, 'koKR', 'Cienisty najemnik', '', 0),
+(38524, 'koKR', 'Widmowy mag (1)', '', 0),
+(38525, 'koKR', 'Spektralny piechur (1)', '', 0),
+(38544, 'koKR', 'Udręczony strzelec (1)', '', 0),
+(38563, 'koKR', 'Upiorny kapłan (1)', '', 0),
+(38564, 'koKR', 'Cienisty najemnik (1)', '', 0),
+(38599, 'koKR', 'Falryk (1)', '', 0),
+(38603, 'koKR', 'Marwyn (1)', '', 0),
+(38608, 'koKR', 'Uther Światłodzierżca', 'Rycerz Srebrnej Dłoni', 0);
 
 DELETE FROM `gameobject_template_locale` WHERE `entry` IN (197341, 202302) AND `locale` = 'koKR';
 INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCaption`, `VerifiedBuild`) VALUES
 (197341, 'koKR', 'Nieprzeniknione drzwi', '', 0),
 (202302, 'koKR', 'Ostrze Mrozu', '', 0);
 
-DELETE FROM `broadcast_text_locale` WHERE `ID` IN (36821, 36885, 36990, 36991, 36992, 36994, 37168, 37169, 37170, 37171, 37172, 37173, 37174, 37175, 37176, 37177, 37201, 37202, 37204, 37205, 37206, 37478, 37479, 37480, 37540, 37541, 37564, 37566, 37567, 37568, 37569, 37570, 37571, 37572, 37573, 37575, 37576, 37583, 37584, 37585, 37586, 37587, 37588, 37589, 37591, 37592, 37593, 37594, 37595, 37596, 37597, 37598, 37599, 37600, 37601, 37602, 37603, 37604, 37605, 37606, 37607, 37608, 37609, 37610, 37611, 37613, 37614, 37615, 37931, 37941, 37942, 37943, 37944, 37945, 37946, 37948, 37949, 37950, 37951, 37952, 37953, 37954, 37955, 38383, 38442, 38525, 38526, 38527, 38528, 38529, 38536, 38537, 38538, 38539, 38540, 38541, 38542, 38543, 38551, 38623, 38664, 38668, 38669, 38670) AND `locale` = 'koKR';
+DELETE FROM `item_template_locale` WHERE `ID` IN (49827, 49828, 49829, 49830, 49831, 49832, 49833, 49834, 49835, 49836, 49837, 49838, 49852, 49853, 49854, 49855, 50260, 50290, 50291, 50292, 50293, 50294, 50295, 50296, 50297, 50298, 50299, 50300, 50315, 50318, 50319) AND `locale` = 'koKR';
+INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `VerifiedBuild`) VALUES
+(49827, 'koKR', 'Krajacz ghuli', '', 0),
+(49828, 'koKR', 'Makabryczne opuszki Marwyna', '', 0),
+(49829, 'koKR', 'Zaśniedziałe naramienniki Valonfortha', '', 0),
+(49830, 'koKR', 'Kaptur poległego wartownika', '', 0),
+(49831, 'koKR', 'Ubłocone buty z Brill', '', 0),
+(49832, 'koKR', 'Upiorna polerka do ostrzy runicznych', '', 0),
+(49833, 'koKR', 'Rozłupane przedpiersie Lodowej Korony', '', 0),
+(49834, 'koKR', 'Naramienniki z postrzępionych szwów plugastwa', '', 0),
+(49835, 'koKR', 'Rozłupane drzwi Cytadeli', '', 0),
+(49836, 'koKR', 'Kościane nogawice zaprzysiężonych mrozowi', '', 0),
+(49837, 'koKR', 'Mitenki płonącego gradu', '', 0),
+(49838, 'koKR', 'Cieśniaki nadgarstka', '', 0),
+(49852, 'koKR', 'Gwóźdź do trumny', '', 0),
+(49853, 'koKR', 'Tytanowe ogniwa wiedzy', '', 0),
+(49854, 'koKR', 'Naramienniki z postrzępionych piór', '', 0),
+(49855, 'koKR', 'Płytowe uchwyty Korth\'azza', '', 0),
+(50260, 'koKR', 'Ulotny płatek śniegu', '', 0),
+(50290, 'koKR', 'Rębak nadgarstków Falryka', '', 0),
+(50291, 'koKR', 'Drzazga duszy', '', 0),
+(50292, 'koKR', 'Karwasz ze startych trzonowców', '', 0),
+(50293, 'koKR', 'Naramienniki czarnej zdrady', '', 0),
+(50294, 'koKR', 'Napierśnik zdrady stanu', '', 0),
+(50295, 'koKR', 'Kolczaste buciory', '', 0),
+(50296, 'koKR', 'Harpun łowcy orek', '', 0),
+(50297, 'koKR', 'Kościany napierśnik zaprzysiężonych mrozowi', '', 0),
+(50298, 'koKR', 'Niewidząca korona Ulmaasa', '', 0),
+(50299, 'koKR', 'Podejrzanie miękkie rękawice', '', 0),
+(50300, 'koKR', 'Dusząca kolczuga', '', 0),
+(50315, 'koKR', 'Siedmiopalczaste pazury', '', 0),
+(50318, 'koKR', 'Upiorne owijacze nadgarstków', '', 0),
+(50319, 'koKR', 'Nienaostrzona lodowa brzytwa', '', 0);
+
+DELETE FROM `broadcast_text_locale` WHERE `ID` IN (36821, 36885, 36886, 36990, 36991, 36992, 36994, 37168, 37169, 37170, 37171, 37172, 37173, 37174, 37175, 37176, 37177, 37201, 37202, 37204, 37205, 37206, 37478, 37479, 37480, 37540, 37541, 37564, 37566, 37567, 37568, 37569, 37570, 37571, 37572, 37573, 37575, 37576, 37583, 37584, 37585, 37586, 37587, 37588, 37589, 37591, 37592, 37593, 37594, 37595, 37596, 37597, 37598, 37599, 37600, 37601, 37602, 37603, 37604, 37605, 37606, 37607, 37608, 37609, 37610, 37611, 37613, 37614, 37615, 37931, 37941, 37942, 37943, 37944, 37945, 37946, 37948, 37949, 37950, 37951, 37952, 37953, 37954, 37955, 38383, 38442, 38525, 38526, 38527, 38528, 38529, 38536, 38537, 38538, 38539, 38540, 38541, 38542, 38543, 38551, 38623, 38664, 38668, 38669, 38670) AND `locale` = 'koKR';
 INSERT INTO `broadcast_text_locale` (`ID`, `locale`, `MaleText`, `FemaleText`, `VerifiedBuild`) VALUES
 (36821, 'koKR', '', 'Jest zbyt potężny. Musimy natychmiast opuścić to miejsce! Moja magia utrzyma go w miejscu tylko przez krótką chwilę. Szybko, bohaterowie!', 0),
 (36885, 'koKR', 'Jesteśmy gotowi! Ruszajmy!', 'Jesteśmy gotowi! Ruszajmy!', 0),
+(36886, 'koKR', '', 'Nie zdołam go długo powstrzymać, musimy natychmiast uciekać!', 0),
 (36990, 'koKR', '', 'Wybaczcie mi, bohaterowie. Powinnam była posłuchać Uthera. Ja... po prostu musiałam zobaczyć to na własne oczy. Spojrzeć mu w oczy ostatni raz. Przepraszam.', 0),
 (36991, 'koKR', '', 'Teraz wiemy, co należy zrobić. Przekażę te wieści królowi Varianowi i najwyższemu lordowi Fordringowi.', 0),
 (36992, 'koKR', '', 'To... to ślepy zaułek. Nie mamy wyboru, musimy walczyć. Przygotujcie się, bohaterowie, bo to nasz ostatni bój!', 0),

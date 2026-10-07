@@ -2,17 +2,19 @@
 
 DELETE FROM `quest_template_locale` WHERE `ID` IN (7938) AND `locale` = 'koKR';
 INSERT INTO `quest_template_locale` (`ID`, `locale`, `Title`, `Details`, `Objectives`, `EndText`, `CompletedText`, `ObjectiveText1`, `ObjectiveText2`, `ObjectiveText3`, `ObjectiveText4`, `VerifiedBuild`) VALUES
-(7938, 'koKR', '', '„Twój los czeka na ciebie w Martwej Kopalni”.$B$BPrzepowiednia, którą wręczył ci Sayge, jest lekko ciepła w dotyku. Gdy mocno ją ściskasz, widzisz obraz Martwej Kopalni w zrujnowanej osadzie Księżycowy Potok w Zachodnim Skraju. Gdy skupiasz się bardziej na obrazie, wędrujesz krętymi korytarzami, aż docierasz do migoczącego portalu... prowadzącego w samo serce kopalni. Gdy przez niego przechodzisz, znikąd pojawia się dziwna skrzynia.', 'Udaj się do Martwej Kopalni w Zachodnim Skraju i odszukaj swój los.', '', '', '', '', '', '', 0);
+(7938, 'koKR', 'Czeka cię szczęście...', '„Twój los czeka na ciebie w Martwej Kopalni”.$B$BPrzepowiednia, którą wręczył ci Sayge, jest lekko ciepła w dotyku. Gdy mocno ją ściskasz, widzisz obraz Martwej Kopalni w zrujnowanej osadzie Księżycowy Potok w Zachodnim Skraju. Gdy skupiasz się bardziej na obrazie, wędrujesz krętymi korytarzami, aż docierasz do migoczącego portalu... prowadzącego w samo serce kopalni. Gdy przez niego przechodzisz, znikąd pojawia się dziwna skrzynia.', 'Udaj się do Martwej Kopalni w Zachodnim Skraju i odszukaj swój los.', '', '', '', '', '', '', 0);
 
-DELETE FROM `quest_offer_reward_locale` WHERE `ID` IN (7938) AND `locale` = 'koKR';
+DELETE FROM `quest_offer_reward_locale` WHERE `ID` IN (7938, 7944) AND `locale` = 'koKR';
 INSERT INTO `quest_offer_reward_locale` (`ID`, `locale`, `RewardText`, `VerifiedBuild`) VALUES
-(7938, 'koKR', 'Szybkie przeszukanie skrzyni ujawnia ukrytą w niej szkatułkę! Wygląda na to, że $godnalazłeś:odnalazłaś; swój los!', 0);
+(7938, 'koKR', 'Szybkie przeszukanie skrzyni ujawnia ukrytą w niej szkatułkę! Wygląda na to, że $godnalazłeś:odnalazłaś; swój los!', 0),
+(7944, 'koKR', 'Szybkie przeszukanie skrzyni ujawnia ukrytą w niej szkatułkę! Wygląda na to, że $godnalazłeś:odnalazłaś; swój los!', 0);
 
-DELETE FROM `quest_request_items_locale` WHERE `ID` IN (7938) AND `locale` = 'koKR';
+DELETE FROM `quest_request_items_locale` WHERE `ID` IN (7938, 7944) AND `locale` = 'koKR';
 INSERT INTO `quest_request_items_locale` (`ID`, `locale`, `CompletionText`, `VerifiedBuild`) VALUES
-(7938, 'koKR', 'Ta skrzynia wygląda jak ta z twojej wizji...', 0);
+(7938, 'koKR', 'Ta skrzynia wygląda jak ta z twojej wizji...', 0),
+(7944, 'koKR', 'Ta skrzynia wygląda jak ta z twojej wizji...', 0);
 
-DELETE FROM `creature_template_locale` WHERE `entry` IN (598, 622, 634, 636, 639, 641, 642, 644, 645, 646, 647, 657, 1729, 1731, 1732, 1763, 3586, 3947, 4416, 4417, 4418) AND `locale` = 'koKR';
+DELETE FROM `creature_template_locale` WHERE `entry` IN (598, 622, 634, 636, 639, 641, 642, 643, 644, 645, 646, 647, 657, 1729, 1731, 1732, 1763, 3586, 3947, 4416, 4417, 4418) AND `locale` = 'koKR';
 INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `VerifiedBuild`) VALUES
 (598, 'koKR', 'Górnik Nieskornych', '', 0),
 (622, 'koKR', 'Inżynier gobliński', '', 0),
@@ -21,6 +23,7 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (639, 'koKR', 'Edwin VanCleef', 'Herszt Nieskornych', 0),
 (641, 'koKR', 'Goblin snycerz', '', 0),
 (642, 'koKR', 'Szatkownik Szmondaka', 'Mistrz tartaku', 0),
+(643, 'koKR', '', 'Mistrz tartaku', 0),
 (644, 'koKR', 'Rhahk\'zor', 'Brygadzista', 0),
 (645, 'koKR', 'Ciastek', 'Okrętowy kucharz', 0),
 (646, 'koKR', 'Pan Grzmot', 'Pierwszy oficer statku', 0),
@@ -84,8 +87,8 @@ INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `Veri
 (5443, 'koKR', 'Pozłacany puklerz', '', 0),
 (5444, 'koKR', 'Peleryna górnika', '', 0),
 (7230, 'koKR', 'Potężny młot Pana Grzmota', '', 0),
-(8490, 'koKR', 'Transporter dla kota (syjamski)', '', 0),
-(8492, 'koKR', 'Klatka z papugą (ara zielonoskrzydła)', '', 0),
+(8490, 'koKR', 'Transporter dla kota (syjamski)', 'Uczy przywoływania tego towarzysza.', 0),
+(8492, 'koKR', 'Klatka z papugą (ara zielonoskrzydła)', 'Uczy przywoływania tego towarzysza.', 0),
 (10399, 'koKR', 'Poczerniała zbroja Nieskornych', '', 0),
 (10400, 'koKR', 'Poczerniałe nogawice Nieskornych', '', 0),
 (10401, 'koKR', 'Poczerniałe rękawice Nieskornych', '', 0),

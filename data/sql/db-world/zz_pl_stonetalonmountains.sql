@@ -18,8 +18,8 @@ INSERT INTO `quest_template_locale` (`ID`, `locale`, `Title`, `Details`, `Object
 (1092, 'koKR', 'Rozkazy Gerenza', 'Chyba też powinienem pomyśleć o tym, żeby się stąd wynieść. Wieść o tym, co tu zaszło, szybko dotrze do szefostwa, a jestem pewien, że nie ucieszyliby się na mój widok.$b$bWymknę się i spotkam z Zizem. Mam nadzieję, że znajdzie mi nową robotę!$b$bSpróbuję trochę tu posprzątać, a ty od razu zanieś próbkę rudy Zizowi. Mówił mi, że rozbije obóz gdzieś po zachodniej stronie Turni Tnącego Wiatru. Powodzenia.', 'Dostarcz niezidentyfikowaną rudę Zizowi Fizziksowi w Górach Szponogłazach.', '', '', '', '', '', '', 0),
 (1093, 'koKR', 'Superżniwiarz 6000', 'Okropne, co spółka Gitgeszeft tu narobiła, co? Co oni sobie myśleli? Goblińska spółka zatrudnia gnoma!$b$bNa szczęście dla mnie Sputtervalve rozpoznaje geniusza, kiedy go widzi. Zatrudnił mnie zaraz po tym, jak mnie wykopali!$b$bMówi, że zbudowali jakąś ogromną maszynę do wyrębu, a Sput chce, żebym wykradł dla niego jej plany. Niestety Gerenzo – przeklęty gnom – chce mnie zabić, gdy tylko mnie zobaczy... może ty wykradniesz dla mnie te plany? Powinny być u któregoś z ich operatorów.', 'Zdobądź plany Superżniwiarza 6000 dla Ziza Fizziksa w Górach Szponogłazach.', '', 'Wróć do Ziza Fizziksa na Turni Tnącego Wiatru w Górach Szponogłazach.', '', '', '', '', 0),
 (1096, 'koKR', 'Gerenzo Wrenchwhistle', 'Spotkałem kiedyś Gerenza i powiem ci, że nie jest miły dla oka. Jego ciało wygląda, jakby gniło, a do tego przyszczepił sobie metal i tryby, a niektóre kończyny zastąpił mechanicznymi.$b$bNa północny wschód stąd, wysoko nad Jeziorem Skalnej Sadzawki, w pobliżu koła wodnego, Gerenzo ma oko na cały teren. Nie ma mowy, żebym się tam przebił, nie mówiąc już o walce z samym Gerenzem... Ale ty wyglądasz, jakby ci się to mogło udać.$b$bJeśli go dla mnie zabijesz, sowicie ci to wynagrodzę!', 'Przynieś mechaniczne ramię Gerenza Wrenchwhistle\'a Zizowi Fizziksowi w Górach Szponogłazach.', '', 'Wróć do Ziza Fizziksa na Turni Tnącego Wiatru w Górach Szponogłazach.', '', '', '', '', 0),
-(1152, 'koKR', '', 'Nasz wspólny czas dobiega końca. Mam dużą wiedzę, ale to nie ja przeprowadzam Próbę wiedzy. Są lekcje, które trzeba odebrać, i miejsca, które trzeba odwiedzić, a władzę nad nimi sprawują inni.$B$BJeśli jesteś $ggotów:gotowa;, odszukaj Brauga Mętnego Ducha – to szaman wielkiej mądrości. Podda cię dalszym próbom, więc słuchaj jego słów, $N.$B$BGdy będziesz $ggotów:gotowa;, znajdź tunel łączący Góry Szponogłazy z Jesionową Knieją: Braug mieszka w jego pobliżu. I uważaj, $N, nocne elfy mogą chcieć przeszkodzić ci w próbie.', 'Odszukaj Brauga Mętnego Ducha w pobliżu wejścia na Ścieżkę Głębokiego Szponu w Górach Szponogłazach.', '', '', '', '', '', '', 0),
-(1154, 'koKR', '', '$GPrzeszedłeś:Przeszłaś; próby Dorna, a teraz chcesz przejść kolejną. Bardzo dobrze. Ale dotąd twoje wyzwania były dziecinne. Łatwo sprawdzić ciało – umysł to zupełnie inna sprawa.$B$BWyjaśnię to prosto: znajdź księgę, którą wskażę, przestudiuj ją i odpowiedz na moje pytanie o jej treść.$B$BJaka to księga, zapewne pytasz? „Dziedzictwo Aspektów”. Znajdziesz ją w najgłębszej części Kurhanu Dor\'Danil w południowej Jesionowej Kniei, strzeżoną przez martwych druidów i ich zabójców.', 'Znajdź „Dziedzictwo Aspektów” i przynieś je Braugowi Mętnemu Duchowi w pobliżu wejścia na Ścieżkę Głębokiego Szponu w Górach Szponogłazach.', '', 'Wróć do Brauga Mętnego Ducha w pobliżu wejścia na Ścieżkę Głębokiego Szponu w Górach Szponogłazach.', '', '', '', '', 0),
+(1152, 'koKR', 'Próba wiedzy', 'Nasz wspólny czas dobiega końca. Mam dużą wiedzę, ale to nie ja przeprowadzam Próbę wiedzy. Są lekcje, które trzeba odebrać, i miejsca, które trzeba odwiedzić, a władzę nad nimi sprawują inni.$B$BJeśli jesteś $ggotów:gotowa;, odszukaj Brauga Mętnego Ducha – to szaman wielkiej mądrości. Podda cię dalszym próbom, więc słuchaj jego słów, $N.$B$BGdy będziesz $ggotów:gotowa;, znajdź tunel łączący Góry Szponogłazy z Jesionową Knieją: Braug mieszka w jego pobliżu. I uważaj, $N, nocne elfy mogą chcieć przeszkodzić ci w próbie.', 'Odszukaj Brauga Mętnego Ducha w pobliżu wejścia na Ścieżkę Głębokiego Szponu w Górach Szponogłazach.', '', '', '', '', '', '', 0),
+(1154, 'koKR', 'Próba wiedzy', '$GPrzeszedłeś:Przeszłaś; próby Dorna, a teraz chcesz przejść kolejną. Bardzo dobrze. Ale dotąd twoje wyzwania były dziecinne. Łatwo sprawdzić ciało – umysł to zupełnie inna sprawa.$B$BWyjaśnię to prosto: znajdź księgę, którą wskażę, przestudiuj ją i odpowiedz na moje pytanie o jej treść.$B$BJaka to księga, zapewne pytasz? „Dziedzictwo Aspektów”. Znajdziesz ją w najgłębszej części Kurhanu Dor\'Danil w południowej Jesionowej Kniei, strzeżoną przez martwych druidów i ich zabójców.', 'Znajdź „Dziedzictwo Aspektów” i przynieś je Braugowi Mętnemu Duchowi w pobliżu wejścia na Ścieżkę Głębokiego Szponu w Górach Szponogłazach.', '', 'Wróć do Brauga Mętnego Ducha w pobliżu wejścia na Ścieżkę Głębokiego Szponu w Górach Szponogłazach.', '', '', '', '', 0),
 (5881, 'koKR', 'Wezwanie rezerw', 'Horda dba o to, by nasze oddziały były wypoczęte... od czasów Wielkiej Wojny dobrze nam się tu, w Kalimdorze, wiedzie.$B$BChcę cię prosić o przysługę. Mam chłopaka imieniem Grish Długi Bieg, który strzeże Wielkiej Windy na południu Pustkowi. Daj mu ten list; dowie się z niego, że wysyłam wojownika z rezerwy, który zluzuje go na posterunku, żeby mógł odwiedzić rodzinę. Prosił o to jakiś czas temu i ucieszy się z tej wiadomości.', 'Maggran chce, żebyś $gdostarczył:dostarczyła; list Grishowi Długiemu Biegowi przy Wielkiej Windzie na Pustkowiach.', '', '', '', '', '', '', 0),
 (6282, 'koKR', 'Harpie zagrażają', 'Taureni są dumni z tego, że chronią te ziemie. Z pewnością domyślasz się, czemu niepokoi mnie liczba harpii, które żyją tu, w Górach Szponogłazach.$B$BTo harpie Krwawej Furii odpowiadają za rosnącą liczbę harpii w Kalimdorze; napierają na wszelkie życie i nie pozwalają niewinnym wydostać się poza swoje granice.$B$BMusisz przetrzebić harpie, $N!', 'Maggran Więź Ziemi z Ustronia Słonecznej Skały chce, żebyś $gzabił:zabiła; 7 harpii Krwawej Furii, 7 napastniczek Krwawej Furii, 7 zabójczyń Krwawej Furii i 7 łotrzyc Krwawej Furii.', '', 'Wróć do Maggrana Więzi Ziemi w Ustroniu Słonecznej Skały w Górach Szponogłazach.', '', '', '', '', 0),
 (6283, 'koKR', 'Ród Krwawej Furii', 'Ograniczenie liczby harpii Krwawej Furii nie wystarczy. Jedynym prawdziwym lekarstwem na tę zarazę będzie zabicie ich przywódczyni, Rozpruwaczki Krwawej Furii!$B$BDla tych plugawych stworzeń jest niemal królową. Zabij ją, a ich liczba z pewnością zmaleje.$B$BWróć do Zwęglonej Doliny, a znajdziesz ją na zachodnich wzgórzach. Niełatwo będzie ją pokonać, ale nagroda będzie wielka.', 'Maggran z Ustronia Słonecznej Skały chce, żebyś $gzabił:zabiła; Rozpruwaczkę Krwawej Furii i $gprzyniósł:przyniosła; jej szczątki na dowód.', '', 'Wróć do Maggrana Więzi Ziemi w Ustroniu Słonecznej Skały w Górach Szponogłazach.', '', '', '', '', 0),
@@ -30,9 +30,9 @@ INSERT INTO `quest_template_locale` (`ID`, `locale`, `Title`, `Details`, `Object
 (6421, 'koKR', 'Parów Osuwiska', 'Coś tu, w Górach Szponogłazach, jest nie tak. Czujesz to napięcie w powietrzu, $N?$B$BNa południowy wschód stąd, w Parowie Osuwiska, jest głęboka jaskinia. Koboldy gorączkowo wydobywają tam rzadki kryształ zwany rezonitem. Przynieś mi kilka próbek, żebym mógł zrozumieć, co się dzieje w tej jaskini. Musisz też zbadać, jak głęboko sięga.$B$BIdź, $N, muszę koniecznie wiedzieć, jakie zło czai się pod tymi górami.', 'Zbadaj głębiny jaskini w Parowie Osuwiska i przynieś 10 kryształów rezonitu Mor\'rogalowi do Ustronia Słonecznej Skały, by mógł je zbadać.', 'Zbadaj jaskinię w Parowie Osuwiska', 'Wróć do Mor\'rogala w Ustroniu Słonecznej Skały w Górach Szponogłazach.', '', '', '', '', 0),
 (6461, 'koKR', 'Krwiopijcy', 'My, trolle z Malaka\'jin, dobrze żyjemy z tej ziemi; Góry Szponogłazy dają nam świetne łowy.$B$BOstatnio jednak przyciągamy nie tych gości na kolację... pająki z tych gór napadają nocą na nasze obozy, żeby ukraść nam zdobycz.$B$BJeśli pomożesz nam wybić te ohydne bestie, my w Malaka\'jin będziemy twoimi dłużnikami. Pająki są wszędzie w Górach Szponogłazach – idź stąd na północ, to zobaczysz, o czym mówię.', 'Xen\'Zilla z Malaka\'jin chce, żebyś $gzabił:zabiła; 10 pełzaczy z Głębomchu i 7 jadoplujów z Głębomchu.', '', 'Wróć do Xen\'Zilli w Malaka\'jin w Górach Szponogłazach.', '', '', '', '', 0),
 (6481, 'koKR', 'Ziemny powstaje', '$GOdkryłeś:Odkryłaś; mroczne zagrożenie dla tej ziemi, $N. Baryłka z rezonitem, którą $gznalazłeś:znalazłaś; w tej jaskini, skrywa uśpionego ziemnego imieniem Goggeroc.$B$BSwoimi szamańskimi mocami zmieniłem skład kryształów rezonitu, które $gzebrałeś:zebrałaś;. Weź zaklęty kryształ rezonitu i roztrzaskaj nim baryłkę z rezonitem, w której spoczywa ziemny.$B$BPo przebudzeniu Goggeroc będzie osłabiony... Zabij go, $N!', 'Otwórz baryłkę z rezonitem zaklętym kryształem rezonitu, a następnie zabij Goggeroca. Wróć do Mor\'rogala z wieściami i zaklętym kryształem rezonitu.', '', 'Wróć do Mor\'rogala w Ustroniu Słonecznej Skały w Górach Szponogłazach.', '', '', '', '', 0),
-(6627, 'koKR', '', '$GPrzyniosłeś:Przyniosłaś; mi księgę, a teraz czas na twoje pytanie. Jesteś $ggotów:gotowa;?$B$BCzas nie gra roli, $N, więc nie czuj presji. Możesz się namyślać, jak długo zechcesz.', 'Poprawnie odpowiedz na pytanie Brauga Mętnego Ducha, a następnie porozmawiaj z nim ponownie. Będzie czekał w Górach Szponogłazach, aż będziesz $ggotów:gotowa;.', 'Poprawnie odpowiedz na pytanie Brauga Mętnego Ducha', 'Wróć do Brauga Mętnego Ducha w Górach Szponogłazach.', '', '', '', '', 0);
+(6627, 'koKR', 'Próba wiedzy', '$GPrzyniosłeś:Przyniosłaś; mi księgę, a teraz czas na twoje pytanie. Jesteś $ggotów:gotowa;?$B$BCzas nie gra roli, $N, więc nie czuj presji. Możesz się namyślać, jak długo zechcesz.', 'Poprawnie odpowiedz na pytanie Brauga Mętnego Ducha, a następnie porozmawiaj z nim ponownie. Będzie czekał w Górach Szponogłazach, aż będziesz $ggotów:gotowa;.', 'Poprawnie odpowiedz na pytanie Brauga Mętnego Ducha', 'Wróć do Brauga Mętnego Ducha w Górach Szponogłazach.', '', '', '', '', 0);
 
-DELETE FROM `quest_offer_reward_locale` WHERE `ID` IN (1057, 1058, 1059, 1071, 1079, 1080, 1083, 1084, 1087, 1088, 1089, 1090, 1091, 1092, 1093, 1096, 1152, 1154, 5881, 6282, 6283, 6284, 6301, 6381, 6393, 6421, 6461, 6481, 6627) AND `locale` = 'koKR';
+DELETE FROM `quest_offer_reward_locale` WHERE `ID` IN (1057, 1058, 1059, 1071, 1079, 1080, 1083, 1084, 1087, 1088, 1089, 1090, 1091, 1092, 1093, 1096, 1152, 1154, 5881, 6282, 6283, 6284, 6301, 6381, 6393, 6421, 6461, 6481, 6627, 11780, 11856) AND `locale` = 'koKR';
 INSERT INTO `quest_offer_reward_locale` (`ID`, `locale`, `RewardText`, `VerifiedBuild`) VALUES
 (1057, 'koKR', 'Teraz, gdy harpie Krwawej Furii poniosły tak wielkie straty, może wreszcie zacznie się prawdziwa praca nad odnową tej ziemi...', 0),
 (1058, 'koKR', 'Och, jak szczęśliwe będą te małe leśne nimfy! Dzięki tej specjalnej miksturze poczują się jak u siebie!', 0),
@@ -62,9 +62,11 @@ INSERT INTO `quest_offer_reward_locale` (`ID`, `locale`, `RewardText`, `Verified
 (6421, 'koKR', 'Ach... Tak! To jest to; kryształy rezonitu noszą ślad magii ziemnych. Koboldy musiały dokopać się głęboko i odsłonić jednego z ziemnych.$b$bLegenda głosi, że ziemni to istoty stworzone przez tytanów. Posłużyli do ukształtowania ziemi, po której stąpamy. To zagrożenie, którego z pewnością nie można zignorować.$b$b<Mor\'rogal kręci głową.>$b$bMoże zdołam zaczarować te próbki, by użyć ich przeciwko spiskowi koboldów.', 0),
 (6461, 'koKR', 'Super, mon! Dobre wieści, może dziś wieczorem będzie mniej nieproszonych gości na kolacji.$b$bWielkie dzięki, $N. Na zawsze jesteśmy twoimi dłużnikami.', 0),
 (6481, 'koKR', 'Przynosisz dobre wieści, $N! Lękam się myśleć, co ziemny mógłby oznaczać dla Kalimdoru.$b$bZabicie Goggeroca było zadaniem na miarę prawdziwego bohatera. Dobrze się $gspisałeś:spisałaś; – całe Góry Szponogłazy i cały Kalimdor są twoimi dłużnikami, $gszlachetny:szlachetna; $N.$b$bPrzyjmij to w nagrodę, $gczcigodny bohaterze:czcigodna bohaterko;.', 0),
-(6627, 'koKR', 'Dobra robota, $N. $GPrzestudiowałeś:Przestudiowałaś; tekst, który ci wskazałem, i $gprzeszedłeś:przeszłaś; kolejną z naszych prób.', 0);
+(6627, 'koKR', 'Dobra robota, $N. $GPrzestudiowałeś:Przestudiowałaś; tekst, który ci wskazałem, i $gprzeszedłeś:przeszłaś; kolejną z naszych prób.', 0),
+(11780, 'koKR', 'Zbezcześć wielkie ognisko Hordy w Górach Szponogłazach!', 0),
+(11856, 'koKR', 'Uczcij płomień Gór Szponogłazów!', 0);
 
-DELETE FROM `quest_request_items_locale` WHERE `ID` IN (1057, 1058, 1071, 1079, 1080, 1083, 1084, 1087, 1088, 1089, 1091, 1092, 1093, 1096, 1154, 5881, 6282, 6283, 6284, 6301, 6381, 6393, 6421, 6461, 6481, 6627) AND `locale` = 'koKR';
+DELETE FROM `quest_request_items_locale` WHERE `ID` IN (1057, 1058, 1071, 1079, 1080, 1083, 1084, 1087, 1088, 1089, 1091, 1092, 1093, 1096, 1154, 5881, 6282, 6283, 6284, 6301, 6381, 6393, 6421, 6461, 6481, 6627, 9024) AND `locale` = 'koKR';
 INSERT INTO `quest_request_items_locale` (`ID`, `locale`, `CompletionText`, `VerifiedBuild`) VALUES
 (1057, 'koKR', 'Wiele pracy trzeba jeszcze wykonać, zanim Zwęglona Dolina znów stanie się bujnym lasem, jakim niegdyś była.$B$BOczyść okolicę z tych plugawych szkodników, $N! Dopiero wtedy będziemy mogli odzyskać to, co należy do natury.', 0),
 (1058, 'koKR', 'Popatrz na naszych biednych elfich przyjaciół. Pozamykani w klatkach, bez lasu, w którym mogliby hasać!$b$bNo to jak, $gznalazłeś:znalazłaś; dla mnie trochę żywicy? A wąsy zmierzchowych biegaczy? Nie masz przypadkiem przy sobie tej łuski baśniowego smoka?$b$bI oczy! Potrzebuję mnóstwa oczu! Porządnego, zajadłego wywaru z leśnej magii nie da się przyrządzić bez solidnej porcji oczu!', 0),
@@ -91,9 +93,10 @@ INSERT INTO `quest_request_items_locale` (`ID`, `locale`, `CompletionText`, `Ver
 (6421, 'koKR', 'Jakie wieści przynosisz z Parowu Osuwiska? Pamiętam jakąś legendę o rezonicie... mam ją na końcu języka, tylko nie mogę jej uchwycić. Może gdy się dowiemy, co kryje się na dnie jaskini, wyjdą na jaw ich podstępne zamiary.', 0),
 (6461, 'koKR', 'Hej, mon, $gzabiłeś:zabiłaś; te włochate krwiopijce? Ja tu w Szponogłazach nikogo się nie boję, ale nocą nie chodzę na spacery... wiesz, o co chodzi, mon!$b$bDopóki nie ląduję na ich talerzu, wszystko gra.$b$bPowodzenia, $N!', 0),
 (6481, 'koKR', 'Obawiam się, że jeśli natychmiast nie pozbędziemy się tego zagrożenia, całe Góry Szponogłazy przepadną. Potędze ziemnego nic nie dorówna. Po przebudzeniu Goggeroc będzie osłabiony długim snem – to okazja, którą musisz wykorzystać... idź już, $N!', 0),
-(6627, 'koKR', 'Życie jest pełne pytań, $N. Nigdy nie odpowiesz na wszystkie, ale z czasem i nauką może staniesz się nieco $gmądrzejszy:mądrzejsza;.', 0);
+(6627, 'koKR', 'Życie jest pełne pytań, $N. Nigdy nie odpowiesz na wszystkie, ale z czasem i nauką może staniesz się nieco $gmądrzejszy:mądrzejsza;.', 0),
+(9024, 'koKR', 'W czym mogę pomóc?', 0);
 
-DELETE FROM `creature_template_locale` WHERE `entry` IN (3411, 3988, 3991, 3992, 3993, 3999, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4011, 4012, 4013, 4014, 4015, 4016, 4017, 4018, 4019, 4020, 4021, 4022, 4023, 4024, 4025, 4026, 4027, 4028, 4029, 4030, 4031, 4032, 4034, 4035, 4036, 4037, 4038, 4041, 4042, 4044, 4050, 4051, 4052, 4053, 4056, 4057, 4061, 4066, 4067, 4070, 4082, 4083, 4084, 4085, 4086, 4188, 4198, 4202, 4276, 4312, 4407, 4409, 5870, 5915, 5916, 5928, 5930, 5931, 5932, 6141, 6167, 7730, 7731, 9549, 10048, 11074, 11860, 11861, 11913, 11914, 11915, 11917, 11918, 11920, 11921, 12043, 12576, 12579, 12816, 16458) AND `locale` = 'koKR';
+DELETE FROM `creature_template_locale` WHERE `entry` IN (3411, 3988, 3991, 3992, 3993, 3999, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4011, 4012, 4013, 4014, 4015, 4016, 4017, 4018, 4019, 4020, 4021, 4022, 4023, 4024, 4025, 4026, 4027, 4028, 4029, 4030, 4031, 4032, 4034, 4035, 4036, 4037, 4038, 4041, 4042, 4044, 4050, 4051, 4052, 4053, 4056, 4057, 4061, 4066, 4067, 4070, 4072, 4076, 4082, 4083, 4084, 4085, 4086, 4188, 4198, 4202, 4276, 4407, 4409, 5915, 5916, 5928, 5930, 5931, 5932, 6141, 6167, 7730, 7731, 11074, 11860, 11861, 11913, 11914, 11915, 11917, 11918, 11920, 11921, 12039, 12043, 12576, 12579, 12816, 16458, 25940, 37715, 38334, 38335, 38336, 38337, 38338, 38339) AND `locale` = 'koKR';
 INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `VerifiedBuild`) VALUES
 (3411, 'koKR', 'Denni\'ka', 'Rzeźniczka', 0),
 (3988, 'koKR', 'Operator spółki Gitgeszeft', '', 0),
@@ -148,19 +151,19 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (4066, 'koKR', 'Nal\'taszar', '', 0),
 (4067, 'koKR', 'Zmierzchowy biegacz', '', 0),
 (4070, 'koKR', 'Budowniczy spółki Gitgeszeft', '', 0),
-(4082, 'koKR', 'Grawnal', '', 0),
+(4072, 'koKR', 'Więzień Jin\'Zila', '', 0),
+(4076, 'koKR', 'Karaluch', '', 0),
+(4082, 'koKR', 'Grawnal', 'Towary różne', 0),
 (4083, 'koKR', 'Jeeda', 'Uczennica znachora', 0),
-(4084, 'koKR', 'Chylina', '', 0),
+(4084, 'koKR', 'Chylina', 'Zaopatrzenie ogólne', 0),
 (4085, 'koKR', 'Nizzik', 'Sprzedawca zbroi spółki Gitgeszeft', 0),
 (4086, 'koKR', 'Veenix', 'Kupiec spółki Gitgeszeft', 0),
-(4188, 'koKR', 'Illyanie', '', 0),
+(4188, 'koKR', 'Illyanie', 'Handlarka zbrojami płóciennymi', 0),
 (4198, 'koKR', 'Braelyn Ognista Dłoń', '', 0),
 (4202, 'koKR', 'Gerenzo Wrenchwhistle', '', 0),
 (4276, 'koKR', 'Piznik', 'Spółka Gitgeszeft', 0),
-(4312, 'koKR', 'Tharm', '', 0),
-(4407, 'koKR', 'Teloren', '', 0),
+(4407, 'koKR', 'Teloren', 'Mistrz hipogryfów', 0),
 (4409, 'koKR', 'Odźwierny Kordurus', '', 0),
-(5870, 'koKR', 'Krond', '', 0),
 (5915, 'koKR', 'Brat Kruczy Dąb', '', 0),
 (5916, 'koKR', 'Strażniczka Amarassan', '', 0),
 (5928, 'koKR', 'Żałobne Skrzydło', '', 0),
@@ -170,10 +173,8 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (6141, 'koKR', 'Dumnoskrzydły szybownik', '', 0),
 (6167, 'koKR', 'Matrona chimer', '', 0),
 (7730, 'koKR', 'Siepacz ze Szponogłazów', '', 0),
-(7731, 'koKR', 'Karczmarka Jayka', '', 0),
-(9549, 'koKR', 'Borand', '', 0),
-(10048, 'koKR', 'Gereck', '', 0),
-(11074, 'koKR', 'Hgarth', '', 0),
+(7731, 'koKR', 'Karczmarka Jayka', 'Karczmarka', 0),
+(11074, 'koKR', 'Hgarth', 'Nauczyciel zaklinania', 0),
 (11860, 'koKR', 'Maggran Więź Ziemi', '', 0),
 (11861, 'koKR', 'Mor\'rogal', '', 0),
 (11913, 'koKR', 'Czarownik Ponurego Totemu', '', 0),
@@ -183,13 +184,22 @@ INSERT INTO `creature_template_locale` (`entry`, `locale`, `Name`, `Title`, `Ver
 (11918, 'koKR', 'Kamieniotłuk Goggerów', '', 0),
 (11920, 'koKR', 'Goggeroc', '', 0),
 (11921, 'koKR', 'Besseleth', '', 0),
-(12043, 'koKR', 'Kulwia', '', 0),
+(12039, 'koKR', '', 'Rzeźniczka', 0),
+(12043, 'koKR', 'Kulwia', 'Zaopatrzenie rzemieślnicze', 0),
 (12576, 'koKR', 'Grish Długi Bieg', '', 0),
 (12579, 'koKR', 'Rozpruwaczka Krwawej Furii', '', 0),
 (12816, 'koKR', 'Xen\'Zilla', '', 0),
-(16458, 'koKR', 'Karczmarka Faralia', '', 0);
+(16458, 'koKR', 'Karczmarka Faralia', 'Karczmarka', 0),
+(25940, 'koKR', 'Opiekunka płomienia Szponogłazów', '', 0),
+(37715, 'koKR', 'Snivel Rustrocket', 'Spółka Gitgeszeft', 0),
+(38334, 'koKR', 'Snivel Rustrocket', 'Spółka Gitgeszeft', 0),
+(38335, 'koKR', 'Snivel Rustrocket', 'Spółka Gitgeszeft', 0),
+(38336, 'koKR', 'Snivel Rustrocket', 'Spółka Gitgeszeft', 0),
+(38337, 'koKR', 'Snivel Rustrocket', 'Spółka Gitgeszeft', 0),
+(38338, 'koKR', 'Snivel Rustrocket', 'Spółka Gitgeszeft', 0),
+(38339, 'koKR', 'Snivel Rustrocket', 'Spółka Gitgeszeft', 0);
 
-DELETE FROM `gameobject_template_locale` WHERE `entry` IN (2334, 19541, 19542, 19547, 19559, 19565, 19566, 19569, 19570, 19571, 19572, 19579, 19583, 19590, 19591, 19594, 19595, 19596, 19597, 19598, 19599, 19600, 19602, 19603, 20899, 50830, 176796, 176798, 176799, 177904, 177926, 177927, 177929, 178104, 178105, 178106, 178145, 180661) AND `locale` = 'koKR';
+DELETE FROM `gameobject_template_locale` WHERE `entry` IN (2334, 19541, 19542, 19547, 19559, 19565, 19566, 19569, 19570, 19571, 19572, 19579, 19583, 19590, 19591, 19594, 19595, 19596, 19597, 19598, 19599, 19600, 19602, 19603, 20899, 50830, 92426, 141076, 152033, 152041, 152046, 152575, 152582, 152586, 153240, 176796, 176798, 176799, 176894, 177904, 177926, 177927, 177929, 178104, 178105, 178106, 178145, 180661) AND `locale` = 'koKR';
 INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCaption`, `VerifiedBuild`) VALUES
 (2334, 'koKR', 'Ognisko', '', 0),
 (19541, 'koKR', 'Jaja z Głębomchu', '', 0),
@@ -217,9 +227,19 @@ INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCap
 (19603, 'koKR', 'Dokumenty spółki Gitgeszeft', '', 0),
 (20899, 'koKR', 'Wóz z materiałami wybuchowymi spółki Gitgeszeft', '', 0),
 (50830, 'koKR', 'Kamienne kowadło', '', 0),
+(92426, 'koKR', 'Marynowany szlam', '', 0),
+(141076, 'koKR', 'Ustronie Słonecznej Skały', '', 0),
+(152033, 'koKR', 'Kamienne kowadło', '', 0),
+(152041, 'koKR', 'Kamienne kowadło', '', 0),
+(152046, 'koKR', 'Kamienne kowadło', '', 0),
+(152575, 'koKR', 'Mroczne Pustkowie', '', 0),
+(152582, 'koKR', 'Mroczne Pustkowie', '', 0),
+(152586, 'koKR', 'Mroczne Pustkowie', '', 0),
+(153240, 'koKR', 'Kamienne kowadło', '', 0),
 (176796, 'koKR', 'Mroczne Pustkowie', '', 0),
 (176798, 'koKR', 'Ustronie Słonecznej Skały', '', 0),
 (176799, 'koKR', 'Ustronie Słonecznej Skały', '', 0),
+(176894, 'koKR', 'Kamienne kowadło', '', 0),
 (177904, 'koKR', 'List gończy: Besseleth', '', 0),
 (177926, 'koKR', 'Nasiono Gai', '', 0),
 (177927, 'koKR', 'Sadzonka Gai Tammry', '', 0),
@@ -230,9 +250,11 @@ INSERT INTO `gameobject_template_locale` (`entry`, `locale`, `name`, `castBarCap
 (178145, 'koKR', 'Baryłka z rezonitem', '', 0),
 (180661, 'koKR', 'Plama ropy', '', 0);
 
-DELETE FROM `item_template_locale` WHERE `ID` IN (1306, 5117, 5582, 5583, 5584, 5585, 5659, 5664, 5687, 5689, 5690, 5691, 5692, 5693, 5694, 5695, 5717, 5718, 5733, 5734, 5736, 5738, 5751, 5752, 6055, 6664, 6665, 6666, 6667, 6668, 6669, 6670, 6671, 6675, 6676, 11384, 11385, 16189, 16190, 16192, 16205, 16208, 16312, 16581, 16603, 16891, 16894, 16981, 16985, 16986, 16987, 16990) AND `locale` = 'koKR';
+DELETE FROM `item_template_locale` WHERE `ID` IN (1306, 1701, 1702, 5117, 5582, 5583, 5584, 5585, 5659, 5664, 5687, 5689, 5690, 5691, 5692, 5693, 5694, 5695, 5717, 5718, 5733, 5734, 5736, 5738, 5751, 5752, 6055, 6664, 6665, 6666, 6667, 6668, 6669, 6670, 6671, 6675, 6676, 11384, 11385, 16189, 16190, 16192, 16205, 16208, 16312, 16581, 16603, 16891, 16894, 16981, 16985, 16986, 16987, 16990) AND `locale` = 'koKR';
 INSERT INTO `item_template_locale` (`ID`, `locale`, `Name`, `Description`, `VerifiedBuild`) VALUES
 (1306, 'koKR', 'Osłony nadgarstków wilczej grzywy', '', 0),
+(1701, 'koKR', 'Zakrzywiony pazur bazyliszka', '', 0),
+(1702, 'koKR', 'Nienaruszony kręgosłup bazyliszka', '', 0),
 (5117, 'koKR', 'Barwne pióro', '', 0),
 (5582, 'koKR', 'Żywica ze Szponogłazów', '', 0),
 (5583, 'koKR', 'Łuska baśniowego smoka', '', 0),
