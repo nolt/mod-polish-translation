@@ -9,9 +9,9 @@
 /*
  * mod-polish-translation: lets an account switch the database texts to Polish.
  *
- * The core has a fixed list of locales and no Polish one, so the Polish texts are stored in the slot
- * of a locale the core already knows (koKR, see README) and a session is moved to that slot when its
- * account asked for it. The server stays English for everybody else.
+ * The client has no Polish locale, so the module registers one in the core ("plPL"), the Polish texts
+ * are stored under that name and a session is moved to that locale when its account asked for it. The
+ * server stays English for everybody else.
  */
 
 #include "Chat.h"
@@ -29,24 +29,7 @@ using namespace Acore::ChatCommands;
 
 namespace
 {
-    constexpr LocaleConstant POLISH_SLOT = LOCALE_koKR;
-
-    // WorldSession fixes its database locale in the constructor and has no setter. Explicit template
-    // instantiation may name a private member, which gives a pointer to it without touching the core.
-    // If the core renames the member this stops compiling: adjust the name below.
-    template <typename Tag, typename Tag::type Member>
-    struct PrivateMember
-    {
-        friend typename Tag::type GetPrivateMember(Tag) { return Member; }
-    };
-
-    struct SessionDbLocale
-    {
-        using type = LocaleConstant WorldSession::*;
-        friend type GetPrivateMember(SessionDbLocale);
-    };
-
-    template struct PrivateMember<SessionDbLocale, &WorldSession::m_sessionDbLocaleIndex>;
+    Optional<LocaleConstant> polishLocale; // registered when the scripts are loaded
 
     std::mutex accountsLock;
     std::unordered_set<uint32> polishAccounts;                  // accounts with Polish switched on
@@ -60,22 +43,25 @@ namespace
 
     void SetSessionLocale(WorldSession* session, bool polish)
     {
-        LocaleConstant& locale = session->*GetPrivateMember(SessionDbLocale());
+        if (!polishLocale)
+            return;
+
+        LocaleConstant locale = session->GetSessionDbLocaleIndex();
         std::lock_guard<std::mutex> guard(accountsLock);
         if (polish)
         {
-            if (locale != POLISH_SLOT)
+            if (locale != *polishLocale)
                 originalLocales[session->GetAccountId()] = locale;
 
-            locale = POLISH_SLOT;
+            session->SetSessionDbLocaleIndex(*polishLocale);
             return;
         }
 
-        if (locale != POLISH_SLOT)
+        if (locale != *polishLocale)
             return;
 
         auto itr = originalLocales.find(session->GetAccountId());
-        locale = itr != originalLocales.end() ? itr->second : session->GetSessionDbcLocale();
+        session->SetSessionDbLocaleIndex(itr != originalLocales.end() ? itr->second : session->GetSessionDbcLocale());
     }
 }
 
@@ -164,6 +150,11 @@ public:
 
 void AddSC_mod_polish_translation()
 {
+    // before the world loads the *_locale tables, so the rows with locale = 'plPL' are picked up
+    polishLocale = RegisterCustomLocale("plPL");
+    if (!polishLocale)
+        LOG_ERROR("server.loading", "mod-polish-translation: the core has no free locale left, Polish texts are off");
+
     new mod_polish_translation_world();
     new mod_polish_translation_player();
     new mod_polish_translation_commandscript();
