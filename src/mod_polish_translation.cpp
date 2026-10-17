@@ -18,10 +18,12 @@
 #include "CommandScript.h"
 #include "DatabaseEnv.h"
 #include "Log.h"
+#include "Optional.h"
 #include "Player.h"
 #include "ScriptMgr.h"
 #include "WorldSession.h"
 #include <mutex>
+#include <string_view>
 #include <unordered_map>
 #include <unordered_set>
 
@@ -34,6 +36,28 @@ namespace
     std::mutex accountsLock;
     std::unordered_set<uint32> polishAccounts;                  // accounts with Polish switched on
     std::unordered_map<uint32, LocaleConstant> originalLocales; // locale of the session before the switch
+
+    // The locale slots after the client locales are free for modules: take the one that already holds "plPL"
+    // (e.g. after a script reload), otherwise the first empty one
+    Optional<LocaleConstant> RegisterPolishLocale()
+    {
+        constexpr char const* name = "plPL";
+
+        for (uint8 i = LOCALE_ruRU + 1; i < TOTAL_LOCALES; ++i)
+            if (localeNames[i] && std::string_view(localeNames[i]) == name)
+                return LocaleConstant(i);
+
+        for (uint8 i = LOCALE_ruRU + 1; i < TOTAL_LOCALES; ++i)
+        {
+            if (!localeNames[i])
+            {
+                localeNames[i] = name;
+                return LocaleConstant(i);
+            }
+        }
+
+        return {};
+    }
 
     bool IsPolishAccount(uint32 accountId)
     {
@@ -151,7 +175,7 @@ public:
 void AddSC_mod_polish_translation()
 {
     // before the world loads the *_locale tables, so the rows with locale = 'plPL' are picked up
-    polishLocale = RegisterCustomLocale("plPL");
+    polishLocale = RegisterPolishLocale();
     if (!polishLocale)
         LOG_ERROR("server.loading", "mod-polish-translation: the core has no free locale left, Polish texts are off");
 
