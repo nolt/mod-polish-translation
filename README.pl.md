@@ -10,10 +10,10 @@ może przełączyć się na polski. Teksty po stronie klienta (zaklęcia, strefy
 wchodzą w skład tego modułu.
 
 > [!IMPORTANT]
-> Ta gałąź (`dev-next`) wymaga rdzenia, który pozwala modułom rejestrować własny język
-> (`RegisterCustomLocale()`, `WorldSession::SetSessionDbLocaleIndex()`, tabela `acore_string_locale`).
-> Ta zmiana jest zgłoszona w pull requeście 27958 do AzerothCore i nie została jeszcze wciągnięta, więc na
-> zwykłym AzerothCore ta gałąź się nie skompiluje. Tam używaj gałęzi `main`: działa bez zmian w rdzeniu
+> Ta gałąź (`dev-next`) wymaga rdzenia, w którym moduł może zarejestrować własny język (wciągnięte do
+> AzerothCore w październiku 2026) i przełączyć na niego sesję (`WorldSession::SetSessionDbLocaleIndex()`,
+> tabela `acore_string_locale`). Druga część jest zgłoszona w pull requeście 27958 do AzerothCore i nie
+> została jeszcze wciągnięta, więc na zwykłym AzerothCore ta gałąź się nie skompiluje. Tam używaj gałęzi `main`: działa bez zmian w rdzeniu
 > i trzyma polskie teksty w pożyczonym slocie `koKR`.
 
 Pliki w `data/sql/` są generowane — nie edytuj ich ręcznie.
@@ -30,9 +30,9 @@ Aktualizacja AzerothCore to nadal `git pull` i przebudowa: moduł leży w `modul
 
 ## Własny język
 
-Klient nie ma języka polskiego, a rdzeń ma sztywną listę dziewięciu języków (`LocaleConstant`), dlatego
-moduł przy starcie serwera rejestruje własny: **plPL**. Rdzeń nadaje mu indeks za językami klienta
-i wczytuje wiersze o tej nazwie tak samo jak wiersze każdego innego języka.
+Klient nie ma języka polskiego, dlatego moduł przy starcie serwera rejestruje własny: **plPL**. Zajmuje
+wolny slot za dziewięcioma językami klienta (`localeNames`), a rdzeń wczytuje wiersze o tej nazwie tak samo
+jak wiersze każdego innego języka.
 
 - `data/sql/db-world/zz_pl_<zone>.sql` wstawiają polskie wiersze z `locale = 'plPL'`, w formie plików
   aktualizacji AzerothCore (`DELETE` po kluczu, wielowierszowy `INSERT`). Komunikaty systemowe trafiają

@@ -9,10 +9,10 @@ system messages) as a plain module: the server stays English and each account ca
 Client-side texts (spells, zones, UI, fonts) are not part of this module.
 
 > [!IMPORTANT]
-> This branch (`dev-next`) needs a core that lets modules register their own locale
-> (`RegisterCustomLocale()`, `WorldSession::SetSessionDbLocaleIndex()`, table `acore_string_locale`).
-> That change is proposed in AzerothCore pull request 27958 and is not merged yet, so on a stock
-> AzerothCore this branch does not compile. Use the `main` branch there: it works without core changes and
+> This branch (`dev-next`) needs a core where a module can register its own locale (merged into
+> AzerothCore in October 2026) and move a session to it (`WorldSession::SetSessionDbLocaleIndex()`,
+> table `acore_string_locale`). The second part is proposed in AzerothCore pull request 27958 and is not
+> merged yet, so on a stock AzerothCore this branch does not compile. Use the `main` branch there: it works without core changes and
 > keeps the Polish texts in the borrowed `koKR` slot.
 
 The files in `data/sql/` are generated; do not edit them by hand.
@@ -29,9 +29,9 @@ Updating AzerothCore stays `git pull` plus a rebuild: the module lives in `modul
 
 ## Own locale
 
-The client has no Polish locale and the core has a fixed list of nine (`LocaleConstant`), so the module
-registers its own while the server starts: **plPL**. The core gives it an index after the client locales and
-loads the rows with that name like those of any other language.
+The client has no Polish locale, so the module registers its own while the server starts: **plPL**. It takes
+a free slot after the nine client locales (`localeNames`) and the core loads the rows with that name like
+those of any other language.
 
 - `data/sql/db-world/zz_pl_<zone>.sql` insert the Polish rows with `locale = 'plPL'`, in the form of
   AzerothCore update files (`DELETE` by key, multi-row `INSERT`). System messages go to
