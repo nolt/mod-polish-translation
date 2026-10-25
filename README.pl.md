@@ -10,11 +10,10 @@ może przełączyć się na polski. Teksty po stronie klienta (zaklęcia, strefy
 wchodzą w skład tego modułu.
 
 > [!IMPORTANT]
-> Ta gałąź (`dev-next`) wymaga rdzenia, w którym moduł może zarejestrować własny język (wciągnięte do
-> AzerothCore w październiku 2026) i przełączyć na niego sesję (`WorldSession::SetSessionDbLocaleIndex()`,
-> tabela `acore_string_locale`). Druga część jest zgłoszona w pull requeście 27958 do AzerothCore i nie
-> została jeszcze wciągnięta, więc na zwykłym AzerothCore ta gałąź się nie skompiluje. Tam używaj gałęzi `main`: działa bez zmian w rdzeniu
-> i trzyma polskie teksty w pożyczonym slocie `koKR`.
+> Moduł wymaga AzerothCore z 25 października 2026 lub nowszego. Korzysta z dwóch zmian w rdzeniu
+> wciągniętych w październiku 2026: moduł może zarejestrować własny język i przełączyć na niego sesję
+> (`WorldSession::SetSessionDbLocaleIndex()`, tabela `acore_string_locale`). Na starszym rdzeniu się nie
+> skompiluje.
 
 Pliki w `data/sql/` są generowane — nie edytuj ich ręcznie.
 
@@ -22,7 +21,7 @@ Pliki w `data/sql/` są generowane — nie edytuj ich ręcznie.
 
 ```bash
 cd <azerothcore>/modules
-git clone -b dev-next https://github.com/nolt/mod-polish-translation.git
+git clone https://github.com/nolt/mod-polish-translation.git
 # uruchom ponownie cmake i zbuduj jak zwykle; worldserver wgra data/sql/ przy następnym starcie
 ```
 
@@ -50,11 +49,12 @@ Klient może wysłać tę komendę sam, gdy postać wchodzi do świata (na przyk
 komenda nic nie wypisuje, jeśli niczego nie zmienia. Po przełączeniu klient pamięta nazwy, które zdążył
 zapisać, dopóki nie wyczyścisz folderu `Cache`.
 
-## Przejście z `main`
+## Klient w pełni po polsku
 
-Gałąź `main` trzyma polskie teksty pod `koKR` i usuwa koreańskie wiersze dostarczane z AzerothCore.
-Ta gałąź tego nie sprząta: stare wiersze zostają pod `koKR` (zobaczy je tylko koreański klient). Żeby mieć
-czysty stan, zaimportuj ponownie bazę world i pozwól worldserverowi wgrać `data/sql/` od nowa.
+Moduł tłumaczy tylko to, co wysyła serwer. Żeby mieć klienta w pełni po polsku (zaklęcia, strefy,
+interfejs, czcionki z polskimi literami), pobierz [polish-client-builder](https://github.com/nolt/polish-client-builder/releases/latest).
+Program tworzy tłumaczenie na komputerze gracza z plików jego własnego klienta, a spolszczony klient sam
+wysyła `.polski on`.
 
 ## Usuwanie
 

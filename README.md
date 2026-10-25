@@ -9,11 +9,10 @@ system messages) as a plain module: the server stays English and each account ca
 Client-side texts (spells, zones, UI, fonts) are not part of this module.
 
 > [!IMPORTANT]
-> This branch (`dev-next`) needs a core where a module can register its own locale (merged into
-> AzerothCore in October 2026) and move a session to it (`WorldSession::SetSessionDbLocaleIndex()`,
-> table `acore_string_locale`). The second part is proposed in AzerothCore pull request 27958 and is not
-> merged yet, so on a stock AzerothCore this branch does not compile. Use the `main` branch there: it works without core changes and
-> keeps the Polish texts in the borrowed `koKR` slot.
+> The module needs AzerothCore from 25 October 2026 or newer. It uses two core changes merged in October
+> 2026: a module can register its own locale and move a session to it
+> (`WorldSession::SetSessionDbLocaleIndex()`, table `acore_string_locale`). On an older core it does not
+> compile.
 
 The files in `data/sql/` are generated; do not edit them by hand.
 
@@ -21,7 +20,7 @@ The files in `data/sql/` are generated; do not edit them by hand.
 
 ```bash
 cd <azerothcore>/modules
-git clone -b dev-next https://github.com/nolt/mod-polish-translation.git
+git clone https://github.com/nolt/mod-polish-translation.git
 # re-run cmake and build as usual; the worldserver applies data/sql/ on the next start
 ```
 
@@ -49,11 +48,12 @@ A client can send the command itself when a character enters the world (an addon
 why it stays silent when nothing changes. After a switch the client keeps names it already cached until its
 `Cache` folder is cleared.
 
-## Moving from `main`
+## Fully Polish client
 
-The `main` branch stores the Polish texts under `koKR` and removes the Korean rows shipped with
-AzerothCore. This branch does not clean that up: the old rows stay under `koKR` (only a Korean client sees
-them). For a clean state re-import the world database and let the worldserver apply `data/sql/` again.
+The module translates only what the server sends. For a fully Polish client (spells, zones, interface,
+fonts with Polish letters) download [polish-client-builder](https://github.com/nolt/polish-client-builder/releases/latest).
+It builds the translation on the player's computer from their own client files, and the client it
+produces sends `.polski on` by itself.
 
 ## Remove
 
